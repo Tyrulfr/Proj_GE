@@ -1,0 +1,3230 @@
+{
+  "meta": {
+    "titre": "Culture universitaire de la résilience",
+    "etablissement": "Université Paris-Saclay",
+    "site": "https://www.universite-paris-saclay.fr/",
+    "format": "Trois niveaux : sensibilisation, métiers, parcours expert",
+    "publicPrincipal": "Personnels de l’université : enseignement, recherche, administration, technique, bibliothèques, numérique, doctorat et encadrement.",
+    "duree": "Niveau 1 : 2 h · Niveau 2 : 4 à 8 h · Niveau 3 : 30 à 40 h",
+    "version": "Prototype adapté au cahier des charges de résilience universitaire",
+    "dateCreation": "2026-10-05",
+    "dateVerification": "2026-10-05",
+    "prochaineRevision": "2027-10-05",
+    "niveauConfiance": "Prototype pédagogique, à valider par un comité scientifique",
+    "intention": "Permettre aux personnels de comprendre les risques, d’adopter des comportements proportionnés et de contribuer à la protection de la recherche, des données, des personnes et des coopérations. Le dispositif ne militarise pas l’université et n’installe pas une culture de la suspicion.",
+    "charte": "Charte graphique de l’Université Paris-Saclay, mars 2025"
+  },
+  "finalites": [
+    "Comprendre les rapports de force économiques contemporains",
+    "Identifier les dépendances stratégiques",
+    "Analyser les instruments de coercition économique",
+    "Cartographier les acteurs et les chaînes de valeur",
+    "Évaluer la fiabilité des sources",
+    "Produire une note d’analyse stratégique",
+    "Construire des scénarios et des indicateurs d’alerte",
+    "Formuler des options de résilience",
+    "Développer une lecture critique des discours médiatiques et institutionnels"
+  ],
+  "distinctions": [
+    {
+      "id": "guerre-economique",
+      "terme": "Guerre économique",
+      "definition": "Usage organisé d’instruments économiques pour contraindre un acteur, obtenir un avantage stratégique ou affaiblir une capacité. Le terme est contesté : il décrit une conflictualité, pas toute relation commerciale."
+    },
+    {
+      "id": "competition",
+      "terme": "Compétition économique",
+      "definition": "Rivalité entre entreprises ou territoires pour des marchés, des capitaux, des talents ou des technologies, dans un cadre principalement commercial et juridique."
+    },
+    {
+      "id": "rivalite",
+      "terme": "Rivalité géopolitique",
+      "definition": "Opposition entre entités politiques sur la puissance, la sécurité, les territoires ou l’ordre international. Elle peut emprunter des voies économiques sans s’y réduire."
+    },
+    {
+      "id": "intelligence-economique",
+      "terme": "Intelligence économique",
+      "definition": "Démarche organisée de recherche, de traitement, de diffusion et de protection de l’information utile à la décision. Elle sert la compréhension et la résilience."
+    },
+    {
+      "id": "securite-economique",
+      "terme": "Sécurité économique",
+      "definition": "Protection des actifs, des savoirs, des approvisionnements et des infrastructures essentiels face à des dépendances, des prédations ou des ruptures."
+    },
+    {
+      "id": "economie-de-guerre",
+      "terme": "Économie de guerre",
+      "definition": "Réorganisation de la production, du travail, du financement et des priorités d’allocation pour soutenir un effort de conflit armé."
+    },
+    {
+      "id": "guerre-hybride",
+      "terme": "Guerre hybride",
+      "definition": "Combinaison d’instruments militaires, économiques, informationnels, cyber et juridiques en dessous ou à côté du seuil d’un conflit armé ouvert. L’étiquette doit rester démontrée, pas décorative."
+    },
+    {
+      "id": "influence",
+      "terme": "Influence et désinformation",
+      "definition": "Action sur les perceptions et les décisions. La désinformation désigne des contenus faux ou trompeurs diffusés pour nuire. Les repérer relève de la critique des sources, pas de la fabrication de campagnes."
+    }
+  ],
+  "publics": [
+    {
+      "public": "Étudiants en économie, géopolitique ou relations internationales",
+      "besoin": "Acquérir une méthode d’analyse"
+    },
+    {
+      "public": "Professionnels de l’intelligence économique",
+      "besoin": "Structurer et approfondir leurs pratiques"
+    },
+    {
+      "public": "Cadres d’entreprise",
+      "besoin": "Identifier les dépendances et les risques"
+    },
+    {
+      "public": "Professionnels publics",
+      "besoin": "Comprendre les politiques de sécurité économique"
+    },
+    {
+      "public": "Journalistes et analystes",
+      "besoin": "Vérifier et contextualiser les informations"
+    },
+    {
+      "public": "Enseignants et formateurs",
+      "besoin": "Disposer de ressources pédagogiques fiables"
+    },
+    {
+      "public": "Citoyens avancés",
+      "besoin": "Développer une culture critique de la puissance"
+    }
+  ],
+  "prerequis": [
+    "Une culture générale en économie et en géopolitique",
+    "Une capacité à lire des articles et des rapports longs",
+    "Une maîtrise basique des moteurs de recherche",
+    "Une aptitude à distinguer faits, opinions et hypothèses"
+  ],
+  "objectifs": [
+    {
+      "id": "comprendre",
+      "titre": "Comprendre",
+      "items": [
+        "Définir les principaux concepts de la guerre économique",
+        "Expliquer le rôle des dépendances et des interdépendances",
+        "Décrire les mécanismes des chaînes de valeur mondiales",
+        "Distinguer puissance économique, puissance financière et puissance technologique"
+      ]
+    },
+    {
+      "id": "analyser",
+      "titre": "Analyser",
+      "items": [
+        "Cartographier les acteurs d’un conflit économique",
+        "Identifier les ressources et technologies critiques",
+        "Analyser une sanction, un embargo ou un contrôle à l’exportation",
+        "Repérer les vulnérabilités d’une filière",
+        "Évaluer le degré de fiabilité d’une source"
+      ]
+    },
+    {
+      "id": "produire",
+      "titre": "Produire",
+      "items": [
+        "Rédiger une note de synthèse",
+        "Construire une chronologie stratégique",
+        "Réaliser une cartographie d’acteurs",
+        "Produire une analyse de dépendance",
+        "Élaborer plusieurs scénarios",
+        "Définir des indicateurs d’alerte"
+      ]
+    },
+    {
+      "id": "decider",
+      "titre": "Décider",
+      "items": [
+        "Proposer des mesures de diversification",
+        "Hiérarchiser les risques",
+        "Distinguer les réponses de court, moyen et long terme",
+        "Expliciter les limites et les incertitudes d’une analyse"
+      ]
+    }
+  ],
+  "scenario": [
+    {
+      "etape": "Mise en situation",
+      "texte": "Un problème concret ouvre la séquence."
+    },
+    {
+      "etape": "Question-problème",
+      "texte": "Une question précise cadre le travail."
+    },
+    {
+      "etape": "Apports",
+      "texte": "Textes courts, schémas et données contextualisées."
+    },
+    {
+      "etape": "Analyse guidée",
+      "texte": "La grille acteurs, dépendances, intérêts, instruments, vulnérabilités, scénarios."
+    },
+    {
+      "etape": "Production",
+      "texte": "Une note, une carte ou un tableau."
+    },
+    {
+      "etape": "Retour réflexif",
+      "texte": "Qu’ai-je conclu ? Sur quelles preuves ? Qu’est-ce qui pourrait remettre en cause mon analyse ?"
+    }
+  ],
+  "categoriesClassement": [
+    {
+      "id": "ge",
+      "label": "Guerre économique"
+    },
+    {
+      "id": "ce",
+      "label": "Compétition économique"
+    },
+    {
+      "id": "rg",
+      "label": "Rivalité géopolitique"
+    },
+    {
+      "id": "ie",
+      "label": "Intelligence économique"
+    },
+    {
+      "id": "se",
+      "label": "Sécurité économique"
+    },
+    {
+      "id": "eg",
+      "label": "Économie de guerre"
+    },
+    {
+      "id": "gh",
+      "label": "Guerre hybride"
+    },
+    {
+      "id": "id",
+      "label": "Influence et désinformation"
+    }
+  ],
+  "modules": [
+    {
+      "id": "m1",
+      "numero": 1,
+      "titre": "Fondamentaux de la guerre économique",
+      "duree": "8 heures",
+      "mvp": "complet",
+      "couleur": "#63003C",
+      "resume": "Définir le concept, distinguer les notions voisines et lire une dépendance comme opportunité et vulnérabilité.",
+      "intention": "Poser un vocabulaire rigoureux et une grille de lecture des dépendances, sans réduire toute relation économique à une guerre.",
+      "contenus": [
+        "Définition et histoire du concept",
+        "Économie politique internationale",
+        "Puissance et dépendance",
+        "Libre-échange, protectionnisme et mercantilisme",
+        "Chaînes de valeur mondiales",
+        "Ressources critiques",
+        "Énergie et sécurité économique",
+        "Interdépendance et vulnérabilité"
+      ],
+      "sequences": [
+        {
+          "id": "m1s1",
+          "titre": "Définir sans tout confondre",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Une entreprise européenne dépend d’un fournisseur unique de composants, situé dans un pays dont le gouvernement vient d’annoncer un régime de licences d’exportation. Le dirigeant parle aussitôt de « guerre économique »."
+            },
+            {
+              "type": "question",
+              "texte": "Cette dépendance constitue-t-elle un risque commercial, politique ou stratégique ? Le mot « guerre » est-il ici une analyse ou un slogan ?"
+            },
+            {
+              "type": "apport",
+              "titre": "Une généalogie, plusieurs traditions",
+              "paragraphes": [
+                "Le vocabulaire contemporain doit beaucoup aux travaux de géoéconomie des années 1990, en particulier à l’article d’Edward Luttwak sur le passage d’une grammaire militaire à une grammaire commerciale de la rivalité. Cette lecture est utile, et elle est aussi critiquée : elle tend à voir du conflit là où il y a parfois simple compétition.",
+                "En France, l’intelligence économique publique s’est plutôt construite autour de la maîtrise de l’information stratégique : recherche, traitement, diffusion et protection. Le parcours s’inscrit dans cette seconde tradition.",
+                "Albert O. Hirschman, dès 1945, montrait qu’un commerce extérieur asymétrique peut devenir un levier de puissance. David Baldwin a ensuite proposé de parler d’economic statecraft : l’ensemble des instruments économiques mobilisés au service d’objectifs politiques."
+              ],
+              "points": [
+                "Nommer un fait ne suffit pas : il faut dire quel instrument est utilisé, par qui, vers quelle cible, avec quel objectif observable.",
+                "Toute perte de marché n’est pas une attaque. Toute dépendance n’est pas une arme. Toute arme économique n’est pas une guerre."
+              ]
+            },
+            {
+              "type": "grille",
+              "texte": "Classez la situation d’ouverture avec la grille : qui agit, quelle dépendance est en jeu, quel instrument est annoncé, quelle vulnérabilité est démontrée, quelles hypothèses restent ouvertes."
+            }
+          ]
+        },
+        {
+          "id": "m1s2",
+          "titre": "Puissance, dépendance, interdépendance",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Deux économies échangent massivement. Chacune présente ce lien comme une assurance de paix. Une crise politique révèle pourtant que l’une peut se passer du flux plus longtemps que l’autre."
+            },
+            {
+              "type": "question",
+              "texte": "L’interdépendance protège-t-elle, ou crée-t-elle une vulnérabilité exploitable ?"
+            },
+            {
+              "type": "apport",
+              "titre": "L’asymétrie compte plus que le volume",
+              "paragraphes": [
+                "Une dépendance est un besoin difficile à remplacer à court terme : fournisseur, technologie, norme, marché, financement, donnée ou compétence. Elle peut être une opportunité lorsqu’elle donne accès à un coût, une qualité ou un savoir qu’on ne produit pas soi-même.",
+                "Elle devient une vulnérabilité lorsque la substitution est lente, concentrée, ou contrôlée par un acteur qui a un intérêt à restreindre le flux. Henry Farrell et Abraham Newman ont décrit, en 2019, des réseaux mondiaux dont la position centrale permet à certains États d’observer ou de restreindre des flux. C’est une thèse d’analyse politique, pas un mode d’emploi.",
+                "Trois puissances se distinguent. La puissance économique renvoie à la capacité productive et commerciale. La puissance financière renvoie à la monnaie, au financement et aux infrastructures de paiement. La puissance technologique renvoie à la maîtrise des savoirs, des équipements, des normes et des données. Un acteur peut être fort sur un plan et exposé sur un autre."
+              ],
+              "points": [
+                "Mesurer la concentration des fournisseurs, le délai de substitution et le coût d’une rupture.",
+                "Ne pas confondre un discours de souveraineté avec un diagnostic de dépendance."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m1s3",
+          "titre": "Chaînes de valeur et ressources critiques",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Un composant peu coûteux, produit sur un seul site, arrête des chaînes d’assemblage entières. Le produit final vaut cent fois plus que la pièce manquante."
+            },
+            {
+              "type": "question",
+              "texte": "Où se situe réellement le goulet d’étranglement : la matière, l’équipement, le savoir-faire, la norme ou la logistique ?"
+            },
+            {
+              "type": "apport",
+              "titre": "Lire une filière de la matière au produit",
+              "paragraphes": [
+                "Une chaîne de valeur mondiale découpe la conception, les intrants, la fabrication, l’assemblage et le marché entre plusieurs territoires. La carte politique du produit fini ne dit presque rien du lieu de la puissance.",
+                "Une ressource ou une technologie est dite critique lorsqu’elle est à la fois importante pour des fonctions essentielles et exposée à un risque d’approvisionnement. Les listes publiques évoluent : elles doivent être datées.",
+                "Le libre-échange cherche à spécialiser et à baisser les coûts. Le protectionnisme restreint l’accès au marché pour abriter une activité. Le mercantilisme, dans son sens historique, vise l’accumulation d’un avantage national par le commerce administré. Aucun de ces trois termes ne suffit à qualifier une politique contemporaine : il faut regarder l’instrument précis."
+              ],
+              "points": [
+                "L’énergie reste un cas particulier : elle conditionne presque toutes les autres filières.",
+                "La souveraineté ne signifie pas produire seul. Elle peut reposer sur la recherche, les compétences, les logiciels, les normes, la maintenance et les données."
+              ]
+            },
+            {
+              "type": "reflexion",
+              "questions": [
+                "Qu’ai-je conclu sur la dépendance présentée dans la mise en situation ?",
+                "Quels faits sont établis, et quelles lectures restent des hypothèses ?",
+                "Quelle information nouvelle remettrait en cause mon classement ?"
+              ]
+            }
+          ]
+        }
+      ],
+      "activite": {
+        "type": "classement",
+        "titre": "Classer des situations",
+        "consigne": "Attribuez à chaque situation la notion la plus juste. Une seule réponse principale est attendue. Le corrigé explique les cas limites.",
+        "items": [
+          {
+            "id": "c1",
+            "texte": "Deux entreprises européennes répondent au même appel d’offres pour équiper un hôpital.",
+            "reponse": "ce",
+            "commentaire": "Il s’agit d’une compétition commerciale dans un cadre juridique. Elle ne devient pas une guerre économique parce que l’enjeu est public."
+          },
+          {
+            "id": "c2",
+            "texte": "Un État subordonne l’exportation d’un métal indispensable à une licence, au moment d’un différend technologique.",
+            "reponse": "ge",
+            "commentaire": "L’instrument économique est utilisé dans un rapport de force politique. On qualifiera plus finement l’outil : contrôle à l’exportation, pas embargo général."
+          },
+          {
+            "id": "c3",
+            "texte": "Deux États s’opposent sur la délimitation d’un espace maritime riche en hydrocarbures.",
+            "reponse": "rg",
+            "commentaire": "Le cœur du différend est géopolitique et territorial. L’économie est l’enjeu, pas encore l’instrument."
+          },
+          {
+            "id": "c4",
+            "texte": "Une équipe de veille reconstitue, à partir de sources ouvertes, le portefeuille de brevets d’une filière.",
+            "reponse": "ie",
+            "commentaire": "Recherche et traitement d’information pour la décision : c’est de l’intelligence économique, pas une action de coercition."
+          },
+          {
+            "id": "c5",
+            "texte": "Un État constitue des stocks de médicaments essentiels et diversifie ses fournisseurs.",
+            "reponse": "se",
+            "commentaire": "La mesure vise à réduire une vulnérabilité. C’est une politique de sécurité économique et de résilience."
+          },
+          {
+            "id": "c6",
+            "texte": "En temps de conflit armé, un gouvernement réquisitionne des usines et oriente le crédit vers la production militaire.",
+            "reponse": "eg",
+            "commentaire": "L’économie est réorganisée pour soutenir la guerre. On parle alors d’économie de guerre, ce qui n’est pas synonyme de guerre économique en temps de paix."
+          },
+          {
+            "id": "c7",
+            "texte": "Des opérations militaires, des coupures d’infrastructures et une campagne de rumeurs sont menées ensemble.",
+            "reponse": "gh",
+            "commentaire": "La combinaison d’instruments relève de l’hypothèse de guerre hybride. Encore faut-il documenter chaque volet, et ne pas utiliser l’expression comme un fourre-tout."
+          },
+          {
+            "id": "c8",
+            "texte": "Un réseau de comptes relaie un faux rappel de produit visant une entreprise d’infrastructures.",
+            "reponse": "id",
+            "commentaire": "Le fait à établir est la diffusion d’un contenu trompeur et son effet possible. L’attribuer à un commanditaire exige des preuves distinctes du contenu lui-même."
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "id": "m1q1",
+          "question": "Selon la grille du parcours, qu’est-ce qui transforme une dépendance en vulnérabilité stratégique ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Le simple fait d’importer un bien"
+            },
+            {
+              "id": "b",
+              "texte": "Une substitution lente, concentrée, ou contrôlée par un acteur capable de restreindre le flux"
+            },
+            {
+              "id": "c",
+              "texte": "L’existence d’un excédent commercial"
+            },
+            {
+              "id": "d",
+              "texte": "La publication d’une statistique douanière"
+            }
+          ],
+          "reponse": "b",
+          "explication": "Importer peut être rationnel. Le risque dépend du délai de remplacement, de la concentration et du contrôle du point de passage."
+        },
+        {
+          "id": "m1q2",
+          "question": "Quelle distinction est la plus solide ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Puissance économique, puissance financière et puissance technologique peuvent diverger"
+            },
+            {
+              "id": "b",
+              "texte": "La puissance financière se mesure uniquement au PIB"
+            },
+            {
+              "id": "c",
+              "texte": "La puissance technologique se confond avec le nombre d’usines"
+            },
+            {
+              "id": "d",
+              "texte": "Ces trois puissances sont toujours détenues par le même acteur"
+            }
+          ],
+          "reponse": "a",
+          "explication": "Une économie peut être un grand marché, dépendre d’une monnaie tierce et maîtriser pourtant peu les équipements critiques d’une filière."
+        },
+        {
+          "id": "m1q3",
+          "question": "Pourquoi le parcours se méfie-t-il de l’expression « guerre économique » ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Parce que les instruments économiques n’ont aucun effet politique"
+            },
+            {
+              "id": "b",
+              "texte": "Parce qu’elle peut servir de slogan et écraser des notions plus précises"
+            },
+            {
+              "id": "c",
+              "texte": "Parce que le commerce international a disparu"
+            },
+            {
+              "id": "d",
+              "texte": "Parce que seules les entreprises agissent"
+            }
+          ],
+          "reponse": "b",
+          "explication": "Le terme est légitime pour certains dispositifs de coercition. Il devient trompeur lorsqu’il qualifie toute compétition, toute régulation ou toute dépendance."
+        },
+        {
+          "id": "m1q4",
+          "question": "Que signifie, dans ce parcours, une politique de souveraineté ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Produire l’intégralité des biens sur le territoire"
+            },
+            {
+              "id": "b",
+              "texte": "Fermer les échanges"
+            },
+            {
+              "id": "c",
+              "texte": "Maîtriser les points décisifs : recherche, compétences, normes, maintenance, données, et pas seulement les usines"
+            },
+            {
+              "id": "d",
+              "texte": "Confier toutes les filières au fournisseur le moins cher"
+            }
+          ],
+          "reponse": "c",
+          "explication": "Produire seul est parfois impossible ou inefficient. La question est de savoir quels maillons on contrôle, lesquels on diversifie, et lesquels on assure par des alliances."
+        }
+      ],
+      "production": {
+        "titre": "Fiche d’analyse",
+        "consigne": "Expliquez, en une page, pourquoi une dépendance peut être à la fois une opportunité et une vulnérabilité. Appuyez-vous sur un exemple public, daté, et séparez les faits des hypothèses.",
+        "criteres": [
+          "La dépendance est nommée précisément",
+          "L’opportunité et la vulnérabilité sont toutes deux argumentées",
+          "Les sources sont identifiées",
+          "Les limites de l’analyse sont explicites"
+        ]
+      },
+      "glossaire": [
+        "guerre-economique",
+        "competition",
+        "dependance",
+        "interdependance",
+        "chaine-de-valeur",
+        "ressource-critique",
+        "souverainete"
+      ],
+      "bibliographie": [
+        "hirschman1945",
+        "baldwin1985",
+        "luttwak1990",
+        "farrell2019"
+      ]
+    },
+    {
+      "id": "m2",
+      "numero": 2,
+      "titre": "Intelligence économique et analyse de l’information",
+      "duree": "10 heures",
+      "mvp": "complet",
+      "couleur": "#7C2A90",
+      "resume": "Poser une question, qualifier des sources ouvertes, repérer les biais et écrire une note traçable.",
+      "intention": "Installer une pédagogie de la traçabilité : chaque donnée importante doit pouvoir être reliée à une source identifiée.",
+      "contenus": [
+        "Cycle du renseignement et question de recherche",
+        "Recherche en sources ouvertes",
+        "Qualification des sources",
+        "Biais cognitifs",
+        "Signaux faibles",
+        "Veille économique et technologique",
+        "Protection de l’information",
+        "Influence et manipulation de l’information"
+      ],
+      "sequences": [
+        {
+          "id": "m2s1",
+          "titre": "Une question avant des sources",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Un analyste collecte vingt articles sur « les métaux critiques » sans avoir formulé de question. Sa note résume l’actualité. Elle n’aide pas à décider."
+            },
+            {
+              "type": "question",
+              "texte": "Quelle décision cette recherche doit-elle éclairer, et quelle question est assez précise pour y répondre ?"
+            },
+            {
+              "type": "apport",
+              "titre": "Cadrer, collecter, qualifier, analyser, diffuser, protéger",
+              "paragraphes": [
+                "Le cycle utile au parcours commence par l’orientation : qui décide, dans quel délai, avec quelle tolérance à l’incertitude. La question de recherche vient ensuite. « Que se passe-t-il ? » est trop large. « Quelles parts de la consommation européenne de tel métal dépendent de tel pays exportateur, selon quelles sources, à telle date ? » est travaillable.",
+                "La collecte en sources ouvertes utilise des documents publics : textes officiels, statistiques, publications scientifiques, rapports d’entreprises, dépêches. Ouvert ne veut pas dire fiable.",
+                "La diffusion transmet une conclusion et ses limites. La protection rappelle qu’une analyse de ses propres vulnérabilités peut être sensible : ce prototype n’est pas un endroit où déposer des données confidentielles."
+              ],
+              "points": [
+                "Une bonne question indique l’acteur, l’objet, la période et le type de réponse attendu.",
+                "Le volume de documents ne remplace pas le critère de tri."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m2s2",
+          "titre": "Qualifier trois regards sur un même fait",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "En juillet 2023, les autorités chinoises ont annoncé un régime de licences pour l’exportation de gallium et de germanium, métaux utilisés notamment dans les semi-conducteurs, les télécommunications et certaines applications civiles et de défense. Le motif publiquement avancé relevait de la sécurité nationale. Ce cas est étudié comme un fait historique à vérifier dans son état juridique actuel : les régimes de contrôle évoluent."
+            },
+            {
+              "type": "question",
+              "texte": "Que peut-on affirmer à partir de l’annonce, et qu’est-ce qui relève déjà d’une interprétation sur ses effets ?"
+            },
+            {
+              "type": "apport",
+              "titre": "Séparer le fait, la lecture et l’intérêt de l’auteur",
+              "paragraphes": [
+                "Un fait daté, ici, est l’existence d’une annonce publique de licences, son champ matériel et sa date d’effet tels qu’ils figurent dans le texte officiel. Une interprétation commence lorsqu’on attribue une intention, un effet de marché ou une réponse à d’autres contrôles à l’exportation.",
+                "Plusieurs lectures ont circulé : mesure technique de contrôle, signal politique, réponse à des restrictions visant l’industrie des puces. Elles ne se valent pas tant qu’elles ne sont pas confrontées au texte, aux données de production, aux possibilités de substitution et aux intérêts de celui qui les formule.",
+                "Les trois documents de l’activité sont des pastiches pédagogiques. Ils ne sont pas des sources réelles et ne doivent pas être cités comme telles."
+              ],
+              "points": [
+                "Recouper au moins une source primaire avant de reprendre un chiffre.",
+                "Noter la date de consultation : un régime de licences n’est pas un état permanent."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m2s3",
+          "titre": "Biais, signaux faibles et réflexivité",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Un indicateur isolé — une hausse de prix, une nomination, un brevet — est présenté comme l’annonce certaine d’une rupture dans six mois."
+            },
+            {
+              "type": "question",
+              "texte": "Ce signal faible est-il une alerte à surveiller, ou déjà une prédiction déguisée ?"
+            },
+            {
+              "type": "apport",
+              "titre": "L’alerte n’est pas une preuve",
+              "paragraphes": [
+                "Le biais de confirmation conduit à ne retenir que les documents qui soutiennent l’intuition de départ. Le biais de disponibilité donne un poids excessif à l’exemple le plus médiatisé. Les nommer ne suffit pas : il faut écrire les hypothèses alternatives que l’on n’a pas testées.",
+                "Un signal faible est un indice précoce, ambigu, qui justifie une veille. Il ne devient un scénario qu’une fois relié à d’autres observations et à un mécanisme explicite.",
+                "Repérer une manipulation informationnelle, c’est d’abord vérifier l’origine, la date, le montage éventuel et la concordance avec des sources indépendantes. Le parcours apprend à lire ces opérations. Il n’apprend pas à en concevoir."
+              ],
+              "points": [
+                "Toute affirmation importante de la note doit avoir une source, un degré d’incertitude et, s’il le faut, la mention « à vérifier ».",
+                "Le retour réflexif fait partie de l’analyse, pas de sa décoration finale."
+              ]
+            },
+            {
+              "type": "reflexion",
+              "questions": [
+                "Qu’ai-je tenu pour un fait alors que c’était une lecture ?",
+                "Quelle source manquante changerait la conclusion ?",
+                "Quel biais a le plus pesé sur mon tri documentaire ?"
+              ]
+            }
+          ]
+        }
+      ],
+      "activite": {
+        "type": "sources",
+        "titre": "Comparer trois documents pédagogiques",
+        "consigne": "Ces textes sont fictifs, écrits pour l’exercice à partir du cas public de 2023. Classez chacun selon sa dominante.",
+        "choix": [
+          {
+            "id": "factuel",
+            "label": "Surtout factuel"
+          },
+          {
+            "id": "melange",
+            "label": "Mélange faits et interprétations"
+          },
+          {
+            "id": "prescriptif",
+            "label": "Surtout prescriptif"
+          }
+        ],
+        "documents": [
+          {
+            "id": "d1",
+            "titre": "Document A — style communiqué",
+            "texte": "À compter du 1er août 2023, l’exportation de gallium et de germanium est soumise à licence. La mesure est présentée comme relevant de la sécurité nationale. La liste des produits concernés est annexée. Aucun volume, aucun pays de destination et aucun effet de prix ne sont indiqués.",
+            "reponse": "factuel",
+            "commentaire": "Le texte rapporte une mesure, une date et un motif officiel. Il ne démontre pas l’effet réel. Le motif de sécurité nationale est une déclaration de l’auteur institutionnel, à distinguer de son bien-fondé."
+          },
+          {
+            "id": "d2",
+            "titre": "Document B — style dépêche",
+            "texte": "Les autorités ont annoncé des licences sur le gallium et le germanium. Cette décision va priver l’Europe de métaux indispensables dès le mois prochain et marque le début d’une guerre des minerais.",
+            "reponse": "melange",
+            "commentaire": "La première phrase peut renvoyer à un fait. La seconde ajoute un effet non démontré et une qualification globale. L’analyste doit scinder les deux."
+          },
+          {
+            "id": "d3",
+            "titre": "Document C — style note de cabinet",
+            "texte": "Nos clients doivent constituer immédiatement des stocks et nous confier une veille exclusive. Le marché va se fermer, les prix vont tripler, et les substituts sont illusoires. Nos travaux antérieurs l’ont toujours anticipé.",
+            "reponse": "prescriptif",
+            "commentaire": "L’intérêt commercial de l’auteur structure le texte. Les prévisions sont affirmées sans donnée ni méthode. Le document peut signaler une inquiétude de marché ; il n’est pas une preuve."
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "id": "m2q1",
+          "question": "Par quoi commence utilement un travail d’intelligence économique ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Par la collecte du plus grand nombre possible d’articles"
+            },
+            {
+              "id": "b",
+              "texte": "Par la décision à éclairer et par une question précise"
+            },
+            {
+              "id": "c",
+              "texte": "Par la conclusion que l’on souhaite atteindre"
+            },
+            {
+              "id": "d",
+              "texte": "Par le choix d’un outil logiciel"
+            }
+          ],
+          "reponse": "b",
+          "explication": "Sans question, la veille accumule des documents. Elle ne produit pas une analyse mobilisable."
+        },
+        {
+          "id": "m2q2",
+          "question": "Une source ouverte est…",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "nécessairement exacte parce qu’elle est publique"
+            },
+            {
+              "id": "b",
+              "texte": "un document accessible, dont la fiabilité reste à qualifier"
+            },
+            {
+              "id": "c",
+              "texte": "toujours préférable à un texte officiel"
+            },
+            {
+              "id": "d",
+              "texte": "une information confidentielle publiée par erreur"
+            }
+          ],
+          "reponse": "b",
+          "explication": "L’accès public facilite la collecte et la citation. Il ne dispense pas de regarder l’auteur, la date, la méthode et les intérêts."
+        },
+        {
+          "id": "m2q3",
+          "question": "Comment traiter un signal faible ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Le présenter comme une prévision certaine"
+            },
+            {
+              "id": "b",
+              "texte": "L’ignorer tant qu’il n’est pas en une des journaux"
+            },
+            {
+              "id": "c",
+              "texte": "Le consigner comme hypothèse à surveiller et à recouper"
+            },
+            {
+              "id": "d",
+              "texte": "L’attribuer tout de suite à un État"
+            }
+          ],
+          "reponse": "c",
+          "explication": "Le signal faible justifie une veille et un indicateur. Il ne remplace pas le mécanisme, la source et le scénario alternatif."
+        },
+        {
+          "id": "m2q4",
+          "question": "Que demande la traçabilité dans une note ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Une bibliographie décorative en fin de document"
+            },
+            {
+              "id": "b",
+              "texte": "Que chaque donnée importante renvoie à une source identifiée, avec les incertitudes"
+            },
+            {
+              "id": "c",
+              "texte": "De ne citer que des sources qui confirment la thèse"
+            },
+            {
+              "id": "d",
+              "texte": "De supprimer les désaccords entre auteurs"
+            }
+          ],
+          "reponse": "b",
+          "explication": "La source se place au plus près de l’affirmation. Les désaccords et les trous documentaires font partie de la note."
+        }
+      ],
+      "production": {
+        "titre": "Note de synthèse",
+        "consigne": "Rédigez le plan développé d’une note de deux pages sur le cas du gallium et du germanium, ou sur une autre dépendance publique de votre choix. Faites apparaître les sources à consulter, les hypothèses et les limites. N’y placez aucune donnée confidentielle.",
+        "criteres": [
+          "Question précise",
+          "Faits, hypothèses et interprétations séparés",
+          "Sources diversifiées à réunir",
+          "Limites et points à vérifier"
+        ]
+      },
+      "glossaire": [
+        "intelligence-economique",
+        "source-ouverte",
+        "signal-faible",
+        "biais",
+        "tracabilite",
+        "veille",
+        "desinformation"
+      ],
+      "bibliographie": [
+        "viepublique",
+        "cnil",
+        "farrell2019"
+      ]
+    },
+    {
+      "id": "m3",
+      "numero": 3,
+      "titre": "Instruments de coercition économique",
+      "duree": "10 heures",
+      "mvp": "apercu",
+      "couleur": "#C60B46",
+      "resume": "Lire sanctions, contrôles, tarifs, normes et subventions selon leurs objectifs, leurs cibles et leurs effets indésirables.",
+      "intention": "Analyser des instruments publics de coercition. L’efficacité dépend de l’objectif, de la mise en œuvre, de la coordination entre alliés et de la maîtrise des effets indésirables.",
+      "contenus": [
+        "Sanctions et embargos",
+        "Droits de douane",
+        "Contrôles à l’exportation",
+        "Gel des avoirs et restrictions financières",
+        "Contrôle des investissements étrangers",
+        "Subventions et normes",
+        "Extraterritorialité",
+        "Contournements observés et effets secondaires, comme objets d’analyse"
+      ],
+      "sequences": [
+        {
+          "id": "m3s1",
+          "titre": "Amorce — une sanction n’est pas un bloc",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Un titre annonce « des sanctions historiques ». Le texte mélange un gel d’avoirs, une interdiction d’exportation et un discours politique."
+            },
+            {
+              "type": "question",
+              "texte": "Quel est l’objectif politique déclaré, quelle est la cible juridique, et quelle est la cible économique réellement touchée ?"
+            },
+            {
+              "type": "apport",
+              "titre": "Décomposer avant de juger",
+              "paragraphes": [
+                "Une sanction est un instrument juridique et politique. Elle peut viser des personnes, des entités, des secteurs ou des flux. Son effet économique ne coïncide pas toujours avec sa cible juridique : des tiers, des alliés ou des marchés mondiaux peuvent porter une partie du coût.",
+                "Les contournements, lorsqu’ils sont documentés par des sources publiques, servent à évaluer les limites d’un dispositif. Les décrire comme phénomène observé ne consiste pas à expliquer comment les organiser.",
+                "Ce module sera développé après le test des modules 1 et 2, conformément au MVP du cahier des charges."
+              ],
+              "points": [
+                "Toujours dater le régime juridique consulté.",
+                "Distinguer l’effet recherché, l’effet observé et l’effet allégué."
+              ]
+            }
+          ]
+        }
+      ],
+      "activite": null,
+      "quiz": [],
+      "production": {
+        "titre": "Étude de cas",
+        "consigne": "Sur un dispositif public de sanctions, préparez les rubriques : objectif politique, cibles, effets observés, limites documentées, conséquences pour les alliés. Les sources restent à vérifier lors de la production complète du module.",
+        "criteres": [
+          "Objectif et cibles distingués",
+          "Effets appuyés sur des sources",
+          "Effets indésirables mentionnés",
+          "Aucune recommandation opérationnelle de contournement"
+        ]
+      },
+      "glossaire": [
+        "sanction",
+        "embargo",
+        "controle-exportation",
+        "extraterritorialite"
+      ],
+      "bibliographie": [
+        "baldwin1985",
+        "treasury",
+        "ue2023"
+      ]
+    },
+    {
+      "id": "m4",
+      "numero": 4,
+      "titre": "Technologies, industrie et souveraineté",
+      "duree": "12 heures",
+      "mvp": "apercu",
+      "couleur": "#007582",
+      "resume": "Cartographier une filière critique, de la matière au produit, et comparer relocalisation, diversification et alliance.",
+      "intention": "Montrer que la souveraineté se joue souvent sur quelques goulets — équipements, logiciels, normes, compétences — plutôt que sur le seul assemblage final.",
+      "contenus": [
+        "Semi-conducteurs",
+        "Intelligence artificielle",
+        "Cloud et télécommunications",
+        "Cybersécurité, comme enjeu de dépendance",
+        "Batteries et métaux critiques",
+        "Biotechnologies",
+        "Satellites",
+        "Technologies duales",
+        "Brevets, normes et propriété intellectuelle"
+      ],
+      "sequences": [
+        {
+          "id": "m4s1",
+          "titre": "Amorce — le produit fini masque la filière",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Un pays assemble des équipements électroniques et se juge souverain. Les logiciels de conception, les machines de fabrication et les puces les plus avancées viennent d’ailleurs."
+            },
+            {
+              "type": "question",
+              "texte": "Quel maillon, s’il s’arrête, arrête le reste ?"
+            },
+            {
+              "type": "apport",
+              "titre": "Trois réponses, pas une seule",
+              "paragraphes": [
+                "Relocaliser, diversifier et s’allier répondent à des risques différents. Produire localement peut réduire une dépendance et en créer d’autres, sur l’énergie, les talents ou les intrants.",
+                "Les normes et les brevets orientent les marchés sans qu’aucune marchandise ne traverse une frontière. Ils font partie de la cartographie.",
+                "L’étude de cas interactive sur les semi-conducteurs sert d’atelier commun à ce module. Le contenu complet reste à produire."
+              ],
+              "points": [
+                "Chercher le goulet le moins substituable, pas seulement le maillon le plus médiatisé.",
+                "La cybersécurité est abordée ici comme une dépendance de confiance et de maintenance, pas comme une technique d’intrusion."
+              ]
+            }
+          ]
+        }
+      ],
+      "activite": null,
+      "quiz": [],
+      "production": {
+        "titre": "Cartographie de filière",
+        "consigne": "Esquissez une filière critique, de la matière première au produit final, en indiquant pour chaque maillon les acteurs dominants et le point de fragilité.",
+        "criteres": [
+          "Maillons ordonnés",
+          "Acteurs et territoires identifiés",
+          "Goulets argumentés",
+          "Options de résilience comparées"
+        ]
+      },
+      "glossaire": [
+        "chaine-de-valeur",
+        "goulet",
+        "norme",
+        "technologie-duale",
+        "souverainete"
+      ],
+      "bibliographie": [
+        "miller2022",
+        "ue2023"
+      ]
+    },
+    {
+      "id": "m5",
+      "numero": 5,
+      "titre": "Finance, monnaie et droit",
+      "duree": "10 heures",
+      "mvp": "apercu",
+      "couleur": "#004E7D",
+      "resume": "Comprendre comment la monnaie, les paiements, l’investissement et le droit prolongent une pression au-delà d’un territoire.",
+      "intention": "Relier les infrastructures financières et juridiques à la puissance, à un niveau conceptuel et documenté.",
+      "contenus": [
+        "Dollar et systèmes de paiement",
+        "Banques correspondantes",
+        "Dette et financement",
+        "Sanctions financières",
+        "Investissements directs et fonds souverains",
+        "Droit des contrats et arbitrage",
+        "Lois de blocage",
+        "Extraterritorialité"
+      ],
+      "sequences": [
+        {
+          "id": "m5s1",
+          "titre": "Amorce — une pression hors des frontières",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Une opération commerciale entre deux pays tiers utilise le dollar et une banque correspondante établie dans un troisième pays. Un changement de régime juridique dans ce troisième pays modifie l’opération."
+            },
+            {
+              "type": "question",
+              "texte": "Comment un État peut-il exercer une pression économique au-delà de ses frontières ?"
+            },
+            {
+              "type": "apport",
+              "titre": "Le point de passage juridique",
+              "paragraphes": [
+                "La portée d’une monnaie de réserve et des infrastructures de paiement tient à leur usage international. Restreindre l’accès à ces infrastructures est un instrument public, étudié ici dans ses effets politiques et économiques.",
+                "Le droit des contrats, l’arbitrage et les lois de blocage montrent que plusieurs ordres juridiques peuvent revendiquer la même opération. L’analyste identifie le droit applicable. Il ne propose pas de montage pour s’y soustraire.",
+                "Ce module sera scénarisé après validation du MVP."
+              ],
+              "points": [
+                "Distinguer la nationalité des parties, la monnaie, la place de règlement et le droit du contrat.",
+                "Un fonds souverain est un acteur : son mandat et sa gouvernance font partie de l’analyse."
+              ]
+            }
+          ]
+        }
+      ],
+      "activite": null,
+      "quiz": [],
+      "production": {
+        "titre": "Note de cadrage",
+        "consigne": "Répondez, en plan détaillé, à la question : comment un État peut-il exercer une pression économique au-delà de ses frontières ? Appuyez chaque mécanisme sur une source juridique ou académique à vérifier.",
+        "criteres": [
+          "Mécanismes distingués",
+          "Exemple public",
+          "Limites juridiques signalées",
+          "Pas de schéma de contournement"
+        ]
+      },
+      "glossaire": [
+        "extraterritorialite",
+        "sanction",
+        "fonds-souverain"
+      ],
+      "bibliographie": [
+        "baldwin1985",
+        "treasury",
+        "farrell2019"
+      ]
+    },
+    {
+      "id": "m6",
+      "numero": 6,
+      "titre": "Prospective, résilience et simulation",
+      "duree": "12 heures",
+      "mvp": "apercu",
+      "couleur": "#F37320",
+      "resume": "Construire plusieurs scénarios, des indicateurs d’alerte et un plan de réponse hiérarchisé.",
+      "intention": "Apprendre à décider sous incertitude. Une simulation pédagogique montre des conséquences visibles. Elle ne prétend pas reproduire la réalité.",
+      "contenus": [
+        "Construction de scénarios",
+        "Méthode des signaux faibles",
+        "Analyse des risques",
+        "Points de bascule",
+        "Résilience des chaînes d’approvisionnement",
+        "Stocks stratégiques",
+        "Coopération public-privé",
+        "Arbitrages entre efficacité et sécurité"
+      ],
+      "sequences": [
+        {
+          "id": "m6s1",
+          "titre": "Amorce — trois avenirs, pas une prédiction",
+          "etapes": [
+            {
+              "type": "situation",
+              "texte": "Le prix d’une matière première monte, un exportateur annonce des restrictions, puis un flux logistique se tend. Les commentaires parlent déjà d’un scénario unique et inévitable."
+            },
+            {
+              "type": "question",
+              "texte": "Quels autres enchaînements restent plausibles, et quels indicateurs permettraient de les départager ?"
+            },
+            {
+              "type": "apport",
+              "titre": "La résilience est un choix daté",
+              "paragraphes": [
+                "Un scénario n’est pas une prévision. C’est un récit conditionnel : si tel mécanisme se prolonge, alors tel effet devient plausible. En proposer plusieurs oblige à dire ce qui les départage.",
+                "Les réponses de court terme (stocks, contrats, substitution d’urgence), de moyen terme (diversification, normes, compétences) et de long terme (recherche, alliances industrielles) n’ont ni le même coût ni la même réversibilité.",
+                "La simulation jouable prévue par le cahier des charges — hausse de prix, restriction, rupture, pression diplomatique, choix de réponse — n’est pas développée dans ce prototype, afin de valider d’abord la méthode."
+              ],
+              "points": [
+                "Chaque scénario porte une probabilité qualitative et un indicateur observable.",
+                "L’efficacité productive et la sécurité d’approvisionnement sont parfois en tension : l’arbitrage doit être explicite."
+              ]
+            }
+          ]
+        }
+      ],
+      "activite": null,
+      "quiz": [],
+      "production": {
+        "titre": "Étude stratégique",
+        "consigne": "Production finale du parcours complet : une étude de 15 à 20 pages sur une dépendance économique ou technologique. Dans le prototype, limitez-vous à la problématique, au plan et à la liste des indicateurs.",
+        "criteres": [
+          "Problématisation précise",
+          "Plusieurs scénarios plausibles",
+          "Recommandations hiérarchisées",
+          "Incertitudes explicites"
+        ]
+      },
+      "glossaire": [
+        "scenario",
+        "resilience",
+        "signal-faible",
+        "indicateur"
+      ],
+      "bibliographie": [
+        "ue2023",
+        "hirschman1945"
+      ]
+    }
+  ],
+  "positionnement": {
+    "titre": "Module de positionnement",
+    "introduction": "Ce test diagnostique ne note pas un niveau scolaire. Il situe votre aisance à distinguer les notions, les faits et les hypothèses avant les modules 1 et 2.",
+    "questions": [
+      {
+        "id": "p1",
+        "question": "Deux firmes se disputent un contrat. De quoi s’agit-il d’abord ?",
+        "choix": [
+          {
+            "id": "a",
+            "texte": "D’une compétition économique"
+          },
+          {
+            "id": "b",
+            "texte": "D’une économie de guerre"
+          },
+          {
+            "id": "c",
+            "texte": "D’une sanction"
+          },
+          {
+            "id": "d",
+            "texte": "D’une guerre hybride"
+          }
+        ],
+        "reponse": "a",
+        "explication": "La compétition pour un marché est le cadre de départ. Les autres notions exigent d’autres instruments ou un contexte de conflit."
+      },
+      {
+        "id": "p2",
+        "question": "Une interdépendance est stratégique lorsque…",
+        "choix": [
+          {
+            "id": "a",
+            "texte": "les échanges sont importants en valeur"
+          },
+          {
+            "id": "b",
+            "texte": "l’un des acteurs peut difficilement remplacer un flux que l’autre peut restreindre"
+          },
+          {
+            "id": "c",
+            "texte": "les deux pays partagent une frontière"
+          },
+          {
+            "id": "d",
+            "texte": "le bien échangé est bon marché"
+          }
+        ],
+        "reponse": "b",
+        "explication": "Le volume ne dit pas l’asymétrie. La question porte sur la substituabilité et le contrôle du flux."
+      },
+      {
+        "id": "p3",
+        "question": "Quelle phrase est un fait, plutôt qu’une interprétation ?",
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Cette mesure déclare une guerre commerciale"
+          },
+          {
+            "id": "b",
+            "texte": "Le texte officiel publié à telle date soumet tel produit à licence"
+          },
+          {
+            "id": "c",
+            "texte": "L’Europe sera privée de ce métal le mois prochain"
+          },
+          {
+            "id": "d",
+            "texte": "Les prix vont nécessairement tripler"
+          }
+        ],
+        "reponse": "b",
+        "explication": "La phrase b peut être vérifiée dans un texte daté. Les autres ajoutent une intention, un effet ou une prévision."
+      },
+      {
+        "id": "p4",
+        "question": "À quoi sert un signal faible ?",
+        "choix": [
+          {
+            "id": "a",
+            "texte": "À annoncer une certitude"
+          },
+          {
+            "id": "b",
+            "texte": "À ouvrir une hypothèse de veille, encore à recouper"
+          },
+          {
+            "id": "c",
+            "texte": "À remplacer les sources"
+          },
+          {
+            "id": "d",
+            "texte": "À désigner un responsable"
+          }
+        ],
+        "reponse": "b",
+        "explication": "Le signal faible est un indice ambigu. Il appelle un indicateur et une source, pas une conclusion immédiate."
+      },
+      {
+        "id": "p5",
+        "question": "L’efficacité d’une sanction dépend notamment…",
+        "choix": [
+          {
+            "id": "a",
+            "texte": "de la seule sévérité du vocabulaire politique"
+          },
+          {
+            "id": "b",
+            "texte": "de son objectif, de sa mise en œuvre, de la coordination et de ses effets indésirables"
+          },
+          {
+            "id": "c",
+            "texte": "du nombre d’articles de presse"
+          },
+          {
+            "id": "d",
+            "texte": "de l’interdiction de toute analyse critique"
+          }
+        ],
+        "reponse": "b",
+        "explication": "Un dispositif sévère sur le papier peut manquer sa cible, coûter aux alliés ou être contourné. L’analyse commence par l’objectif."
+      },
+      {
+        "id": "p6",
+        "question": "La souveraineté industrielle exige-t-elle de tout produire sur place ?",
+        "choix": [
+          {
+            "id": "a",
+            "texte": "Oui, sinon la notion est vide"
+          },
+          {
+            "id": "b",
+            "texte": "Non : recherche, normes, compétences, maintenance et alliances en font partie"
+          },
+          {
+            "id": "c",
+            "texte": "Oui, mais seulement pour les biens de consommation"
+          },
+          {
+            "id": "d",
+            "texte": "Non, le prix le plus bas suffit toujours"
+          }
+        ],
+        "reponse": "b",
+        "explication": "Maîtriser les points décisifs d’une filière ne se confond pas avec l’autarcie."
+      }
+    ]
+  },
+  "cas": {
+    "id": "semi-conducteurs",
+    "titre": "Chaîne de valeur des semi-conducteurs",
+    "dateCas": "Synthèse pédagogique arrêtée au 5 octobre 2026, à partir de faits de structure connus avant 2024",
+    "vigilance": "Les parts de marché, les contrôles à l’exportation et les projets d’usines changent vite. Vérifiez toute donnée avant de la citer dans une note.",
+    "probleme": "Un équipement électronique grand public ou industriel repose sur des puces dont la conception, les machines, les matériaux et la fabrication ne sont pas situés au même endroit. La carte du produit fini donne une image fausse de la puissance.",
+    "question": "Où sont les goulets peu substituables, et quelles options de résilience sont réalistes à court, moyen et long terme ?",
+    "maillons": [
+      {
+        "id": "conception",
+        "titre": "Conception",
+        "role": "Architectures et design des puces",
+        "acteurs": "Entreprises spécialisées surtout aux États-Unis, avec des pôles au Royaume-Uni, en Europe et en Asie",
+        "fragilite": "Dépendance aux logiciels de conception et aux compétences rares",
+        "question": "Qui détient le plan de la puce, et qui peut le modifier ?"
+      },
+      {
+        "id": "eda",
+        "titre": "Logiciels de conception",
+        "role": "Outils d’automatisation de la conception électronique",
+        "acteurs": "Marché très concentré, historiquement dominé par des éditeurs américains",
+        "fragilite": "Goulet immatériel : sans l’outil, la conception avancée s’arrête",
+        "question": "Un logiciel peut-il être un point de contrôle au même titre qu’une mine ou un port ?"
+      },
+      {
+        "id": "equipements",
+        "titre": "Équipements de fabrication",
+        "role": "Machines de lithographie et équipements de procédé",
+        "acteurs": "Compétences décisives aux Pays-Bas et au Japon, parmi d’autres fournisseurs d’équipements",
+        "fragilite": "Quelques machines très avancées n’ont presque pas de substitut à court terme",
+        "question": "Que change un contrôle à l’exportation sur un équipement, par rapport à un tarif douanier sur le produit fini ?"
+      },
+      {
+        "id": "materiaux",
+        "titre": "Matériaux et chimie",
+        "role": "Silicium, gaz, chimie de spécialité, métaux dont le gallium et le germanium",
+        "acteurs": "Chaînes réparties entre le Japon, l’Europe, les États-Unis, la Chine et d’autres producteurs",
+        "fragilite": "Des intrants peu visibles peuvent bloquer un procédé entier",
+        "question": "La criticité se mesure-t-elle au prix unitaire ou à l’absence de substitut ?"
+      },
+      {
+        "id": "fonderie",
+        "titre": "Fonderies",
+        "role": "Fabrication des puces les plus fines",
+        "acteurs": "Capacités de pointe très concentrées à Taïwan et en Corée du Sud",
+        "fragilite": "Concentration géographique et technique : un site peut représenter une part décisive de la production mondiale avancée",
+        "question": "La concentration est-elle un risque politique, un risque physique, ou les deux ?"
+      },
+      {
+        "id": "assemblage",
+        "titre": "Assemblage et test",
+        "role": "Mise en boîtier, test, packaging avancé",
+        "acteurs": "Forte présence en Asie du Sud-Est et en Chine, avec des efforts de relocalisation ailleurs",
+        "fragilite": "Étape parfois jugée secondaire, alors que le packaging avancé devient stratégique",
+        "question": "Quel maillon avez-vous tendance à sous-estimer parce qu’il est en aval ?"
+      },
+      {
+        "id": "integration",
+        "titre": "Intégration",
+        "role": "Insertion dans l’automobile, le cloud, l’industrie, la défense et le grand public",
+        "acteurs": "Demande mondiale, chaînes d’assemblage réparties",
+        "fragilite": "L’utilisateur final subit la rupture sans voir le maillon d’origine",
+        "question": "Qui, dans la chaîne, a intérêt à surestimer ou à minimiser le risque ?"
+      }
+    ],
+    "options": [
+      {
+        "horizon": "Court terme",
+        "piste": "Stocks ciblés, clauses contractuelles, identification du composant qui arrête l’usine"
+      },
+      {
+        "horizon": "Moyen terme",
+        "piste": "Second fournisseur, qualification d’une technologie légèrement plus ancienne, accords industriels"
+      },
+      {
+        "horizon": "Long terme",
+        "piste": "Compétences, recherche, participation aux normes, alliances sur les équipements et les logiciels"
+      }
+    ]
+  },
+  "glossaire": [
+    {
+      "id": "guerre-economique",
+      "terme": "Guerre économique",
+      "definition": "Mobilisation d’instruments économiques à des fins de contrainte ou d’avantage stratégique. À distinguer de la compétition ordinaire.",
+      "voir": [
+        "competition",
+        "sanction"
+      ]
+    },
+    {
+      "id": "competition",
+      "terme": "Compétition économique",
+      "definition": "Rivalité pour des marchés, des facteurs de production ou des technologies, principalement par le prix, l’innovation et le droit.",
+      "voir": [
+        "guerre-economique"
+      ]
+    },
+    {
+      "id": "rivalite",
+      "terme": "Rivalité géopolitique",
+      "definition": "Opposition entre entités politiques sur la puissance et la sécurité. L’économie peut en être l’enjeu ou l’instrument.",
+      "voir": [
+        "guerre-economique"
+      ]
+    },
+    {
+      "id": "intelligence-economique",
+      "terme": "Intelligence économique",
+      "definition": "Recherche, traitement, diffusion et protection de l’information stratégique au service d’une décision.",
+      "voir": [
+        "veille",
+        "tracabilite"
+      ]
+    },
+    {
+      "id": "securite-economique",
+      "terme": "Sécurité économique",
+      "definition": "Réduction des vulnérabilités touchant les actifs, les savoirs, les approvisionnements et les infrastructures essentiels.",
+      "voir": [
+        "resilience",
+        "dependance"
+      ]
+    },
+    {
+      "id": "economie-de-guerre",
+      "terme": "Économie de guerre",
+      "definition": "Réorientation de la production et du financement pour soutenir un conflit armé.",
+      "voir": [
+        "guerre-economique"
+      ]
+    },
+    {
+      "id": "guerre-hybride",
+      "terme": "Guerre hybride",
+      "definition": "Combinaison revendiquée ou observée d’instruments militaires et non militaires. L’expression doit être justifiée maillon par maillon.",
+      "voir": [
+        "influence"
+      ]
+    },
+    {
+      "id": "influence",
+      "terme": "Influence",
+      "definition": "Action sur les perceptions et les décisions d’un public ou d’un décideur.",
+      "voir": [
+        "desinformation"
+      ]
+    },
+    {
+      "id": "desinformation",
+      "terme": "Désinformation",
+      "definition": "Diffusion de contenus faux ou trompeurs dans le but de nuire ou de manipuler. À établir, pas à présumer du seul désaccord.",
+      "voir": [
+        "source-ouverte"
+      ]
+    },
+    {
+      "id": "dependance",
+      "terme": "Dépendance",
+      "definition": "Besoin d’un flux extérieur difficile à remplacer dans le délai de la décision.",
+      "voir": [
+        "interdependance",
+        "goulet"
+      ]
+    },
+    {
+      "id": "interdependance",
+      "terme": "Interdépendance",
+      "definition": "Dépendance réciproque. Elle peut stabiliser une relation ou, si elle est asymétrique, devenir un levier.",
+      "voir": [
+        "dependance"
+      ]
+    },
+    {
+      "id": "sanction",
+      "terme": "Sanction",
+      "definition": "Mesure restrictive publique visant à modifier un comportement ou à dégrader une capacité. Ses cibles juridiques et économiques peuvent différer.",
+      "voir": [
+        "embargo",
+        "extraterritorialite"
+      ]
+    },
+    {
+      "id": "embargo",
+      "terme": "Embargo",
+      "definition": "Interdiction d’échanges visant un territoire, un secteur ou une catégorie de biens. Le terme est souvent élargi à tort à toute restriction.",
+      "voir": [
+        "sanction"
+      ]
+    },
+    {
+      "id": "controle-exportation",
+      "terme": "Contrôle à l’exportation",
+      "definition": "Régime de licences ou d’interdictions pesant sur la sortie de biens, de technologies ou de savoirs.",
+      "voir": [
+        "sanction"
+      ]
+    },
+    {
+      "id": "extraterritorialite",
+      "terme": "Extraterritorialité",
+      "definition": "Prétention d’un droit national à s’appliquer à des actes situés hors de son territoire, souvent via un point de passage monétaire, technique ou personnel.",
+      "voir": [
+        "sanction"
+      ]
+    },
+    {
+      "id": "chaine-de-valeur",
+      "terme": "Chaîne de valeur",
+      "definition": "Suite des activités qui mènent d’un intrant à un usage final, souvent répartie entre plusieurs pays.",
+      "voir": [
+        "goulet"
+      ]
+    },
+    {
+      "id": "goulet",
+      "terme": "Goulet d’étranglement",
+      "definition": "Maillon dont la saturation, la concentration ou l’arrêt limite toute la filière.",
+      "voir": [
+        "ressource-critique"
+      ]
+    },
+    {
+      "id": "ressource-critique",
+      "terme": "Ressource critique",
+      "definition": "Intrant à la fois important pour des fonctions essentielles et exposé à un risque d’approvisionnement. Une liste critique est toujours datée.",
+      "voir": [
+        "dependance"
+      ]
+    },
+    {
+      "id": "signal-faible",
+      "terme": "Signal faible",
+      "definition": "Indice précoce et ambigu, utile pour orienter une veille, insuffisant pour conclure.",
+      "voir": [
+        "indicateur",
+        "scenario"
+      ]
+    },
+    {
+      "id": "veille",
+      "terme": "Veille",
+      "definition": "Collecte organisée et répétée d’informations sur un périmètre défini, avec des critères de tri.",
+      "voir": [
+        "intelligence-economique"
+      ]
+    },
+    {
+      "id": "source-ouverte",
+      "terme": "Source ouverte",
+      "definition": "Information licitement accessible sans accès privilégié. Sa publicité ne garantit pas sa qualité.",
+      "voir": [
+        "tracabilite"
+      ]
+    },
+    {
+      "id": "biais",
+      "terme": "Biais cognitif",
+      "definition": "Déformation systématique du jugement, par exemple le biais de confirmation ou le biais de disponibilité.",
+      "voir": [
+        "tracabilite"
+      ]
+    },
+    {
+      "id": "scenario",
+      "terme": "Scénario",
+      "definition": "Récit conditionnel et plausible. Ce n’est pas une prévision unique.",
+      "voir": [
+        "indicateur"
+      ]
+    },
+    {
+      "id": "indicateur",
+      "terme": "Indicateur d’alerte",
+      "definition": "Observation suivie dans le temps, choisie parce qu’elle permet de départager des scénarios.",
+      "voir": [
+        "signal-faible"
+      ]
+    },
+    {
+      "id": "resilience",
+      "terme": "Résilience",
+      "definition": "Capacité à absorber une rupture, à s’adapter et à rétablir une fonction essentielle.",
+      "voir": [
+        "souverainete"
+      ]
+    },
+    {
+      "id": "souverainete",
+      "terme": "Souveraineté économique",
+      "definition": "Capacité à décider sans être paralysé par une dépendance. Elle peut passer par la production, mais aussi par les normes, les compétences et les alliances.",
+      "voir": [
+        "resilience"
+      ]
+    },
+    {
+      "id": "norme",
+      "terme": "Norme",
+      "definition": "Règle technique ou standard qui oriente un marché et peut devenir un instrument de puissance.",
+      "voir": [
+        "chaine-de-valeur"
+      ]
+    },
+    {
+      "id": "technologie-duale",
+      "terme": "Technologie duale",
+      "definition": "Technologie susceptible d’usages civils et militaires. Le caractère dual élargit les enjeux de contrôle, sans qualifier à lui seul une intention.",
+      "voir": [
+        "controle-exportation"
+      ]
+    },
+    {
+      "id": "fonds-souverain",
+      "terme": "Fonds souverain",
+      "definition": "Véhicule d’investissement public. Son effet stratégique dépend de son mandat, de sa gouvernance et des secteurs visés.",
+      "voir": [
+        "dependance"
+      ]
+    },
+    {
+      "id": "tracabilite",
+      "terme": "Traçabilité",
+      "definition": "Possibilité de relier une affirmation importante à une source, une date et un degré d’incertitude.",
+      "voir": [
+        "source-ouverte"
+      ]
+    },
+    {
+      "id": "ppst",
+      "terme": "Protection du potentiel scientifique et technique",
+      "definition": "Dispositif français visant à protéger les savoirs, savoir-faire et technologies sensibles détenus par les établissements. La fiche SGDSN le relie notamment à la maîtrise des accès et aux zones à régime restrictif. Il protège des actifs, il ne qualifie pas les personnes.",
+      "voir": [
+        "securite-economique",
+        "liberte-academique"
+      ]
+    },
+    {
+      "id": "liberte-academique",
+      "terme": "Liberté académique",
+      "definition": "Liberté de chercher, d’enseigner, de publier et de coopérer, dans le cadre du droit. Les mesures de protection se justifient si elles restent proportionnées et si elles préservent cette liberté ainsi que l’autonomie de l’établissement.",
+      "voir": [
+        "ppst",
+        "proportionnalite"
+      ]
+    },
+    {
+      "id": "proportionnalite",
+      "terme": "Proportionnalité",
+      "definition": "Principe selon lequel une mesure de protection doit être adaptée au risque identifié, limitée dans son objet et compatible avec l’ouverture scientifique. Formule de travail : aussi ouvert que possible, aussi protégé que nécessaire.",
+      "voir": [
+        "liberte-academique"
+      ]
+    },
+    {
+      "id": "signalement",
+      "terme": "Signalement",
+      "definition": "Transmission factuelle d’une situation inhabituelle au bon interlocuteur interne. La personne qui signale décrit ce qu’elle a vu. Elle n’accuse pas et elle ne mène pas l’enquête.",
+      "voir": [
+        "source-ouverte"
+      ]
+    }
+  ],
+  "bibliographie": [
+    {
+      "id": "hirschman1945",
+      "auteurs": "Hirschman, Albert O.",
+      "annee": "1945",
+      "titre": "National Power and the Structure of Foreign Trade",
+      "support": "University of California Press",
+      "url": "https://www.ucpress.edu/books/national-power-and-the-structure-of-foreign-trade/pdf",
+      "apport": "Montre comment une asymétrie commerciale peut devenir un rapport de puissance.",
+      "vigilance": "Contexte historique de l’immédiat après-guerre à lire comme une matrice, pas comme une description du commerce actuel."
+    },
+    {
+      "id": "baldwin1985",
+      "auteurs": "Baldwin, David A.",
+      "annee": "1985",
+      "titre": "Economic Statecraft",
+      "support": "Princeton University Press, 1985 ; page de la réédition 2020",
+      "url": "https://press.princeton.edu/books/paperback/9780691204420/economic-statecraft",
+      "apport": "Cadre général des instruments économiques au service d’objectifs politiques.",
+      "vigilance": "Les exemples ont vieilli. Conserver la typologie, vérifier les cas. Le lien ouvre la réédition, qui reprend le texte de 1985."
+    },
+    {
+      "id": "luttwak1990",
+      "auteurs": "Luttwak, Edward N.",
+      "annee": "1990",
+      "titre": "From Geopolitics to Geo-Economics: Logic of Conflict, Grammar of Commerce",
+      "support": "The National Interest, n° 20, été 1990, p. 17-23",
+      "url": "https://www.jstor.org/stable/42894676",
+      "apport": "Texte fondateur, et discutable, de la géoéconomie contemporaine.",
+      "vigilance": "Tendance à militariser le vocabulaire commercial. Le lire avec les critiques ultérieures. L’accès au texte peut dépendre de l’abonnement de la bibliothèque."
+    },
+    {
+      "id": "farrell2019",
+      "auteurs": "Farrell, Henry et Newman, Abraham L.",
+      "annee": "2019",
+      "titre": "Weaponized Interdependence: How Global Economic Networks Shape State Coercion",
+      "support": "International Security, 44(1), 2019, p. 42-79. Version déposée par les auteurs.",
+      "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/2/7314/files/2019/08/Farrell-and-Newman-2019-Weaponized-Interdependence.pdf",
+      "apport": "Analyse la position centrale dans certains réseaux mondiaux comme ressource de contrainte.",
+      "vigilance": "Article d’analyse. Le lien ouvre le PDF déposé par les auteurs, contrôlé le 5 octobre 2026. La version de revue reste celle d’International Security."
+    },
+    {
+      "id": "blackwill2016",
+      "auteurs": "Blackwill, Robert D. et Harris, Jennifer M.",
+      "annee": "2016",
+      "titre": "War by Other Means: Geoeconomics and Statecraft",
+      "support": "Harvard University Press / Council on Foreign Relations",
+      "url": "https://www.hup.harvard.edu/books/9780674979796",
+      "apport": "Panorama anglophone de la géoéconomie étatique.",
+      "vigilance": "Point de vue situé. Le croiser avec des travaux européens et des sources primaires."
+    },
+    {
+      "id": "miller2022",
+      "auteurs": "Miller, Chris",
+      "annee": "2022",
+      "titre": "Chip War: The Fight for the World’s Most Critical Technology",
+      "support": "Scribner, 2022 ; page de l’édition brochée",
+      "url": "https://www.simonandschuster.com/books/Chip-War/Chris-Miller/9781982172015",
+      "apport": "Récit accessible de la filière des semi-conducteurs et de ses concentrations.",
+      "vigilance": "Synthèse grand public. Revenir aux rapports industriels et aux textes officiels pour les chiffres."
+    },
+    {
+      "id": "ue2023",
+      "auteurs": "Commission européenne et haut représentant",
+      "annee": "2023",
+      "titre": "Stratégie européenne en matière de sécurité économique",
+      "support": "Communication conjointe JOIN(2023) 20 final, 20 juin 2023",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-10919-2023-INIT/fr/pdf",
+      "apport": "Cadre public européen : promotion, protection et partenariats.",
+      "vigilance": "Texte politique évolutif. Vérifier les actes ultérieurs avant toute citation normative."
+    },
+    {
+      "id": "treasury",
+      "auteurs": "Office of Foreign Assets Control, département du Trésor des États-Unis",
+      "annee": "ressource vivante",
+      "titre": "Sanctions Programs and Country Information",
+      "support": "Page officielle des programmes de sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
+      "apport": "Permet de lire l’objectif déclaré et l’architecture juridique d’un instrument.",
+      "vigilance": "Source de partie. La confronter au droit de l’Union européenne, aux lois de blocage et aux évaluations indépendantes."
+    },
+    {
+      "id": "viepublique",
+      "auteurs": "Martre, Henri (prés.), Clerc, Philippe et Harbulot, Christian",
+      "annee": "1994",
+      "titre": "Intelligence économique et stratégie des entreprises",
+      "support": "Rapport au Commissariat général du Plan, La Documentation française",
+      "url": "https://www.vie-publique.fr/rapport/29146-intelligence-economique-et-strategie-des-entreprises",
+      "apport": "Texte fondateur français : recherche, traitement et distribution de l’information utile aux acteurs économiques.",
+      "vigilance": "Rapport de 1994. Les institutions et les pratiques ont changé : le lire comme une source historique, pas comme l’état actuel de la politique publique."
+    },
+    {
+      "id": "cnil",
+      "auteurs": "CNIL",
+      "annee": "2024",
+      "titre": "Développement des systèmes d’IA : les recommandations de la CNIL pour respecter le RGPD",
+      "support": "cnil.fr",
+      "url": "https://www.cnil.fr/fr/developpement-des-systemes-dia-les-recommandations-de-la-cnil-pour-respecter-le-rgpd",
+      "apport": "Cadre les usages d’un tuteur numérique : information des personnes, minimisation, contrôle des traitements.",
+      "vigilance": "Le droit applicable et les recommandations se mettent à jour. Citer la version consultée."
+    }
+  ],
+  "criteres": [
+    {
+      "critere": "Problématisation",
+      "attendu": "Question précise et pertinente"
+    },
+    {
+      "critere": "Sources",
+      "attendu": "Sources diversifiées, fiables et correctement citées"
+    },
+    {
+      "critere": "Analyse",
+      "attendu": "Distinction entre faits, hypothèses et interprétations"
+    },
+    {
+      "critere": "Raisonnement",
+      "attendu": "Identification claire des causalités et des dépendances"
+    },
+    {
+      "critere": "Scénarios",
+      "attendu": "Plusieurs hypothèses plausibles"
+    },
+    {
+      "critere": "Recommandations",
+      "attendu": "Propositions réalistes et hiérarchisées"
+    },
+    {
+      "critere": "Réflexivité",
+      "attendu": "Limites et incertitudes explicitées"
+    },
+    {
+      "critere": "Forme",
+      "attendu": "Structure claire et vocabulaire maîtrisé"
+    }
+  ],
+  "maj": [
+    {
+      "objet": "Veille et actualités",
+      "frequence": "Hebdomadaire"
+    },
+    {
+      "objet": "Sanctions et réglementations",
+      "frequence": "Mensuelle"
+    },
+    {
+      "objet": "Études de cas",
+      "frequence": "Trimestrielle"
+    },
+    {
+      "objet": "Concepts et ressources fondamentales",
+      "frequence": "Annuelle"
+    }
+  ],
+  "gardeFous": [
+    "Le parcours développe la lecture, l’analyse, la veille et la résilience.",
+    "Il ne forme pas à des opérations clandestines, offensives ou de contournement.",
+    "L’assistant prévu dans le cahier des charges est un tuteur. Il n’est pas l’auteur des travaux. Ce prototype n’intègre pas de générateur automatique : les définitions viennent du glossaire rédigé.",
+    "Aucune donnée confidentielle d’entreprise ou d’administration ne doit être saisie. La progression reste dans le navigateur."
+  ],
+  "corpus": {
+    "introduction": "Corpus arrêté le 5 octobre 2026. L’archive ouverte rassemble les textes intégraux qu’un étudiant peut lire sans abonnement. L’archive payante rassemble des articles de revue dont le texte intégral n’a pas été lu pour rédiger le parcours : le lien mène à la notice, le PDF se télécharge via la bibliothèque. Les livres restent chez leur éditeur.",
+    "ouverte": [
+      {
+        "id": "farrell2019",
+        "etiquette": "PDF vérifié",
+        "auteurs": "Henry Farrell et Abraham L. Newman",
+        "annee": "2019",
+        "titre": "Weaponized Interdependence: How Global Economic Networks Shape State Coercion",
+        "support": "International Security, 44(1), p. 42-79",
+        "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/2/7314/files/2019/08/Farrell-and-Newman-2019-Weaponized-Interdependence.pdf",
+        "lien": "Lire le PDF déposé par les auteurs",
+        "apport": "Texte central sur la contrainte exercée depuis une position de réseau.",
+        "precision": "Fichier PDF ouvert le 5 octobre 2026. DOI de la version de revue : 10.1162/isec_a_00351."
+      },
+      {
+        "id": "chen2023",
+        "etiquette": "Accès ouvert éditeur",
+        "auteurs": "Ling S. Chen et Miles M. Evers",
+        "annee": "2023",
+        "titre": "Wars without Gun Smoke: Global Supply Chains, Power Transitions, and Economic Statecraft",
+        "support": "International Security, 48(2), p. 164-204",
+        "url": "https://doi.org/10.1162/isec_a_00473",
+        "lien": "Ouvrir le texte chez l’éditeur",
+        "apport": "Lit les chaînes d’approvisionnement comme instrument de puissance pendant une transition.",
+        "precision": "Accès ouvert signalé par Unpaywall le 5 octobre 2026. Le serveur de l’éditeur refuse les robots ; la page s’ouvre dans un navigateur."
+      },
+      {
+        "id": "aggarwal2021",
+        "etiquette": "PDF vérifié",
+        "auteurs": "Vinod K. Aggarwal et Andrew W. Reddie",
+        "annee": "2021",
+        "titre": "Economic Statecraft in the 21st Century: Implications for the Future of the Global Trade Regime",
+        "support": "World Trade Review, 20(2), p. 137-151",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/164195A90AF9FC352E82117CA4531EA0/S147474562000049Xa.pdf/economic-statecraft-in-the-21st-century-implications-for-the-future-of-the-global-trade-regime.pdf",
+        "lien": "Lire le PDF",
+        "apport": "Situe le statecraft économique dans le régime commercial contemporain.",
+        "precision": "PDF Cambridge ouvert le 5 octobre 2026. DOI : 10.1017/s147474562000049x."
+      },
+      {
+        "id": "drezner2024",
+        "etiquette": "Accès ouvert éditeur",
+        "auteurs": "Daniel W. Drezner",
+        "annee": "2024",
+        "titre": "Global Economic Sanctions",
+        "support": "Annual Review of Political Science, 27(1), p. 9-24",
+        "url": "https://doi.org/10.1146/annurev-polisci-041322-032240",
+        "lien": "Ouvrir le texte chez l’éditeur",
+        "apport": "Synthèse récente de la littérature sur les sanctions.",
+        "precision": "Accès ouvert signalé par Unpaywall le 5 octobre 2026."
+      },
+      {
+        "id": "danzman2024",
+        "etiquette": "Accès ouvert éditeur",
+        "auteurs": "Sarah Bauerle Danzman et Sophie Meunier",
+        "annee": "2024",
+        "titre": "The EU's Geoeconomic Turn: From Policy Laggard to Institutional Innovator",
+        "support": "JCMS: Journal of Common Market Studies, 62(4), p. 1097-1115",
+        "url": "https://doi.org/10.1111/jcms.13599",
+        "lien": "Ouvrir le texte chez l’éditeur",
+        "apport": "Décrit le tournant géoéconomique des institutions européennes.",
+        "precision": "Accès ouvert signalé par Unpaywall le 5 octobre 2026. Wiley refuse souvent le téléchargement automatique."
+      },
+      {
+        "id": "haroche2023",
+        "etiquette": "Accès ouvert éditeur",
+        "auteurs": "Pierre Haroche",
+        "annee": "2023",
+        "titre": "A “Geopolitical Commission”: Supranationalism Meets Global Power Competition",
+        "support": "JCMS: Journal of Common Market Studies, 61(4), p. 970-987",
+        "url": "https://doi.org/10.1111/jcms.13440",
+        "lien": "Ouvrir le texte chez l’éditeur",
+        "apport": "Analyse la Commission géopolitique comme réponse à la compétition de puissance.",
+        "precision": "Accès ouvert signalé par Unpaywall le 5 octobre 2026. Parution en ligne en 2022, volume 2023."
+      },
+      {
+        "id": "seidl2024",
+        "etiquette": "Accès ouvert éditeur",
+        "auteurs": "Timo Seidl et Luuk Schmitz",
+        "annee": "2024",
+        "titre": "Moving on to not fall behind? Technological sovereignty and the “geo-dirigiste” turn in EU industrial policy",
+        "support": "Journal of European Public Policy, 31(8), p. 2147-2174",
+        "url": "https://doi.org/10.1080/13501763.2023.2248204",
+        "lien": "Ouvrir le texte chez l’éditeur",
+        "apport": "Relie souveraineté technologique et tournant industriel européen.",
+        "precision": "Accès ouvert signalé par Unpaywall le 5 octobre 2026. Parution en ligne en 2023, volume 2024."
+      },
+      {
+        "id": "weinhardt2024",
+        "etiquette": "Page vérifiée",
+        "auteurs": "Clara Weinhardt et Ferdi De Ville",
+        "annee": "2024",
+        "titre": "The Geoeconomic Turn in EU Trade and Investment Policy: Implications for Developing Countries",
+        "support": "Politics and Governance, vol. 12",
+        "url": "https://www.cogitatiopress.com/politicsandgovernance/article/view/8217",
+        "lien": "Lire l’article",
+        "apport": "Regarde les effets du tournant géoéconomique européen pour les pays en développement.",
+        "precision": "Page de la revue ouverte le 5 octobre 2026. DOI : 10.17645/pag.8217."
+      },
+      {
+        "id": "danzman2023",
+        "etiquette": "Accès ouvert éditeur",
+        "auteurs": "Sarah Bauerle Danzman et Sophie Meunier",
+        "annee": "2023",
+        "titre": "Naïve no more: Foreign direct investment screening in the European Union",
+        "support": "Global Policy, 14(S3), p. 40-53",
+        "url": "https://doi.org/10.1111/1758-5899.13215",
+        "lien": "Ouvrir le texte chez l’éditeur",
+        "apport": "Décrit la généralisation du filtrage des investissements dans l’Union européenne.",
+        "precision": "Accès ouvert signalé par Unpaywall le 5 octobre 2026."
+      },
+      {
+        "id": "giumelli2021",
+        "etiquette": "PDF vérifié",
+        "auteurs": "Francesco Giumelli et Michal Onderco",
+        "annee": "2021",
+        "titre": "States, firms, and security: How private actors implement sanctions, lessons learned from the Netherlands",
+        "support": "European Journal of International Security, 6(2), p. 190-209",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2D74ECCB8252B534F2B36C2375BA88F1/S2057563720000218a.pdf/div-class-title-states-firms-and-security-how-private-actors-implement-sanctions-lessons-learned-from-the-netherlands-div.pdf",
+        "lien": "Lire le PDF",
+        "apport": "Montre le rôle des entreprises dans l’application concrète des sanctions.",
+        "precision": "PDF Cambridge ouvert le 5 octobre 2026. DOI : 10.1017/eis.2020.21."
+      },
+      {
+        "id": "itskhoki2025",
+        "etiquette": "PDF vérifié",
+        "auteurs": "Oleg Itskhoki et Dmitry Mukhin",
+        "annee": "2025",
+        "titre": "Sanctions and the Exchange Rate",
+        "support": "Review of Economic Studies, 93(4), p. 2680-2714. Version déposée à la LSE.",
+        "url": "https://researchonline.lse.ac.uk/id/eprint/129422/1/sanctionsER_250723.pdf",
+        "lien": "Lire le PDF déposé",
+        "apport": "Mesure l’effet des sanctions sur le taux de change.",
+        "precision": "PDF du dépôt LSE ouvert le 5 octobre 2026. DOI de la version de revue : 10.1093/restud/rdaf085. Volume imprimé en 2026."
+      },
+      {
+        "id": "wigell2016",
+        "etiquette": "PDF vérifié",
+        "auteurs": "Mikael Wigell",
+        "annee": "2016",
+        "titre": "Conceptualizing regional powers’ geoeconomic strategies: neo-imperialism, neo-mercantilism, hegemony, and liberal institutionalism",
+        "support": "Asia Europe Journal, 14(2), p. 135-151",
+        "url": "https://link.springer.com/content/pdf/10.1007/s10308-015-0442-x.pdf",
+        "lien": "Lire le PDF",
+        "apport": "Propose une typologie des stratégies géoéconomiques des puissances régionales.",
+        "precision": "PDF Springer ouvert le 5 octobre 2026. Première mise en ligne en 2015. DOI : 10.1007/s10308-015-0442-x."
+      },
+      {
+        "id": "portela2023",
+        "etiquette": "Accès ouvert éditeur",
+        "auteurs": "Clara Portela",
+        "annee": "2023",
+        "titre": "Logiques des sanctions de l’Union européenne contre la Russie au sujet de l’Ukraine",
+        "support": "Études internationales, 54(2)",
+        "url": "https://doi.org/10.7202/1111131ar",
+        "lien": "Ouvrir le texte sur Érudit",
+        "apport": "Article en français sur les logiques des sanctions européennes après 2022.",
+        "precision": "Accès ouvert signalé par Unpaywall le 5 octobre 2026, sur la plateforme Érudit."
+      },
+      {
+        "id": "amairia2022",
+        "etiquette": "Archive ouverte",
+        "auteurs": "Ali Amairia",
+        "annee": "2022",
+        "titre": "Quand l'intelligence économique devient territoriale : principes et agenda de recherche",
+        "support": "HAL, dépôt hal-04527302",
+        "url": "https://hal.science/hal-04527302v1",
+        "lien": "Ouvrir la notice HAL",
+        "apport": "Texte universitaire français en archive ouverte, du côté de l’intelligence économique territoriale.",
+        "precision": "Notice HAL confirmée le 5 octobre 2026. Le PDF se télécharge depuis cette page."
+      },
+      {
+        "id": "ue2023",
+        "etiquette": "Document public",
+        "auteurs": "Commission européenne et haut représentant",
+        "annee": "2023",
+        "titre": "Stratégie européenne en matière de sécurité économique",
+        "support": "JOIN(2023) 20 final, 20 juin 2023",
+        "url": "https://data.consilium.europa.eu/doc/document/ST-10919-2023-INIT/fr/pdf",
+        "lien": "Lire le PDF officiel",
+        "apport": "Texte primaire européen : promotion, protection, partenariats.",
+        "precision": "PDF du Conseil ouvert le 5 octobre 2026, 19 pages."
+      },
+      {
+        "id": "viepublique",
+        "etiquette": "Document public",
+        "auteurs": "Henri Martre (prés.), Philippe Clerc et Christian Harbulot",
+        "annee": "1994",
+        "titre": "Intelligence économique et stratégie des entreprises",
+        "support": "Rapport au Commissariat général du Plan",
+        "url": "https://www.vie-publique.fr/rapport/29146-intelligence-economique-et-strategie-des-entreprises",
+        "lien": "Ouvrir le rapport",
+        "apport": "Texte fondateur de la doctrine française d’intelligence économique.",
+        "precision": "Page vie-publique contrôlée le 5 octobre 2026. À lire comme source historique."
+      },
+      {
+        "id": "carayon2003",
+        "etiquette": "PDF vérifié",
+        "auteurs": "Bernard Carayon",
+        "annee": "2003",
+        "titre": "Intelligence économique, compétitivité et cohésion sociale",
+        "support": "Rapport au Premier ministre",
+        "url": "https://www.vie-publique.fr/files/rapport/pdf/034000484.pdf",
+        "lien": "Lire le PDF",
+        "apport": "Second texte public français de référence après le rapport Martre.",
+        "precision": "PDF vie-publique ouvert le 5 octobre 2026."
+      },
+      {
+        "id": "treasury",
+        "etiquette": "Document public",
+        "auteurs": "Office of Foreign Assets Control",
+        "annee": "ressource vivante",
+        "titre": "Sanctions Programs and Country Information",
+        "support": "Département du Trésor des États-Unis",
+        "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
+        "lien": "Ouvrir la page officielle",
+        "apport": "Source primaire sur l’architecture déclarée des programmes de sanctions américains.",
+        "precision": "Page officielle contrôlée le 5 octobre 2026. Source de partie, à confronter au droit européen."
+      },
+      {
+        "id": "cnil",
+        "etiquette": "Document public",
+        "auteurs": "CNIL",
+        "annee": "2024",
+        "titre": "Développement des systèmes d’IA : les recommandations de la CNIL pour respecter le RGPD",
+        "support": "cnil.fr",
+        "url": "https://www.cnil.fr/fr/developpement-des-systemes-dia-les-recommandations-de-la-cnil-pour-respecter-le-rgpd",
+        "lien": "Ouvrir la page",
+        "apport": "Cadre les usages d’un outil numérique dans le parcours.",
+        "precision": "Page contrôlée le 5 octobre 2026."
+      }
+    ],
+    "payante": [
+      {
+        "id": "meunier2019",
+        "etiquette": "Abonnement",
+        "auteurs": "Sophie Meunier et Kalypso Nicolaidis",
+        "annee": "2019",
+        "titre": "The Geopoliticization of European Trade and Investment Policy",
+        "support": "JCMS, 57(S1), p. 103-113",
+        "url": "https://doi.org/10.1111/jcms.12932",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Montre comment la politique commerciale européenne est tirée vers la géopolitique.",
+        "precision": "Texte intégral non lu. Unpaywall le classe hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "kalyanpur2019",
+        "etiquette": "Abonnement",
+        "auteurs": "Nikhil Kalyanpur et Abraham L. Newman",
+        "annee": "2019",
+        "titre": "Mobilizing Market Power: Jurisdictional Expansion as Economic Statecraft",
+        "support": "International Organization, 73(1), p. 1-34",
+        "url": "https://doi.org/10.1017/s0020818318000334",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Étudie l’extension du droit national comme instrument de puissance de marché.",
+        "precision": "Texte intégral non lu. Mise en ligne en 2018, volume imprimé en 2019. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "scholvin2018",
+        "etiquette": "Abonnement",
+        "auteurs": "Sören Scholvin et Mikael Wigell",
+        "annee": "2018",
+        "titre": "Power politics by economic means: Geoeconomics as an analytical approach and foreign policy practice",
+        "support": "Comparative Strategy, 37(1), p. 73-84",
+        "url": "https://doi.org/10.1080/01495933.2018.1419729",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Propose la géoéconomie à la fois comme grille d’analyse et comme pratique de politique étrangère.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "mcdowell2021",
+        "etiquette": "Abonnement",
+        "auteurs": "Daniel McDowell",
+        "annee": "2021",
+        "titre": "Financial sanctions and political risk in the international currency system",
+        "support": "Review of International Political Economy, 28(3), p. 635-661",
+        "url": "https://doi.org/10.1080/09692290.2020.1736126",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Relie sanctions financières et risque politique dans le système des monnaies.",
+        "precision": "Texte intégral non lu. Mise en ligne en 2020, volume imprimé en 2021. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "kim2019",
+        "etiquette": "Abonnement",
+        "auteurs": "Dong Jung Kim",
+        "annee": "2019",
+        "titre": "Economic Deterrence Through Economic Engagement",
+        "support": "Foreign Policy Analysis, 15(2), p. 176-186",
+        "url": "https://doi.org/10.1093/fpa/ory001",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Examine l’engagement économique comme forme de dissuasion.",
+        "precision": "Texte intégral non lu. Mise en ligne en 2018, volume imprimé en 2019. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "peksen2019",
+        "etiquette": "Abonnement",
+        "auteurs": "Dursun Peksen",
+        "annee": "2019",
+        "titre": "When Do Imposed Economic Sanctions Work? A Critical Review of the Sanctions Effectiveness Literature",
+        "support": "Defence and Peace Economics, 30(6), p. 635-647",
+        "url": "https://doi.org/10.1080/10242694.2019.1625250",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Revue critique des conditions d’efficacité des sanctions.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "vihma2018",
+        "etiquette": "Abonnement",
+        "auteurs": "Antto Vihma",
+        "annee": "2018",
+        "titre": "Geoeconomic Analysis and the Limits of Critical Geopolitics: A New Engagement with Edward Luttwak",
+        "support": "Geopolitics, 23(1), p. 1-21",
+        "url": "https://doi.org/10.1080/14650045.2017.1302928",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Reprend Luttwak et en marque les limites.",
+        "precision": "Texte intégral non lu. Mise en ligne en 2017, volume imprimé en 2018. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "nephew2018",
+        "etiquette": "Abonnement",
+        "auteurs": "Richard Nephew",
+        "annee": "2018",
+        "titre": "The Hard Part: The Art of Sanctions Relief",
+        "support": "The Washington Quarterly, 41(2), p. 63-77",
+        "url": "https://doi.org/10.1080/0163660x.2018.1484225",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Traite la levée des sanctions, moment souvent moins étudié que leur adoption.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "farrell2021",
+        "etiquette": "Abonnement",
+        "auteurs": "Henry Farrell et Abraham L. Newman",
+        "annee": "2021",
+        "titre": "The Janus Face of the Liberal International Information Order: When Global Institutions Are Self-Undermining",
+        "support": "International Organization, 75(2), p. 333-358",
+        "url": "https://doi.org/10.1017/s0020818320000302",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Prolonge leur travail sur les réseaux vers l’ordre informationnel.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "mcdowell2017",
+        "etiquette": "Abonnement",
+        "auteurs": "Daniel McDowell et David A. Steinberg",
+        "annee": "2017",
+        "titre": "Systemic Strengths, Domestic Deficiencies: The Renminbi’s Future as a Reserve Currency",
+        "support": "Journal of Contemporary China, 26(108), p. 801-819",
+        "url": "https://doi.org/10.1080/10670564.2017.1337292",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Éclaire la monnaie comme infrastructure de puissance.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "cilizoglu2020",
+        "etiquette": "Abonnement",
+        "auteurs": "Menevis Cilizoglu et Navin A. Bapat",
+        "annee": "2020",
+        "titre": "Economic coercion and the problem of sanctions-proofing",
+        "support": "Conflict Management and Peace Science, 37(4), p. 385-408",
+        "url": "https://doi.org/10.1177/0738894218783296",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Étudie la façon dont les cibles se préparent à encaisser une sanction.",
+        "precision": "Texte intégral non lu. Mise en ligne en 2018, volume imprimé en 2020. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "fabre2016",
+        "etiquette": "Abonnement",
+        "auteurs": "Cécile Fabre",
+        "annee": "2016",
+        "titre": "Secondary Economic Sanctions",
+        "support": "Current Legal Problems, 69(1), p. 259-288",
+        "url": "https://doi.org/10.1093/clp/cuw003",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Discussion juridique des sanctions secondaires.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "early2022",
+        "etiquette": "Abonnement",
+        "auteurs": "Bryan R. Early et Timothy M. Peterson",
+        "annee": "2022",
+        "titre": "Does Punishing Sanctions Busters Work? Sanctions Enforcement and U.S. Trade with Sanctioned States",
+        "support": "Political Research Quarterly, 75(3), p. 782-796",
+        "url": "https://doi.org/10.1177/10659129211025620",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Mesure l’effet des poursuites contre les contournements sur les flux commerciaux.",
+        "precision": "Texte intégral non lu. Mise en ligne en 2021, volume imprimé en 2022. Hors accès ouvert au 5 octobre 2026. Lecture analytique uniquement : le parcours ne forme pas au contournement."
+      },
+      {
+        "id": "early2019",
+        "etiquette": "Abonnement",
+        "auteurs": "Bryan Early et Dursun Peksen",
+        "annee": "2019",
+        "titre": "Searching in the Shadows: The Impact of Economic Sanctions on Informal Economies",
+        "support": "Political Research Quarterly, 72(4), p. 821-834",
+        "url": "https://doi.org/10.1177/1065912918806412",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Relie sanctions et économie informelle.",
+        "precision": "Texte intégral non lu. Mise en ligne en 2018, volume imprimé en 2019. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "prism2023",
+        "etiquette": "Abonnement",
+        "auteurs": "Sarah Bauerle Danzman et Sophie Meunier",
+        "annee": "2023",
+        "titre": "Mapping the Characteristics of Foreign Investment Screening Mechanisms: The New PRISM Dataset",
+        "support": "International Studies Quarterly, 67(2)",
+        "url": "https://doi.org/10.1093/isq/sqad026",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Propose un jeu de données comparé sur les mécanismes de filtrage des investissements.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026. Une version de travail antérieure circule sur SSRN ; la version à télécharger pour le corpus est celle de la revue."
+      },
+      {
+        "id": "abel2025",
+        "etiquette": "Abonnement",
+        "auteurs": "Patrick Abel et Carsten Bormann",
+        "annee": "2025",
+        "titre": "Countering extraterritorial sanctions",
+        "support": "Journal of International Trade Law and Policy, 24(1), p. 57-76",
+        "url": "https://doi.org/10.1108/jitlp-07-2024-0040",
+        "lien": "Ouvrir la notice DOI",
+        "apport": "Traite les réponses juridiques à l’extraterritorialité des sanctions.",
+        "precision": "Texte intégral non lu. Hors accès ouvert au 5 octobre 2026."
+      },
+      {
+        "id": "luttwak1990",
+        "etiquette": "Classique, abonnement",
+        "auteurs": "Edward N. Luttwak",
+        "annee": "1990",
+        "titre": "From Geopolitics to Geo-Economics: Logic of Conflict, Grammar of Commerce",
+        "support": "The National Interest, n° 20, été 1990, p. 17-23",
+        "url": "https://www.jstor.org/stable/42894676",
+        "lien": "Ouvrir la notice JSTOR",
+        "apport": "Article déjà mobilisé dans le module 1. Il est hors du lot récent et reste utile comme texte de départ.",
+        "precision": "Texte intégral non lu dans son entier. L’accès dépend de l’abonnement JSTOR de la bibliothèque."
+      }
+    ],
+    "livres": [
+      {
+        "id": "harbulot2011",
+        "etiquette": "Livre",
+        "auteurs": "Christian Harbulot et Éric Delbecque",
+        "annee": "2011",
+        "titre": "La guerre économique",
+        "support": "Presses universitaires de France, Que sais-je ?, ISBN 978-2-13-058082-9",
+        "url": "https://www.puf.com/la-guerre-economique",
+        "lien": "Voir la page de l’éditeur",
+        "apport": "Synthèse courte de l’école française, utile comme porte d’entrée.",
+        "precision": "Ouvrage sous droit d’auteur. Année relevée dans Crossref. Lecture d’une tradition intellectuelle : le parcours n’en retire aucun procédé offensif."
+      },
+      {
+        "id": "harbulot2012",
+        "etiquette": "Livre",
+        "auteurs": "Christian Harbulot",
+        "annee": "2012",
+        "titre": "Manuel d'intelligence économique",
+        "support": "Presses universitaires de France, ISBN 978-2-13-059140-5",
+        "url": "https://www.puf.com/manuel-dintelligence-economique",
+        "lien": "Voir la page de l’éditeur",
+        "apport": "Manuel de la tradition française d’intelligence économique.",
+        "precision": "La page éditeur peut afficher une réédition. Retenir le millésime de l’exemplaire réellement lu. ISBN 2012 confirmé dans Crossref."
+      },
+      {
+        "id": "harbulot2024",
+        "etiquette": "Livre",
+        "auteurs": "Christian Harbulot",
+        "annee": "2024",
+        "titre": "La guerre économique au XXIe siècle",
+        "support": "VA éditions, ISBN 978-2-36093-304-4",
+        "url": "https://www.eyrolles.com/Entreprise/Livre/la-guerre-economique-au-xxie-siecle-9782360933044/",
+        "lien": "Voir la page du diffuseur",
+        "apport": "Ouvrage récent de Harbulot, à lire comme prise de position d’une école.",
+        "precision": "Page Eyrolles contrôlée le 5 octobre 2026 : auteur et titre confirmés. Aucun mode opératoire offensif n’est au programme. Le titre Techniques offensives et guerre économique n’est pas retenu."
+      },
+      {
+        "id": "gagliano2019",
+        "etiquette": "Livre",
+        "auteurs": "Giuseppe Gagliano",
+        "annee": "2019",
+        "titre": "L'école française de la guerre économique",
+        "support": "VA éditions, ISBN 979-10-93240-84-8",
+        "url": "https://www.eyrolles.com/Entreprise/Livre/l-ecole-francaise-de-la-guerre-economique-9791093240848/",
+        "lien": "Voir la page du diffuseur",
+        "apport": "Présentation, par un auteur italien, de l’école française autour de Harbulot.",
+        "precision": "Page Eyrolles contrôlée le 5 octobre 2026. Ouvrage de commentaire d’une école, à croiser avec les articles universitaires du corpus ouvert."
+      },
+      {
+        "id": "laidi2016",
+        "etiquette": "Livre",
+        "auteurs": "Ali Laïdi",
+        "annee": "2016",
+        "titre": "Histoire mondiale de la guerre économique",
+        "support": "Perrin, ISBN 978-2-262-06928-5",
+        "url": "https://www.eyrolles.com/Entreprise/Livre/histoire-mondiale-de-la-guerre-economique-9782262069285/",
+        "lien": "Voir la page du diffuseur",
+        "apport": "Récit historique de longue durée, en français.",
+        "precision": "Monographie confirmée dans Crossref (Perrin, 2016) et page Eyrolles ouverte le 5 octobre 2026. Synthèse grand public : revenir aux sources pour les épisodes précis."
+      },
+      {
+        "id": "hirschman1945",
+        "etiquette": "Livre",
+        "auteurs": "Albert O. Hirschman",
+        "annee": "1945",
+        "titre": "National Power and the Structure of Foreign Trade",
+        "support": "University of California Press",
+        "url": "https://www.ucpress.edu/books/national-power-and-the-structure-of-foreign-trade/pdf",
+        "lien": "Voir la page de l’éditeur",
+        "apport": "Matrice classique du lien entre asymétrie commerciale et puissance.",
+        "precision": "Page éditeur contrôlée. Le contexte est celui de 1945."
+      },
+      {
+        "id": "baldwin1985",
+        "etiquette": "Livre",
+        "auteurs": "David A. Baldwin",
+        "annee": "1985",
+        "titre": "Economic Statecraft",
+        "support": "Princeton University Press. Page de la réédition 2020.",
+        "url": "https://press.princeton.edu/books/paperback/9780691204420/economic-statecraft",
+        "lien": "Voir la page de l’éditeur",
+        "apport": "Typologie des instruments économiques mis au service d’objectifs politiques.",
+        "precision": "Le lien ouvre la réédition, qui reprend le texte de 1985."
+      },
+      {
+        "id": "blackwill2016",
+        "etiquette": "Livre",
+        "auteurs": "Robert D. Blackwill et Jennifer M. Harris",
+        "annee": "2016",
+        "titre": "War by Other Means: Geoeconomics and Statecraft",
+        "support": "Harvard University Press",
+        "url": "https://www.hup.harvard.edu/books/9780674979796",
+        "lien": "Voir la page de l’éditeur",
+        "apport": "Panorama anglophone de la géoéconomie étatique.",
+        "precision": "Point de vue situé. À croiser avec les travaux européens du corpus."
+      },
+      {
+        "id": "miller2022",
+        "etiquette": "Livre",
+        "auteurs": "Chris Miller",
+        "annee": "2022",
+        "titre": "Chip War: The Fight for the World’s Most Critical Technology",
+        "support": "Scribner",
+        "url": "https://www.simonandschuster.com/books/Chip-War/Chris-Miller/9781982172015",
+        "lien": "Voir la page de l’éditeur",
+        "apport": "Récit de la filière des semi-conducteurs.",
+        "precision": "Page de l’édition brochée. Les chiffres sont à reprendre dans les rapports industriels et les textes officiels."
+      },
+      {
+        "id": "mulder2022",
+        "etiquette": "Livre",
+        "auteurs": "Nicholas Mulder",
+        "annee": "2022",
+        "titre": "The Economic Weapon: The Rise of Sanctions as a Tool of Modern War",
+        "support": "Yale University Press, ISBN 978-0-300-25936-0",
+        "url": "https://yalebooks.yale.edu/book/9780300259360/the-economic-weapon/",
+        "lien": "Voir la page de l’éditeur",
+        "apport": "Histoire des sanctions comme instrument de guerre au XXe siècle.",
+        "precision": "Notice Crossref : Yale University Press, 2022, ISBN 9780300259360. Page éditeur ouverte le 5 octobre 2026."
+      }
+    ]
+  },
+  "programme": {
+    "formulation": "Concevoir une formation destinée au personnel universitaire afin de développer une culture commune de la résilience économique, informationnelle, cognitive et numérique. Le programme initial de guerre économique devient le niveau expert.",
+    "principes": [
+      "Chaque séquence distingue obligation réglementaire, recommandation institutionnelle, bonne pratique, exemple pédagogique, interprétation et hypothèse.",
+      "Un exemple de menace est un cas pédagogique. Il n’est pas présenté comme un fait établi.",
+      "La coopération internationale et la science ouverte restent des biens à préserver.",
+      "Le temps de réponse, les hésitations ou l’absence à un module ne servent pas à établir un profil de dangerosité ou de loyauté."
+    ],
+    "documents": [
+      {
+        "id": "doc-ppst",
+        "etiquette": "PDF vérifié",
+        "auteurs": "SGDSN",
+        "annee": "fiche en vigueur",
+        "titre": "La protection du potentiel scientifique et technique de la nation",
+        "support": "Fiche PPST, 2 pages",
+        "url": "https://www.sgdsn.gouv.fr/files/files/Nos_missions/a5-ppst-v5.pdf",
+        "lien": "Lire le PDF",
+        "apport": "Présente le dispositif de protection des savoirs, savoir-faire et technologies sensibles, et cite le code pénal ainsi que le décret n° 2011-1425.",
+        "precision": "PDF ouvert le 5 octobre 2026. Document court de présentation, à compléter par les textes juridiques cités et par les procédures de l’établissement."
+      },
+      {
+        "id": "doc-presidents",
+        "etiquette": "PDF vérifié",
+        "auteurs": "SGDSN",
+        "annee": "guide en vigueur",
+        "titre": "Vigilance attentats : les bons réflexes",
+        "support": "Guide à destination des présidents d’université, des directeurs d’établissement et des référents défense et sécurité, 20 pages",
+        "url": "https://www.sgdsn.gouv.fr/files/files/Publications/guide-a-destination-des-presidents-duniversite-des-directeurs-detablissement-denseignement-superieur-et-des-referents-de-defense-et-securite.pdf",
+        "lien": "Lire le PDF",
+        "apport": "Référence de sûreté pour les responsabilités des présidents et des référents. Le titre de couverture porte sur la vigilance attentats et les bons réflexes.",
+        "precision": "PDF ouvert le 5 octobre 2026. Il ne remplace pas la fiche PPST ni les procédures internes de l’établissement."
+      },
+      {
+        "id": "doc-vigipirate",
+        "etiquette": "Page officielle",
+        "auteurs": "SGDSN",
+        "annee": "ressource vivante",
+        "titre": "Vigipirate",
+        "support": "Portail sgdsn.gouv.fr",
+        "url": "https://www.sgdsn.gouv.fr/vigipirate",
+        "lien": "Ouvrir le portail",
+        "apport": "Point d’entrée officiel pour la posture de vigilance, la sûreté et les volets numériques associés.",
+        "precision": "Page ouverte le 5 octobre 2026. Le guide unique de sensibilisation se télécharge depuis ce portail, dans son édition du moment."
+      },
+      {
+        "id": "doc-anssi",
+        "etiquette": "Page officielle",
+        "auteurs": "ANSSI",
+        "annee": "ressource vivante",
+        "titre": "Guide d’hygiène informatique",
+        "support": "cyber.gouv.fr",
+        "url": "https://cyber.gouv.fr/publications/guide-dhygiene-informatique",
+        "lien": "Ouvrir la publication",
+        "apport": "Référentiel de réflexes numériques : comptes, mises à jour, sauvegardes, cloisonnement.",
+        "precision": "Page de publication ouverte le 5 octobre 2026. Retenir l’édition affichée ce jour-là."
+      },
+      {
+        "id": "doc-cnil-collab",
+        "etiquette": "Page officielle",
+        "auteurs": "CNIL",
+        "annee": "ressource vivante",
+        "titre": "Enseignement supérieur : bonnes pratiques pour les outils collaboratifs",
+        "support": "cnil.fr",
+        "url": "https://www.cnil.fr/fr/enseignement-superieur-bonnes-pratiques-outils-collaboratifs",
+        "lien": "Ouvrir la page",
+        "apport": "Cadre les responsabilités, l’information des personnes et les transferts lorsque l’établissement utilise des outils collaboratifs.",
+        "precision": "Page ouverte le 5 octobre 2026."
+      },
+      {
+        "id": "doc-cnil-recherche",
+        "etiquette": "Page officielle",
+        "auteurs": "CNIL",
+        "annee": "ressource vivante",
+        "titre": "Recherche scientifique hors santé",
+        "support": "cnil.fr",
+        "url": "https://www.cnil.fr/fr/recherche-scientifique-hors-sante",
+        "lien": "Ouvrir la page",
+        "apport": "Point d’entrée pour protéger les données personnelles traitées dans une recherche qui n’est pas une recherche en santé.",
+        "precision": "Page ouverte le 5 octobre 2026. Les recherches impliquant la santé suivent un régime distinct, indiqué par la CNIL sur ses autres pages."
+      },
+      {
+        "id": "doc-cnil-ia",
+        "etiquette": "Page officielle",
+        "auteurs": "CNIL",
+        "annee": "ressource vivante",
+        "titre": "Éducation : mise en place d’un système d’IA",
+        "support": "cnil.fr",
+        "url": "https://www.cnil.fr/fr/education-mise-en-place-systeme-ia",
+        "lien": "Ouvrir la page",
+        "apport": "Demande d’examiner la politique de confidentialité, les usages des données et les conditions de réutilisation avant d’adopter un système d’IA.",
+        "precision": "Page ouverte le 5 octobre 2026."
+      },
+      {
+        "id": "doc-science-ouverte",
+        "etiquette": "PDF vérifié",
+        "auteurs": "Ministère chargé de l’enseignement supérieur et de la recherche",
+        "annee": "2026",
+        "titre": "Stratégie de science ouverte. Ouvrir la science en France 2026-2033",
+        "support": "Document de 98 pages",
+        "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2026-09/MESRE_SSO_2026_FR.pdf",
+        "lien": "Lire le PDF",
+        "apport": "Référence pour tenir ensemble diffusion des connaissances et protection des recherches sensibles.",
+        "precision": "La page de titre a été lue le 5 octobre 2026. Les chapitres sur la protection, la PPST et les ingérences doivent être cités d’après le passage exact du PDF, pas d’après un résumé."
+      },
+      {
+        "id": "doc-ue-2024",
+        "etiquette": "Identifiant officiel",
+        "auteurs": "Conseil de l’Union européenne",
+        "annee": "2024",
+        "titre": "Recommandation C/2024/3510 sur la sécurité de la recherche",
+        "support": "Journal officiel de l’Union européenne",
+        "url": "https://eur-lex.europa.eu/eli/C/2024/3510/oj/fra",
+        "lien": "Ouvrir la recommandation sur EUR-Lex",
+        "apport": "Demande une approche proportionnée, adaptée aux établissements, fondée sur la liberté académique et l’autonomie institutionnelle.",
+        "precision": "Identifiant ELI officiel. Le serveur EUR-Lex filtre les téléchargements automatiques ; le lien s’ouvre dans un navigateur."
+      },
+      {
+        "id": "doc-pca",
+        "etiquette": "À rattacher",
+        "auteurs": "SGDSN",
+        "annee": "édition en vigueur",
+        "titre": "Guide pour réaliser un plan de continuité d’activité",
+        "support": "Document institutionnel",
+        "url": "",
+        "lien": "",
+        "apport": "Sert à préparer la poursuite des activités essentielles en cas de crise.",
+        "precision": "Aucune adresse stable n’a répondu lors du contrôle du 5 octobre 2026. Le référent rattache l’édition en vigueur avant toute citation."
+      }
+    ],
+    "competences": [
+      {
+        "competence": "Identifier une information sensible",
+        "n1": "Initiation",
+        "n2": "Maîtrise",
+        "n3": "Expertise"
+      },
+      {
+        "competence": "Réagir à un incident",
+        "n1": "Initiation",
+        "n2": "Maîtrise",
+        "n3": "Pilotage"
+      },
+      {
+        "competence": "Vérifier une source",
+        "n1": "Initiation",
+        "n2": "Maîtrise",
+        "n3": "Expertise"
+      },
+      {
+        "competence": "Comprendre la PPST",
+        "n1": "Sensibilisation",
+        "n2": "Application",
+        "n3": "Pilotage"
+      },
+      {
+        "competence": "Protéger les données",
+        "n1": "Initiation",
+        "n2": "Application",
+        "n3": "Gouvernance"
+      },
+      {
+        "competence": "Évaluer un partenaire",
+        "n1": "Non requis",
+        "n2": "Application",
+        "n3": "Expertise"
+      },
+      {
+        "competence": "Analyser une dépendance",
+        "n1": "Compréhension",
+        "n2": "Analyse",
+        "n3": "Stratégie"
+      },
+      {
+        "competence": "Construire un scénario",
+        "n1": "Non requis",
+        "n2": "Initiation",
+        "n3": "Maîtrise"
+      },
+      {
+        "competence": "Utiliser le serious game",
+        "n1": "Décision simple",
+        "n2": "Coopération",
+        "n3": "Analyse stratégique"
+      }
+    ],
+    "sensibilisation": {
+      "duree": "1 h 30 à 2 h",
+      "objectifs": [
+        "Identifier les principaux actifs à protéger",
+        "Reconnaître une situation à risque",
+        "Éviter une transmission inappropriée",
+        "Appliquer les réflexes de base",
+        "Contacter le bon interlocuteur",
+        "Différencier vigilance et suspicion",
+        "Comprendre les limites de son rôle"
+      ],
+      "sequences": [
+        {
+          "id": "n1-s1",
+          "titre": "Pourquoi l’université est concernée",
+          "blocs": [
+            {
+              "nature": "Recommandation institutionnelle",
+              "texte": "L’université produit des connaissances, accueille des partenariats et fait circuler des personnes, des données et des équipements. La fiche PPST du SGDSN rappelle que des savoirs et des technologies peuvent être sensibles et que leur protection repose notamment sur la maîtrise des accès."
+            },
+            {
+              "nature": "Interprétation",
+              "texte": "Être concerné ne signifie pas que chaque laboratoire est une cible, ni que chaque coopération est suspecte. Le risque varie selon les données, les équipements, les contrats et l’exposition numérique."
+            },
+            {
+              "nature": "Bonne pratique",
+              "texte": "Avant une action de protection, nommer l’actif concret : un jeu de données, un prototype, un accès, un contrat, une réputation. Une mesure sans actif identifié devient vite disproportionnée."
+            }
+          ]
+        },
+        {
+          "id": "n1-s2",
+          "titre": "Les actifs à protéger",
+          "blocs": [
+            {
+              "nature": "Obligation réglementaire",
+              "texte": "Les données personnelles sont encadrées par le RGPD. La CNIL précise les précautions pour la recherche hors santé et pour les outils collaboratifs de l’enseignement supérieur, y compris l’information des personnes et les transferts."
+            },
+            {
+              "nature": "Recommandation institutionnelle",
+              "texte": "Au-delà des données personnelles, l’établissement protège aussi les résultats non publiés, la propriété intellectuelle, les identifiants, les accès aux locaux, les contrats et les informations financières."
+            },
+            {
+              "nature": "Bonne pratique",
+              "texte": "Classer un document avant de le partager : public, interne, ou à diffusion restreinte selon la règle de l’établissement. En cas de doute, garder le document dans l’outil institutionnel et demander au responsable du projet."
+            }
+          ]
+        },
+        {
+          "id": "n1-s3",
+          "titre": "Comprendre les risques",
+          "blocs": [
+            {
+              "nature": "Bonne pratique",
+              "texte": "Les situations les plus fréquentes à reconnaître sont un message qui imite un interlocuteur connu, une demande pressante de fichier, une pièce jointe inattendue, un partenaire peu documenté, ou le dépôt de données de recherche dans un outil d’IA externe."
+            },
+            {
+              "nature": "Exemple pédagogique",
+              "texte": "Un courriel reprend la signature d’un responsable et demande, dans l’heure, l’envoi d’un tableau de contacts ou d’un résultat non publié. Cet exemple est inventé pour l’exercice. Il ne relate pas un incident de l’université."
+            },
+            {
+              "nature": "Interprétation",
+              "texte": "Une demande inhabituelle peut être une erreur, une urgence légitime, une fraude ou une tentative de captation. Le premier geste est de qualifier ce qui est observé, pas d’attribuer une intention."
+            }
+          ]
+        },
+        {
+          "id": "n1-s4",
+          "titre": "Les bons réflexes",
+          "blocs": [
+            {
+              "nature": "Bonne pratique",
+              "texte": "Vérifier par un canal déjà connu. Limiter le partage. Utiliser les outils de l’établissement. Protéger les accès. Conserver le message sans le transférer largement. Signaler vite. Ne pas répondre sous pression. Ne pas relayer une rumeur. Ne pas enquêter soi-même."
+            },
+            {
+              "nature": "Recommandation institutionnelle",
+              "texte": "Le guide SGDSN « Vigilance attentats : les bons réflexes », adressé aux présidents et aux référents défense et sécurité, rappelle que les réflexes de sûreté sont une responsabilité d’établissement, avec des interlocuteurs désignés."
+            },
+            {
+              "nature": "Obligation réglementaire",
+              "texte": "Signaler une situation n’autorise pas à collecter des données sur une personne au-delà de ce qui est nécessaire au signalement factuel. L’enquête, si elle a lieu, relève des fonctions habilitées."
+            }
+          ]
+        },
+        {
+          "id": "n1-s5",
+          "titre": "Liberté académique et ouverture",
+          "blocs": [
+            {
+              "nature": "Recommandation institutionnelle",
+              "texte": "La recommandation européenne C/2024/3510 demande une sécurité de la recherche proportionnée, adaptée aux établissements, et fondée sur la liberté académique et l’autonomie institutionnelle."
+            },
+            {
+              "nature": "Recommandation institutionnelle",
+              "texte": "La stratégie de science ouverte 2026-2033, « Ouvrir la science en France », est la référence ministérielle pour ne pas opposer diffusion des connaissances et protection."
+            },
+            {
+              "nature": "Interprétation",
+              "texte": "Un désaccord scientifique, une critique publique ou une coopération internationale ne sont pas, par eux-mêmes, une ingérence. L’ingérence suppose des éléments vérifiables : dissimulation, pression, contournement d’une règle, captation. À défaut, on parle d’un désaccord ou d’un partenariat à instruire."
+            },
+            {
+              "nature": "Bonne pratique",
+              "texte": "Formule de travail : aussi ouvert que possible, aussi protégé que nécessaire. La mesure la plus large n’est pas la plus sûre si elle coupe la recherche de ses coopérations utiles."
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "id": "q1",
+          "question": "Une collègue transmet un résultat non publié vers une messagerie personnelle « pour finir ce soir ». Que faites-vous en premier ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Vous ouvrez une enquête sur ses contacts."
+            },
+            {
+              "id": "b",
+              "texte": "Vous lui indiquez l’outil institutionnel et, si le document est sensible, vous prévenez le responsable du projet."
+            },
+            {
+              "id": "c",
+              "texte": "Vous publiez un message d’alerte sur les réseaux sociaux du laboratoire."
+            }
+          ],
+          "reponse": "b",
+          "explication": "Le réflexe est de limiter la diffusion et d’orienter vers la procédure. L’enquête et l’alerte publique dépassent le rôle de la personne qui constate."
+        },
+        {
+          "id": "q2",
+          "question": "Comment qualifier un désaccord vif sur un résultat, sans autre élément ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Une ingérence établie."
+            },
+            {
+              "id": "b",
+              "texte": "Un désaccord, tant qu’aucun élément vérifiable de dissimulation ou de pression n’est réuni."
+            },
+            {
+              "id": "c",
+              "texte": "Une faute disciplinaire."
+            }
+          ],
+          "reponse": "b",
+          "explication": "La formation distingue désaccord, incident, influence et ingérence. L’intention ne se déduit pas du seul désaccord."
+        },
+        {
+          "id": "q3",
+          "question": "À quoi sert la PPST, d’après la fiche du SGDSN ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "À protéger des savoirs, savoir-faire et technologies sensibles, notamment par la maîtrise des accès."
+            },
+            {
+              "id": "b",
+              "texte": "À noter la loyauté des personnels."
+            },
+            {
+              "id": "c",
+              "texte": "À fermer les coopérations internationales."
+            }
+          ],
+          "reponse": "a",
+          "explication": "La fiche porte sur la protection d’actifs scientifiques et techniques. Elle ne crée pas un profil des personnes."
+        },
+        {
+          "id": "q4",
+          "question": "Quelle phrase guide l’équilibre entre publication et protection ?",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Tout fermer par précaution."
+            },
+            {
+              "id": "b",
+              "texte": "Tout publier immédiatement, y compris les données personnelles et les résultats sous contrat."
+            },
+            {
+              "id": "c",
+              "texte": "Aussi ouvert que possible, aussi protégé que nécessaire."
+            }
+          ],
+          "reponse": "c",
+          "explication": "Cette formule tient ensemble la stratégie de science ouverte et les mesures proportionnées de protection."
+        },
+        {
+          "id": "q5",
+          "question": "Un indicateur de réussite de cette formation peut être :",
+          "choix": [
+            {
+              "id": "a",
+              "texte": "Le temps d’hésitation d’une personne dans le jeu, lu comme un signe de loyauté."
+            },
+            {
+              "id": "b",
+              "texte": "Sa capacité à citer la procédure et à distinguer un fait d’une hypothèse."
+            },
+            {
+              "id": "c",
+              "texte": "Son absence à un module, lue comme un signal de risque."
+            }
+          ],
+          "reponse": "b",
+          "explication": "Les hésitations, l’opinion et l’absence ne servent pas à établir un profil de dangerosité. Ils peuvent seulement renseigner l’expérience pédagogique."
+        }
+      ],
+      "fiche": [
+        "Vérifier l’expéditeur par un canal déjà connu.",
+        "Ne pas ouvrir une pièce jointe inattendue et ne pas répondre sous pression.",
+        "Garder les données de recherche et les résultats non publiés dans les outils de l’établissement.",
+        "Ne pas coller de données sensibles ou personnelles dans une IA externe.",
+        "Conserver le message. Noter la date, l’objet et ce qui a été demandé.",
+        "Signaler au responsable du projet et au contact désigné par l’établissement.",
+        "Décrire les faits. Ne pas qualifier une personne. Ne pas enquêter.",
+        "Si des personnes sont mises en cause publiquement, protéger leur sécurité et leur réputation avant de commenter."
+      ]
+    },
+    "metiers": [
+      {
+        "id": "chercheurs",
+        "titre": "Chercheurs et doctorants",
+        "duree": "4 à 8 h",
+        "public": "Enseignants-chercheurs, chercheurs, doctorants",
+        "intention": "Protéger les partenariats, les données et les publications sans refermer la coopération.",
+        "sequences": [
+          {
+            "id": "ch-1",
+            "titre": "Partenariat et invitation",
+            "blocs": [
+              {
+                "nature": "Bonne pratique",
+                "texte": "Avant d’accepter un financement, une invitation ou un accès à une plateforme, identifier ce qui sera partagé, qui en sera responsable, et quelle règle de propriété intellectuelle s’applique."
+              },
+              {
+                "nature": "Exemple pédagogique",
+                "texte": "Une délégation propose une visite de plateforme le lendemain et demande la liste des essais en cours. Cas inventé : la visite se prépare avec le responsable de plateforme, sur un périmètre déjà publiable."
+              }
+            ]
+          },
+          {
+            "id": "ch-2",
+            "titre": "Publication et prépublication",
+            "blocs": [
+              {
+                "nature": "Recommandation institutionnelle",
+                "texte": "La science ouverte favorise la diffusion. Elle ne dispense pas de retirer les données personnelles, les secrets protégés par un contrat et les éléments couverts par une règle de l’établissement."
+              },
+              {
+                "nature": "Bonne pratique",
+                "texte": "Relire une prépublication avec la question : qu’est-ce qui est nécessaire à la preuve, et qu’est-ce qui peut attendre la levée d’une clause ?"
+              }
+            ]
+          },
+          {
+            "id": "ch-3",
+            "titre": "Départ d’un collaborateur",
+            "blocs": [
+              {
+                "nature": "Bonne pratique",
+                "texte": "Au départ, restituer les accès, les supports et les jeux de données selon la procédure du laboratoire. Copier une base sur un compte personnel pour « garder une trace » sort du cadre."
+              },
+              {
+                "nature": "Interprétation",
+                "texte": "Un départ est une étape normale de la carrière. La procédure protège le projet et la personne. Elle ne présume d’aucun motif."
+              }
+            ]
+          }
+        ],
+        "production": "Rédigez un signalement factuel à partir d’une demande pressante de données non publiées. Décrivez les faits, le canal déjà utilisé, ce que vous n’avez pas transmis, et le service que vous alertez. N’attribuez pas d’intention."
+      },
+      {
+        "id": "administratifs",
+        "titre": "Personnels administratifs",
+        "duree": "4 à 8 h",
+        "public": "Gestion, achats, accueil, scolarité, ressources humaines",
+        "intention": "Sécuriser les contrats, les paiements, les visiteurs et les documents sans bloquer le service.",
+        "sequences": [
+          {
+            "id": "ad-1",
+            "titre": "Paiements et fournisseurs",
+            "blocs": [
+              {
+                "nature": "Bonne pratique",
+                "texte": "Un changement de RIB annoncé par courriel se vérifie par le circuit habituel de la commande, pas en répondant au message. On conserve l’échange."
+              },
+              {
+                "nature": "Exemple pédagogique",
+                "texte": "Un fournisseur connu écrit depuis une adresse légèrement différente et demande un virement le jour même. Cas inventé : aucun paiement n’est modifié avant vérification téléphonique au numéro déjà enregistré."
+              }
+            ]
+          },
+          {
+            "id": "ad-2",
+            "titre": "Visiteurs et documents",
+            "blocs": [
+              {
+                "nature": "Recommandation institutionnelle",
+                "texte": "L’accueil des visiteurs suit la règle d’accès de l’établissement. Un badge, un accompagnement et un périmètre de visite suffisent dans le cas général."
+              },
+              {
+                "nature": "Obligation réglementaire",
+                "texte": "Les listes de personnes et les pièces d’identité éventuellement demandées sont des données personnelles. Elles se limitent au besoin d’accès et ne se recopient pas dans une messagerie personnelle."
+              }
+            ]
+          }
+        ],
+        "production": "Rédigez la check-list de votre service pour une demande urgente de changement de coordonnées bancaires ou d’envoi de documents contractuels."
+      },
+      {
+        "id": "techniciens",
+        "titre": "Ingénieurs et techniciens",
+        "duree": "4 à 8 h",
+        "public": "Ingénieurs, techniciens, responsables de plateforme",
+        "intention": "Protéger équipements, prototypes, logiciels et accès de maintenance.",
+        "sequences": [
+          {
+            "id": "te-1",
+            "titre": "Plateforme et prestataire",
+            "blocs": [
+              {
+                "nature": "Bonne pratique",
+                "texte": "Un prestataire reçoit les accès utiles à l’intervention, pour la durée utile, sur un compte dédié. Le compte nominatif d’un agent ne se prête pas."
+              },
+              {
+                "nature": "Exemple pédagogique",
+                "texte": "Une maintenance imprévue demande une clé USB « pour récupérer les logs ». Cas inventé : les journaux partent par le canal déjà prévu avec la direction des systèmes, pas par un support inconnu."
+              }
+            ]
+          },
+          {
+            "id": "te-2",
+            "titre": "Prototypes et données techniques",
+            "blocs": [
+              {
+                "nature": "Recommandation institutionnelle",
+                "texte": "Plans, paramètres et jeux d’essai peuvent relever de la protection du potentiel scientifique même s’ils ne sont pas encore publiés. Le responsable de plateforme indique ce qui se montre pendant une visite."
+              },
+              {
+                "nature": "Bonne pratique",
+                "texte": "Photographier une paillasse ou un prototype pour un réseau social se décide avec le responsable, pas dans le couloir."
+              }
+            ]
+          }
+        ],
+        "production": "Décrivez la procédure d’accès d’un prestataire à votre plateforme : qui autorise, quelle durée, quelles données restent hors de portée, comment l’accès est retiré."
+      },
+      {
+        "id": "informatiques",
+        "titre": "Personnels informatiques",
+        "duree": "4 à 8 h",
+        "public": "Direction du numérique, administrateurs, support",
+        "intention": "Tenir les comptes, les sauvegardes, les incidents et les outils d’IA dans le cadre fixé avec le RSSI et le DPO.",
+        "sequences": [
+          {
+            "id": "in-1",
+            "titre": "Comptes et incidents",
+            "blocs": [
+              {
+                "nature": "Recommandation institutionnelle",
+                "texte": "Le guide d’hygiène de l’ANSSI sert de référence pour les comptes nominatifs, l’authentification, les mises à jour, les sauvegardes et la séparation des environnements."
+              },
+              {
+                "nature": "Bonne pratique",
+                "texte": "Un incident se journalise avec l’heure, le périmètre et les mesures déjà prises. Le support ne demande pas à l’utilisateur son mot de passe pour « vérifier le compte »."
+              }
+            ]
+          },
+          {
+            "id": "in-2",
+            "titre": "Cloud et IA",
+            "blocs": [
+              {
+                "nature": "Obligation réglementaire",
+                "texte": "Un outil qui traite des données personnelles, surtout s’il implique un transfert hors de l’Union européenne ou une réutilisation pour entraîner un modèle, s’instruit avec le DPO. La CNIL le rappelle pour les outils collaboratifs et pour les systèmes d’IA dans l’éducation."
+              },
+              {
+                "nature": "Bonne pratique",
+                "texte": "Le mode par défaut pour un document interne reste l’outil hébergé ou contractuel de l’établissement. Une IA externe se limite à des textes déjà publics."
+              }
+            ]
+          }
+        ],
+        "production": "Rédigez la fiche d’un incident fictif de compte compromis : faits, premières mesures, personnes informées, données qui ne figurent pas dans le ticket."
+      },
+      {
+        "id": "international",
+        "titre": "Relations internationales et valorisation",
+        "duree": "4 à 8 h",
+        "public": "Partenariats, valorisation, relations internationales",
+        "intention": "Instruire un partenariat avec des critères explicites, sans fermer l’ouverture par principe.",
+        "sequences": [
+          {
+            "id": "ri-1",
+            "titre": "Évaluer un partenaire",
+            "blocs": [
+              {
+                "nature": "Recommandation institutionnelle",
+                "texte": "La recommandation européenne C/2024/3510 invite à une gestion des risques de recherche proportionnée, sous la responsabilité de l’établissement et dans le respect de la liberté académique."
+              },
+              {
+                "nature": "Bonne pratique",
+                "texte": "La fiche d’instruction décrit l’objet du partenariat, les savoirs réellement exposés, les clauses de propriété intellectuelle, les financements et les conflits d’intérêts déclarés. Elle sépare les faits des points encore à vérifier."
+              }
+            ]
+          },
+          {
+            "id": "ri-2",
+            "titre": "Technologies sensibles",
+            "blocs": [
+              {
+                "nature": "Recommandation institutionnelle",
+                "texte": "Si le projet touche un savoir-faire couvert par la PPST ou par un engagement contractuel, le référent défense et sécurité et le service juridique sont associés avant la signature. La fiche SGDSN renvoie au cadre pénal et au décret de 2011."
+              },
+              {
+                "nature": "Interprétation",
+                "texte": "Un partenaire établi dans un autre pays n’est pas, à lui seul, un risque. Le critère est l’actif partagé et les conditions du partage."
+              }
+            ]
+          }
+        ],
+        "production": "Construisez la grille d’un partenariat fictif : actif exposé, clause manquante, fait établi, hypothèse, service à consulter. Concluez par une décision proportionnée : poursuivre, encadrer, ou surseoir le temps d’une vérification."
+      }
+    ],
+    "jeu": {
+      "duree": "15 à 25 minutes",
+      "regle": "La version courte évalue la qualité du réflexe. Elle ne se joue pas contre un adversaire. Chaque choix est une décision de protection, de vérification ou de signalement.",
+      "scenario": "Un laboratoire reçoit une proposition de partenariat. Un fichier est demandé rapidement. Un courriel semble provenir d’un responsable. Une publication controversée circule sur les réseaux sociaux. Tous les messages de cet exercice sont fictifs.",
+      "etapes": [
+        {
+          "id": "j1",
+          "titre": "La proposition",
+          "texte": "Un message propose un partenariat et demande, pour le lendemain matin, le tableau des résultats non encore soumis. L’adresse ressemble à celle d’une université partenaire, sans être exactement celle du correspondant habituel.",
+          "choix": [
+            {
+              "id": "a",
+              "qualite": "adapte",
+              "texte": "Je réponds que le partage suit la procédure du laboratoire et je vérifie l’identité auprès du correspondant déjà connu.",
+              "retour": "Le délai ne justifie pas d’envoyer des résultats non publiés. La vérification passe par un canal déjà établi."
+            },
+            {
+              "id": "b",
+              "qualite": "a-revoir",
+              "texte": "J’envoie uniquement la page de garde, pour montrer ma bonne volonté.",
+              "retour": "Même un extrait peut exposer un résultat. Mieux vaut ne rien transmettre avant vérification."
+            },
+            {
+              "id": "c",
+              "qualite": "inapproprie",
+              "texte": "J’envoie le tableau : refuser serait discourtois envers un partenaire.",
+              "retour": "La courtoisie ne remplace pas la règle de partage. Le fichier ne part pas."
+            }
+          ]
+        },
+        {
+          "id": "j2",
+          "titre": "Le courriel du responsable",
+          "texte": "Une heure plus tard, un message au nom de la direction de composante ordonne d’envoyer le même fichier « sans en parler, c’est confidentiel » et de ne pas utiliser le téléphone.",
+          "choix": [
+            {
+              "id": "a",
+              "qualite": "inapproprie",
+              "texte": "J’obéis : l’expéditeur connaît le dossier.",
+              "retour": "La consigne d’éviter tout autre canal est un signal d’alerte, pas une preuve d’autorité."
+            },
+            {
+              "id": "b",
+              "qualite": "adapte",
+              "texte": "Je n’envoie rien. Je joins la direction par le numéro déjà enregistré et je conserve le message.",
+              "retour": "Vérifier hors du message, garder la pièce, ne pas élargir la diffusion : c’est le réflexe attendu."
+            },
+            {
+              "id": "c",
+              "qualite": "a-revoir",
+              "texte": "Je transfère le message à toute l’équipe pour avoir un avis.",
+              "retour": "Demander un avis élargit l’exposition du message. Un responsable désigné suffit."
+            }
+          ]
+        },
+        {
+          "id": "j3",
+          "titre": "Le fichier demandé",
+          "texte": "La pièce jointe reçue s’appelle « resultats-finaux-urgent » et le texte pousse à l’ouvrir pour « confirmer la compatibilité du partenariat ».",
+          "choix": [
+            {
+              "id": "a",
+              "qualite": "adapte",
+              "texte": "Je n’ouvre pas la pièce. Elle sera examinée par le support informatique si le référent le demande.",
+              "retour": "Conserver sans ouvrir évite d’exécuter un contenu inattendu et laisse la main aux personnes habilitées."
+            },
+            {
+              "id": "b",
+              "qualite": "inapproprie",
+              "texte": "Je l’ouvre sur mon poste, puis je la teste aussi sur la clé USB du laboratoire.",
+              "retour": "Ouvrir et recopier multiplie les supports exposés."
+            },
+            {
+              "id": "c",
+              "qualite": "a-revoir",
+              "texte": "Je l’ouvre après avoir désactivé le réseau, pour voir de quoi il s’agit.",
+              "retour": "Vérifier soi-même le contenu n’est pas le rôle attendu. Le signalement suffit."
+            }
+          ]
+        },
+        {
+          "id": "j4",
+          "titre": "La publication qui circule",
+          "texte": "Un fil de réseau social affirme qu’un membre du laboratoire « travaille pour une puissance étrangère ». Le message cite un article réel, déjà publié, et ajoute des accusations sans source.",
+          "choix": [
+            {
+              "id": "a",
+              "qualite": "inapproprie",
+              "texte": "Je commente en donnant le nom de la personne et mon avis sur sa loyauté.",
+              "retour": "Le fil mélange un fait (un article public) et une accusation non sourcée. Y ajouter un jugement personnel expose la personne."
+            },
+            {
+              "id": "b",
+              "qualite": "adapte",
+              "texte": "Je ne commente pas. Je signale le fil au responsable et, si la personne est visée, je m’assure qu’elle est informée et protégée.",
+              "retour": "Protéger la personne, ne pas relayer la rumeur, laisser les fonctions compétentes qualifier les faits."
+            },
+            {
+              "id": "c",
+              "qualite": "a-revoir",
+              "texte": "Je republie le fil dans le canal interne « pour que tout le monde sache ».",
+              "retour": "Republier étend la rumeur. Un signalement ciblé suffit."
+            }
+          ]
+        },
+        {
+          "id": "j5",
+          "titre": "Le signalement",
+          "texte": "Vous devez écrire au contact désigné. Que contient votre message ?",
+          "choix": [
+            {
+              "id": "a",
+              "qualite": "adapte",
+              "texte": "La date, l’adresse expéditrice, ce qui était demandé, le fait que rien n’a été envoyé, et la copie conservée. Pas de motif attribué.",
+              "retour": "Un signalement utile est factuel, daté, et s’arrête à ce que vous avez constaté."
+            },
+            {
+              "id": "b",
+              "qualite": "a-revoir",
+              "texte": "Un résumé oral à un collègue, sans trace.",
+              "retour": "L’alerte informelle peut compléter, elle ne remplace pas le circuit prévu."
+            },
+            {
+              "id": "c",
+              "qualite": "inapproprie",
+              "texte": "Une conclusion : il s’agit d’une ingérence organisée, et je propose une sanction.",
+              "retour": "Qualifier l’intention et proposer une sanction dépasse le rôle de la personne qui a reçu le message."
+            }
+          ]
+        }
+      ]
+    },
+    "ia": {
+      "acceptables": [
+        "Expliquer une notion du glossaire",
+        "Reformuler un document déjà public",
+        "Proposer des questions d’entraînement",
+        "Aider à comparer deux sources citées",
+        "Signaler une affirmation qui demande une vérification",
+        "Simuler un interlocuteur dans un cas pédagogique clairement fictif",
+        "Donner un retour sur la structure d’une production",
+        "Proposer un scénario d’exercice"
+      ],
+      "limites": [
+        "Classer des personnels selon une dangerosité",
+        "Déduire des opinions politiques",
+        "Évaluer une loyauté",
+        "Analyser des émotions",
+        "Proposer une décision disciplinaire",
+        "Conserver des données sensibles sans base établie",
+        "Inventer une procédure de l’établissement",
+        "Présenter une hypothèse comme un fait"
+      ],
+      "local": [
+        "Règles pédagogiques écrites dans le site, comme ce prototype",
+        "Ou un modèle installé sur l’infrastructure de l’établissement",
+        "Données conservées dans le cadre fixé par l’établissement",
+        "Mode à privilégier dès qu’un document n’est pas public"
+      ],
+      "externe": [
+        "Usage facultatif, désactivable",
+        "Aucune donnée sensible, personnelle ou non publiée dans les requêtes",
+        "Anonymisation préalable",
+        "Contrat, durée de conservation et transferts hors Union européenne vérifiés avec le DPO",
+        "La sortie est une aide. Elle se relit avant usage"
+      ]
+    },
+    "donnees": {
+      "responsables": [
+        "Responsable de traitement",
+        "Délégué à la protection des données",
+        "Hébergeur",
+        "Éditeur",
+        "Fournisseur d’IA",
+        "Prestataire d’analytics",
+        "Sous-traitants techniques"
+      ],
+      "collecter": [
+        "Identifiant professionnel",
+        "Groupe ou fonction",
+        "Progression",
+        "Résultats aux activités",
+        "Travaux remis",
+        "Traces de connexion strictement nécessaires"
+      ],
+      "eviter": [
+        "Opinions politiques",
+        "Données de santé",
+        "Données biométriques",
+        "Profils comportementaux",
+        "Conversations privées non nécessaires"
+      ],
+      "information": [
+        "Données collectées",
+        "Finalités",
+        "Base juridique",
+        "Destinataires",
+        "Durée de conservation",
+        "Transferts éventuels",
+        "Droits des personnes",
+        "Caractère obligatoire ou facultatif",
+        "Usage éventuel d’une IA"
+      ],
+      "aipd": "Une analyse d’impact est à étudier avant un déploiement qui suivrait finement les comportements, profilerait, enverrait des données vers une IA externe, traiterait des données sensibles ou conserverait les échanges. La CNIL indique que certains outils collaboratifs de l’enseignement supérieur peuvent déjà relever de cette analyse."
+    },
+    "gouvernance": {
+      "pilotage": [
+        "Direction de l’établissement",
+        "Direction de la recherche",
+        "Référent défense et sécurité",
+        "RSSI",
+        "DPO",
+        "Service juridique",
+        "Relations internationales",
+        "Valorisation",
+        "Représentants des personnels",
+        "Ingénierie pédagogique",
+        "Comité scientifique",
+        "Référent intégrité scientifique ou liberté académique"
+      ],
+      "editorial": [
+        "Valider les contenus",
+        "Vérifier les sources",
+        "Écarter les affirmations non démontrées",
+        "Tenir la neutralité pédagogique",
+        "Intégrer les mises à jour",
+        "Signaler les désaccords",
+        "Séparer doctrine officielle et analyse"
+      ],
+      "validation": [
+        "DPO pour les données",
+        "RSSI pour la sécurité numérique",
+        "Référent défense et sécurité pour la PPST",
+        "Service juridique pour les partenariats et les procédures",
+        "Intégrité scientifique si le cas l’exige",
+        "Responsables pédagogiques pour les objectifs et les évaluations"
+      ]
+    },
+    "indicateurs": {
+      "pedagogiques": [
+        "Taux de complétion",
+        "Progression entre un prétest et un post-test",
+        "Réussite aux mises en situation",
+        "Qualité des signalements simulés",
+        "Capacité à citer les sources",
+        "Compréhension des procédures"
+      ],
+      "institutionnels": [
+        "Services représentés",
+        "Participation des personnels",
+        "Référents formés",
+        "Délai d’orientation vers le bon interlocuteur",
+        "Procédures documentées",
+        "Contenus révisés",
+        "Conformité RGPD et accessibilité"
+      ],
+      "exclus": [
+        "Temps de réponse",
+        "Hésitations",
+        "Choix dans un jeu lus comme un profil",
+        "Opinion",
+        "Niveau de prudence",
+        "Absence à un module"
+      ]
+    },
+    "fonctionnel": {
+      "prototype": [
+        "Parcours de sensibilisation jouable, avec quiz et fiche réflexe",
+        "Cinq parcours métier avec production enregistrée dans le navigateur",
+        "Parcours expert repris des six modules initiaux",
+        "Jeu court de réflexes, sans adversaire",
+        "Glossaire, recherche, ressources officielles et corpus scientifique",
+        "Tableau de bord local, export JSON, aucune création de compte"
+      ],
+      "cible": [
+        "Authentification et accès par profil",
+        "Groupes, procédures locales et contacts internes paramétrables",
+        "Dépôt institutionnel des travaux et certificats après évaluation humaine",
+        "Statistiques agrégées et anonymisées",
+        "Désactivation d’une ressource obsolète",
+        "Jeu avancé en équipe, avec débriefing, hors de ce prototype",
+        "IA locale ou externe dans le cadre validé par le DPO et le RSSI"
+      ]
+    },
+    "phases": [
+      {
+        "phase": "1. Audit",
+        "duree": "4 à 6 semaines",
+        "livrables": "Publics, risques propres à l’établissement, procédures déjà écrites, interlocuteurs."
+      },
+      {
+        "phase": "2. Référentiel",
+        "duree": "4 semaines",
+        "livrables": "Objectifs, compétences, politique de sources, règles d’usage de l’IA."
+      },
+      {
+        "phase": "3. Prototype du niveau 1",
+        "duree": "8 à 12 semaines",
+        "livrables": "Sensibilisation, mises en situation, quiz, fiche réflexe, essai avec un groupe pilote."
+      },
+      {
+        "phase": "4. Parcours métiers",
+        "duree": "4 à 6 mois",
+        "livrables": "Cas spécialisés, procédures contextualisées, productions évaluées."
+      },
+      {
+        "phase": "5. Jeu avancé",
+        "duree": "6 à 9 mois",
+        "livrables": "Simulation, modes collectifs, scénarios, débriefing, tableau formateur."
+      },
+      {
+        "phase": "6. Déploiement",
+        "duree": "selon l’établissement",
+        "livrables": "Mise en ligne, formation des formateurs, support, calendrier de mise à jour."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprendre et analyser la guerre économique — Université Paris-Saclay</title>
+  <meta name="description" content="Prototype de formation en ligne : comprendre, analyser et documenter la guerre économique. Parcours progressif de l’Université Paris-Saclay.">
+  <meta name="theme-color" content="#63003C">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2363003C'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --prune: #63003C;
+      --prune-fonce: #4a002c;
+      --encre: #313E48;
+      --framboise: #C60B46;
+      --violet: #7C2A90;
+      --orange: #F37320;
+      --gris: #D6DBDF;
+      --fond: #F3F5F6;
+      --blanc: #FFFFFF;
+      --teal: #007582;
+      --bleu: #004E7D;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 10.5rem; }
+    body {
+      margin: 0;
+      font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+      color: var(--encre);
+      background: var(--fond);
+      line-height: 1.6;
+      font-size: 1.0625rem;
+    }
+    img { max-width: 100%; height: auto; }
+    a { color: var(--prune); }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 2px;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .skip {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      background: var(--blanc);
+      color: var(--prune);
+      padding: 0.6rem 1rem;
+      z-index: 20;
+      font-weight: 700;
+    }
+    .skip:focus { top: 0.5rem; }
+    .wrap { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+
+    .site-header {
+      background: var(--blanc);
+      border-bottom: 4px solid var(--prune);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-height: 92px;
+      flex-wrap: wrap;
+      padding: 0.75rem 0;
+    }
+    .logo-link { display: flex; align-items: center; margin-right: 0.5rem; }
+    .logo-link img { height: 64px; width: auto; display: block; }
+    .nav { display: flex; flex-wrap: wrap; gap: 0.15rem 0.35rem; margin-left: auto; align-items: center; }
+    .nav a {
+      color: var(--encre);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.45rem 0.65rem;
+      border-bottom: 2px solid transparent;
+    }
+    .nav a:hover { color: var(--prune); }
+    .nav a.is-active { color: var(--prune); border-bottom-color: var(--prune); }
+    .menu-btn {
+      display: none;
+      margin-left: auto;
+      background: var(--blanc);
+      color: var(--prune);
+      border: 2px solid var(--prune);
+      font: inherit;
+      font-weight: 700;
+      min-height: 44px;
+      padding: 0.4rem 0.9rem;
+      cursor: pointer;
+    }
+    .search-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding-bottom: 0.85rem;
+      position: relative;
+    }
+    .search-row form { flex: 1; min-width: 12rem; }
+    #q {
+      width: 100%;
+      font: inherit;
+      border: 1px solid var(--gris);
+      background: var(--fond);
+      color: var(--encre);
+      padding: 0.65rem 0.8rem;
+      min-height: 44px;
+    }
+    .progress-chip {
+      margin: 0;
+      font-weight: 700;
+      color: var(--prune);
+      white-space: nowrap;
+      font-size: 0.95rem;
+    }
+    .resultats {
+      position: absolute;
+      left: 0;
+      right: 8rem;
+      top: calc(100% - 0.4rem);
+      background: var(--blanc);
+      border: 1px solid var(--gris);
+      box-shadow: 0 12px 32px rgba(49, 62, 72, 0.12);
+      z-index: 12;
+      max-height: 22rem;
+      overflow: auto;
+    }
+    .resultats a {
+      display: block;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: var(--encre);
+      border-bottom: 1px solid var(--fond);
+    }
+    .resultats a:hover, .resultats a:focus { background: #f8eef4; }
+    .resultats small { display: block; color: var(--encre); }
+
+    main { min-height: 60vh; }
+    main:focus { outline: none; }
+
+    .hero { background: var(--prune); color: var(--blanc); }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr;
+      gap: 2.5rem;
+      align-items: end;
+      padding: 3.5rem 0 3rem;
+    }
+    .kicker { font-weight: 700; margin: 0 0 0.4rem; }
+    .hero .kicker { color: #F6D5E4; }
+    h1 { font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.15; margin: 0 0 1rem; font-weight: 700; letter-spacing: -0.02em; }
+    .hero p.lead { font-size: 1.15rem; margin: 0 0 1.5rem; max-width: 42rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.55rem 1.1rem;
+      background: var(--prune);
+      color: var(--blanc);
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid var(--prune);
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .btn:hover { background: var(--prune-fonce); border-color: var(--prune-fonce); }
+    .btn.secondary { background: var(--blanc); color: var(--prune); }
+    .btn.secondary:hover { background: #f8eef4; }
+    .btn.on-dark { background: var(--blanc); color: var(--prune); border-color: var(--blanc); }
+    .btn.on-dark:hover { background: #f8eef4; }
+    .btn.ghost { background: transparent; color: var(--blanc); border-color: var(--blanc); }
+    .btn.ghost:hover { background: rgba(255, 255, 255, 0.1); }
+    .btn.danger { background: var(--blanc); color: var(--framboise); border-color: var(--framboise); }
+    .stats { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+    .stats li { background: rgba(255, 255, 255, 0.08); padding: 0.9rem 1rem; border-left: 3px solid var(--orange); }
+    .stats strong { display: block; font-size: 1.7rem; line-height: 1.1; }
+    .section { padding: 3rem 0; }
+    .section h2 { font-size: 1.7rem; margin: 0 0 0.4rem; letter-spacing: -0.02em; }
+    .rule { width: 3rem; height: 3px; background: var(--prune); border: 0; margin: 0 0 1.25rem; }
+    .lead { font-size: 1.08rem; }
+    .grid-4, .grid-3, .grid-2 { display: grid; gap: 1rem; }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .card, .panel {
+      background: var(--blanc);
+      border: 1px solid var(--gris);
+      padding: 1.15rem 1.2rem;
+    }
+    a.card { display: block; color: inherit; text-decoration: none; }
+    a.card:hover { border-color: var(--prune); }
+    .card h3, .panel h3 { margin: 0 0 0.55rem; font-size: 1.12rem; }
+    .card p, .panel p { margin: 0.4rem 0; }
+    .card ol, .card ul, .panel ul, .panel ol { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+    .accent { border-top: 4px solid var(--prune); }
+    .muted { color: var(--encre); }
+    .tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.15rem 0.45rem;
+      background: #f8eef4;
+      color: var(--prune);
+    }
+    .tag.apercu { background: var(--fond); color: var(--encre); border: 1px solid var(--gris); }
+    .notice, .flash {
+      background: #f8eef4;
+      border-left: 4px solid var(--prune);
+      padding: 0.9rem 1rem;
+      margin: 0 0 1rem;
+    }
+    .flash { background: #fff6ee; border-left-color: var(--orange); }
+    .cadre { background: var(--encre); color: var(--blanc); }
+    .cadre a { color: var(--blanc); }
+    .cadre .wrap { padding: 1.4rem 0; }
+    .timeline { display: grid; gap: 0.8rem; }
+    .mod-link {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      background: var(--blanc);
+      border: 1px solid var(--gris);
+      border-left-width: 6px;
+      padding: 1rem 1.1rem;
+    }
+    .mod-link:hover { border-color: var(--prune); }
+    .mod-link strong { display: block; color: var(--encre); font-size: 1.08rem; }
+    .num { font-weight: 700; font-size: 1.4rem; color: var(--prune); min-width: 2rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--blanc); }
+    th, td { text-align: left; padding: 0.75rem 0.9rem; border-bottom: 1px solid var(--gris); vertical-align: top; }
+    th { background: var(--prune); color: var(--blanc); font-weight: 700; }
+    .page { padding: 2rem 0 3.5rem; }
+    .page-head { margin-bottom: 1.5rem; }
+    .page-head h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+    .sommaire { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 1.25rem; }
+    .sommaire a, .chip-btn {
+      background: var(--blanc);
+      border: 1px solid var(--gris);
+      color: var(--encre);
+      text-decoration: none;
+      font: inherit;
+      font-weight: 600;
+      padding: 0.4rem 0.7rem;
+      cursor: pointer;
+      min-height: 44px;
+    }
+    .sommaire a:hover, .chip-btn:hover, .chip-btn.is-on { border-color: var(--prune); color: var(--prune); }
+    .etape { margin-top: 0.8rem; }
+    .etape h3 { font-size: 0.95rem; text-transform: none; color: var(--prune); margin-bottom: 0.25rem; }
+    .seq, #detail-maillon, #resultat-quiz, #resultat-activite, .page article[id^="ref-"], .page h2[id] { margin-bottom: 1rem; scroll-margin-top: 11rem; }
+    .seq-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+    fieldset { border: 1px solid var(--gris); background: var(--blanc); margin: 0 0 0.8rem; padding: 0.9rem 1rem 1rem; }
+    legend { font-weight: 700; padding: 0 0.3rem; }
+    label.choice { display: flex; gap: 0.6rem; align-items: flex-start; margin: 0.4rem 0; cursor: pointer; }
+    .ok { background: #E7F6EF; border-color: #0E6B45; }
+    .ko { background: #FDECEF; border-color: var(--framboise); }
+    textarea, select, input[type="text"], input[type="search"] {
+      font: inherit;
+      color: var(--encre);
+      border: 1px solid #b7c0c6;
+      padding: 0.6rem 0.7rem;
+      width: 100%;
+      background: var(--blanc);
+    }
+    textarea { min-height: 8rem; resize: vertical; }
+    .form-grid { display: grid; gap: 0.7rem; }
+    .maillon.is-on { border-color: var(--prune); background: #f8eef4; }
+    .score { font-size: 1.4rem; font-weight: 700; color: var(--prune); margin: 0.2rem 0 0.8rem; }
+    .bar { height: 0.7rem; background: var(--gris); margin: 0.4rem 0 1rem; }
+    .bar span { display: block; height: 100%; background: var(--prune); }
+    .site-footer { background: var(--blanc); border-top: 4px solid var(--prune); padding: 1.5rem 0 2rem; }
+    .site-footer p { margin: 0.25rem 0; }
+    .split { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: end; }
+
+    @media (max-width: 980px) {
+      .menu-btn { display: inline-flex; }
+      .nav { display: none; width: 100%; margin-left: 0; flex-direction: column; align-items: stretch; padding-bottom: 0.4rem; }
+      .nav.is-open { display: flex; }
+      .nav a { border-bottom: 0; padding: 0.7rem 0.2rem; }
+      .hero-grid, .grid-4, .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .search-row { flex-wrap: wrap; }
+      .search-row form { flex: 1 1 100%; }
+      .resultats { right: 0; }
+      .mod-link { grid-template-columns: auto 1fr; }
+      .mod-link .tag { grid-column: 2; }
+    }
+    @media (max-width: 700px) {
+      table.responsive thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+      table.responsive tr { display: block; margin-bottom: 0.8rem; background: var(--blanc); border: 1px solid var(--gris); }
+      table.responsive td { display: block; border-bottom: 0; }
+      table.responsive td::before { content: attr(data-label); font-weight: 700; display: block; }
+      .logo-link img { height: 60px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media print {
+      .site-header, .site-footer, .actions, .no-print { display: none !important; }
+      body { background: white; }
+      .card, .panel, fieldset { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo-link" href="#/">
+        <img src="Logotype_UPSaclay_RVB.png" width="142" height="64" alt="Logotype de l’Université Paris-Saclay">
+      </a>
+      <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <a href="#/" data-nav="accueil">Accueil</a>
+        <a href="#/sensibilisation" data-nav="sensibilisation">Sensibilisation</a>
+        <a href="#/metiers" data-nav="metiers">Métiers</a>
+        <a href="#/parcours" data-nav="expert">Expert</a>
+        <a href="#/jeu" data-nav="jeu">Jeu</a>
+        <a href="#/cadre" data-nav="cadre">Cadre</a>
+        <a href="#/ressources" data-nav="ressources">Ressources</a>
+        <a href="#/tableau" data-nav="tableau">Tableau de bord</a>
+      </nav>
+    </div>
+    <div class="wrap search-row">
+      <form id="form-recherche" role="search">
+        <label class="sr-only" for="q">Rechercher dans le parcours</label>
+        <input id="q" type="search" placeholder="Rechercher un concept, un module, une référence" autocomplete="off">
+      </form>
+      <p class="progress-chip" id="progress-chip">Progression 0 %</p>
+      <div id="resultats" class="resultats" hidden></div>
+    </div>
+  </header>
+  <main id="contenu" tabindex="-1">
+    <p class="wrap section">Chargement du parcours…</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap split">
+      <div>
+        <p><strong>Université Paris-Saclay</strong></p>
+        <p>Prototype pédagogique — Culture universitaire de la résilience</p>
+        <p><a href="https://www.universite-paris-saclay.fr/">www.universite-paris-saclay.fr</a></p>
+      </div>
+      <p>Charte graphique de mars 2025 · logotype RVB pour l’écran · police Open Sans</p>
+    </div>
+  </footer>
+  <noscript>
+    <p class="wrap">Activez JavaScript pour afficher ce parcours, dont les contenus sont chargés depuis formation.json.</p>
+  </noscript>
+  <script>
+    const STORAGE_KEY = "ups-guerre-eco-v1";
+    const state = { data: null, flash: "", scrollTo: "" };
+
+    function defaultProgress() {
+      return {
+        sequences: {},
+        quizzes: {},
+        productions: {},
+        classement: null,
+        activiteSources: null,
+        acteurs: [],
+        sources: [],
+        grille: { acteurs: "", dependances: "", interets: "", instruments: "", vulnerabilites: "", scenarios: "" },
+        notes: "",
+        marques: [],
+        casVisite: false,
+        casEtape: "conception",
+        jeu: { index: 0, reponses: [], termine: false }
+      };
+    }
+
+    function loadProgress() {
+      const base = defaultProgress();
+      try {
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+        if (!raw || typeof raw !== "object") return base;
+        return {
+          ...base,
+          ...raw,
+          grille: { ...base.grille, ...(raw.grille || {}) },
+          sequences: raw.sequences || {},
+          quizzes: raw.quizzes || {},
+          productions: raw.productions || {},
+          acteurs: Array.isArray(raw.acteurs) ? raw.acteurs : [],
+          sources: Array.isArray(raw.sources) ? raw.sources : [],
+          marques: Array.isArray(raw.marques) ? raw.marques : [],
+          jeu: raw.jeu && typeof raw.jeu === "object" ? { index: raw.jeu.index || 0, reponses: Array.isArray(raw.jeu.reponses) ? raw.jeu.reponses : [], termine: Boolean(raw.jeu.termine) } : base.jeu
+        };
+      } catch (error) {
+        return base;
+      }
+    }
+
+    state.progress = loadProgress();
+
+    function save() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
+    }
+
+    function esc(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[char]));
+    }
+
+    function norm(value) {
+      return String(value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function parseRoute() {
+      const parts = (location.hash || "#/").replace(/^#/, "").split("/").filter(Boolean);
+      if (!parts.length) return { name: "accueil" };
+      if (parts[0] === "module" && parts[1]) return { name: "module", id: parts[1] };
+      if (parts[0] === "metier" && parts[1]) return { name: "metier", id: parts[1] };
+      if ((parts[0] === "glossaire" || parts[0] === "ressources") && parts[1]) {
+        return { name: parts[0], id: parts[1] };
+      }
+      return { name: parts[0] };
+    }
+
+    function completion() {
+      const data = state.data;
+      if (!data) return 0;
+      let total = 0;
+      let done = 0;
+      total += 1;
+      if (state.progress.quizzes.positionnement && state.progress.quizzes.positionnement.done) done += 1;
+      ["m1", "m2"].forEach((id) => {
+        const module = data.modules.find((item) => item.id === id);
+        module.sequences.forEach((sequence) => {
+          total += 1;
+          if (state.progress.sequences[sequence.id]) done += 1;
+        });
+        total += 1;
+        if (state.progress.quizzes[id] && state.progress.quizzes[id].done) done += 1;
+        total += 1;
+        if ((state.progress.productions[id] || "").trim().length > 40) done += 1;
+      });
+      total += 1;
+      if (state.progress.casVisite) done += 1;
+      const sensibilisation = data.programme && data.programme.sensibilisation;
+      if (sensibilisation) {
+        sensibilisation.sequences.forEach((sequence) => {
+          total += 1;
+          if (state.progress.sequences[sequence.id]) done += 1;
+        });
+        total += 1;
+        if (state.progress.quizzes.sensibilisation && state.progress.quizzes.sensibilisation.done) done += 1;
+        total += 1;
+        if (state.progress.jeu && state.progress.jeu.termine) done += 1;
+      }
+      return Math.round((100 * done) / total);
+    }
+
+    function updateChrome(route) {
+      const chip = document.getElementById("progress-chip");
+      chip.textContent = "Progression " + completion() + " %";
+      const navName = {
+        metier: "metiers",
+        parcours: "expert",
+        module: "expert",
+        positionnement: "expert",
+        cas: "expert",
+        outils: "expert",
+        glossaire: "expert"
+      }[route.name] || route.name;
+      document.querySelectorAll("[data-nav]").forEach((link) => {
+        const active = link.dataset.nav === navName;
+        link.classList.toggle("is-active", active);
+        if (active) link.setAttribute("aria-current", "page");
+        else link.removeAttribute("aria-current");
+      });
+    }
+
+    function paragraphs(list) {
+      return (list || []).map((item) => "<p>" + esc(item) + "</p>").join("");
+    }
+
+    function bullets(list) {
+      if (!list || !list.length) return "";
+      return "<ul>" + list.map((item) => "<li>" + esc(item) + "</li>").join("") + "</ul>";
+    }
+
+    function pageHead(kicker, title, lead) {
+      return '<header class="page-head"><p class="kicker">' + esc(kicker) + "</p><h1>" + esc(title) + "</h1>" +
+        (lead ? '<p class="lead">' + esc(lead) + "</p>" : "") + "</header>";
+    }
+
+    function renderEtape(etape) {
+      const labels = {
+        situation: "Mise en situation",
+        question: "Question-problème",
+        apport: "Apports",
+        grille: "Analyse guidée",
+        reflexion: "Retour réflexif"
+      };
+      let body = "";
+      if (etape.type === "apport") {
+        body += etape.titre ? "<h4>" + esc(etape.titre) + "</h4>" : "";
+        body += paragraphs(etape.paragraphes);
+        if (etape.points) body += "<div class=\"panel accent\"><h3>À retenir</h3>" + bullets(etape.points) + "</div>";
+      } else if (etape.type === "grille") {
+        body += "<p>" + esc(etape.texte) + "</p><p><a href=\"#/outils\">Ouvrir la grille d’analyse</a></p>";
+      } else if (etape.type === "reflexion") {
+        body += "<ol>" + etape.questions.map((item) => "<li>" + esc(item) + "</li>").join("") + "</ol>";
+      } else {
+        body += "<p>" + esc(etape.texte) + "</p>";
+      }
+      return '<section class="etape"><h3>' + esc(labels[etape.type] || "Étape") + "</h3>" + body + "</section>";
+    }
+
+    function renderQuiz(scope, questions) {
+      if (!questions || !questions.length) return "";
+      const stored = state.progress.quizzes[scope];
+      if (stored && stored.done) {
+        const items = questions.map((question) => {
+          const answer = stored.answers[question.id];
+          const correct = answer === question.reponse;
+          const expected = question.choix.find((choice) => choice.id === question.reponse);
+          return '<article class="panel ' + (correct ? "ok" : "ko") + '"><h3>' + esc(question.question) + "</h3><p>" +
+            (correct ? "Bonne réponse." : "Réponse attendue : " + esc(expected ? expected.texte : "")) +
+            "</p><p>" + esc(question.explication) + "</p></article>";
+        }).join("");
+        return '<section id="resultat-quiz"><h2>Quiz</h2><p class="score">' + stored.score + " / " + stored.total +
+          '</p>' + items + '<p class="no-print"><button type="button" class="btn secondary" data-action="retry-quiz" data-scope="' +
+          esc(scope) + '">Recommencer le quiz</button></p></section>';
+      }
+      const fields = questions.map((question) => {
+        const choices = question.choix.map((choice) =>
+          '<label class="choice"><input type="radio" name="' + esc(scope + "-" + question.id) + '" value="' + esc(choice.id) + '"> <span>' +
+          esc(choice.texte) + "</span></label>"
+        ).join("");
+        return "<fieldset><legend>" + esc(question.question) + "</legend>" + choices + "</fieldset>";
+      }).join("");
+      return '<section><h2>Quiz</h2><form data-quiz="' + esc(scope) + '">' + fields +
+        '<button type="button" class="btn" data-action="submit-quiz" data-scope="' + esc(scope) + '">Valider le quiz</button></form></section>';
+    }
+
+    function renderClassement(module) {
+      const activity = module.activite;
+      if (!activity || activity.type !== "classement") return "";
+      const stored = state.progress.classement;
+      if (stored && stored.done) {
+        const cards = activity.items.map((item) => {
+          const correct = stored.answers[item.id] === item.reponse;
+          const label = state.data.categoriesClassement.find((category) => category.id === item.reponse);
+          return '<article class="panel ' + (correct ? "ok" : "ko") + '"><h3>' + esc(item.texte) + "</h3><p>" +
+            (correct ? "Classement retenu." : "Notion attendue : " + esc(label ? label.label : "")) +
+            "</p><p>" + esc(item.commentaire) + "</p></article>";
+        }).join("");
+        return '<section id="resultat-activite"><h2>' + esc(activity.titre) + '</h2><p class="score">' + stored.score + " / " +
+          stored.total + "</p>" + cards +
+          '<p class="no-print"><button type="button" class="btn secondary" data-action="retry-classement">Recommencer l’activité</button></p></section>';
+      }
+      const options = state.data.categoriesClassement.map((category) =>
+        '<option value="' + esc(category.id) + '">' + esc(category.label) + "</option>"
+      ).join("");
+      const rows = activity.items.map((item) =>
+        '<label class="panel">' + esc(item.texte) +
+        '<select name="class-' + esc(item.id) + '" aria-label="Notion pour cette situation"><option value="">Choisir une notion</option>' +
+        options + "</select></label>"
+      ).join("");
+      return '<section><h2>' + esc(activity.titre) + "</h2><p>" + esc(activity.consigne) + "</p>" + rows +
+        '<p><button type="button" class="btn" data-action="submit-classement">Valider le classement</button></p></section>';
+    }
+
+    function renderSourcesActivity(module) {
+      const activity = module.activite;
+      if (!activity || activity.type !== "sources") return "";
+      const stored = state.progress.activiteSources;
+      if (stored && stored.done) {
+        const cards = activity.documents.map((doc) => {
+          const correct = stored.answers[doc.id] === doc.reponse;
+          const expected = activity.choix.find((choice) => choice.id === doc.reponse);
+          return '<article class="panel ' + (correct ? "ok" : "ko") + '"><h3>' + esc(doc.titre) + "</h3><p>" + esc(doc.texte) +
+            "</p><p>" + (correct ? "Lecture retenue." : "Dominante attendue : " + esc(expected ? expected.label : "")) +
+            "</p><p>" + esc(doc.commentaire) + "</p></article>";
+        }).join("");
+        return '<section id="resultat-activite"><h2>' + esc(activity.titre) + '</h2><p class="score">' + stored.score + " / " +
+          stored.total + "</p>" + cards +
+          '<p class="no-print"><button type="button" class="btn secondary" data-action="retry-sources">Recommencer l’activité</button></p></section>';
+      }
+      const docs = activity.documents.map((doc) => {
+        const choices = activity.choix.map((choice) =>
+          '<label class="choice"><input type="radio" name="src-' + esc(doc.id) + '" value="' + esc(choice.id) + '"> <span>' +
+          esc(choice.label) + "</span></label>"
+        ).join("");
+        return '<fieldset><legend>' + esc(doc.titre) + "</legend><p>" + esc(doc.texte) + "</p>" + choices + "</fieldset>";
+      }).join("");
+      return '<section><h2>' + esc(activity.titre) + "</h2><p>" + esc(activity.consigne) + "</p>" + docs +
+        '<p><button type="button" class="btn" data-action="submit-sources">Valider la comparaison</button></p></section>';
+    }
+
+    function renderProduction(module) {
+      const production = module.production;
+      if (!production) return "";
+      const value = state.progress.productions[module.id] || "";
+      return '<section class="panel"><h2>' + esc(production.titre) + "</h2><p>" + esc(production.consigne) +
+        "</p>" + bullets(production.criteres) +
+        '<label>Votre production<textarea data-production="' + esc(module.id) + '">' + esc(value) + "</textarea></label>" +
+        "<p>Le texte est enregistré dans ce navigateur. Trois questions de clôture : qu’avez-vous conclu, sur quelles preuves, et qu’est-ce qui pourrait remettre en cause l’analyse ?</p></section>";
+    }
+
+    function renderBlocs(blocs) {
+      return (blocs || []).map((bloc) =>
+        '<p><span class="tag">' + esc(bloc.nature) + "</span></p><p>" + esc(bloc.texte) + "</p>"
+      ).join("");
+    }
+
+    function renderAccueil() {
+      const data = state.data;
+      const programme = data.programme;
+      return '<section class="hero"><div class="wrap hero-grid"><div><p class="kicker">' + esc(data.meta.etablissement) +
+        " · " + esc(data.meta.format) + "</p><h1>" + esc(data.meta.titre) + "</h1><p class=\"lead\">" + esc(data.meta.publicPrincipal) +
+        "</p><div class=\"actions\"><a class=\"btn on-dark\" href=\"#/sensibilisation\">Commencer la sensibilisation</a>" +
+        "<a class=\"btn ghost\" href=\"#/metiers\">Voir les métiers</a></div></div><ul class=\"stats\"><li><strong>3</strong><span>niveaux</span></li>" +
+        "<li><strong>2 h</strong><span>sensibilisation commune</span></li><li><strong>5</strong><span>parcours métier</span></li></ul></div></section>" +
+        '<div class="cadre"><div class="wrap"><p><strong>Cadre.</strong> ' + esc(data.meta.intention) + "</p></div></div>" +
+        '<section class="section"><div class="wrap"><h2>Trois niveaux</h2><hr class="rule"><div class="grid-3">' +
+        '<article class="card accent"><h3>Niveau 1 · Sensibilisation</h3><p>1 h 30 à 2 h, pour tous les personnels. Actifs, risques, réflexes, liberté académique, quiz et fiche.</p><p><a href="#/sensibilisation">Ouvrir</a></p></article>' +
+        '<article class="card accent"><h3>Niveau 2 · Métiers</h3><p>4 à 8 h. Recherche, administration, plateformes, numérique, partenariats. Chaque parcours se termine par une production.</p><p><a href="#/metiers">Ouvrir</a></p></article>' +
+        '<article class="card accent"><h3>Niveau 3 · Expert</h3><p>30 à 40 h. Le programme initial de guerre économique, repris pour l’analyse, les sources et la note stratégique.</p><p><a href="#/parcours">Ouvrir</a></p></article>' +
+        "</div></div></section>" +
+        '<section class="section" style="padding-top:0"><div class="wrap"><h2>Règle documentaire</h2><hr class="rule">' + bullets(programme.principes) +
+        '<p><a href="#/cadre">Compétences, gouvernance, données et intelligence artificielle</a> · <a href="#/jeu">Jeu court</a> · <a href="#/ressources">Documents officiels</a></p></div></section>';
+    }
+
+    function renderSensibilisation() {
+      const bloc = state.data.programme.sensibilisation;
+      const sommaire = bloc.sequences.map((sequence) =>
+        '<a href="#/sensibilisation" data-scroll="' + esc(sequence.id) + '">' + esc(sequence.titre) +
+        (state.progress.sequences[sequence.id] ? " · lu" : "") + "</a>"
+      ).join("");
+      const sequences = bloc.sequences.map((sequence) =>
+        '<article class="panel seq" id="' + esc(sequence.id) + '"><div class="seq-head"><h2>' + esc(sequence.titre) + "</h2>" +
+        (state.progress.sequences[sequence.id] ? '<span class="tag">Séquence lue</span>' : "") + "</div>" +
+        renderBlocs(sequence.blocs) +
+        '<p class="no-print"><button type="button" class="btn secondary" data-action="lire" data-id="' + esc(sequence.id) + '">Marquer cette séquence comme lue</button></p></article>'
+      ).join("");
+      const fiche = '<article class="panel" id="fiche-reflexe"><h2>Fiche réflexe</h2><p>À imprimer ou à garder. Les contacts internes de l’établissement se ajoutent ici au moment du déploiement.</p>' +
+        bullets(bloc.fiche) +
+        '<p class="no-print"><button type="button" class="btn secondary" data-action="print">Imprimer la fiche</button></p></article>';
+      return '<div class="wrap page">' + pageHead("Niveau 1", "Sensibilisation commune", bloc.duree + ". Public : tous les personnels, y compris les doctorants et les encadrants.") +
+        "<h2>Objectifs</h2>" + bullets(bloc.objectifs) +
+        '<nav class="sommaire" aria-label="Séquences">' + sommaire + "</nav>" + sequences +
+        renderQuiz("sensibilisation", bloc.quiz) + fiche +
+        '<p><a class="btn" href="#/jeu">Passer au jeu court</a></p></div>';
+    }
+
+    function renderMetiers() {
+      const cards = state.data.programme.metiers.map((metier) =>
+        '<a class="card accent" href="#/metier/' + esc(metier.id) + '"><h3>' + esc(metier.titre) + "</h3><p>" + esc(metier.public) +
+        "</p><p>" + esc(metier.duree) + "</p></a>"
+      ).join("");
+      return '<div class="wrap page">' + pageHead("Niveau 2", "Parcours par métier", "Entre 4 et 8 heures selon la fonction. Cette version pose le contrat pédagogique et une production. Les procédures locales se branchent au déploiement.") +
+        '<div class="grid-2">' + cards + "</div></div>";
+    }
+
+    function renderMetier(id) {
+      const metier = state.data.programme.metiers.find((item) => item.id === id);
+      if (!metier) return '<div class="wrap page"><h1>Parcours introuvable</h1><p><a href="#/metiers">Retour aux métiers</a></p></div>';
+      const sequences = metier.sequences.map((sequence) =>
+        '<article class="panel seq" id="' + esc(sequence.id) + '"><div class="seq-head"><h2>' + esc(sequence.titre) + "</h2>" +
+        (state.progress.sequences[sequence.id] ? '<span class="tag">Séquence lue</span>' : "") + "</div>" +
+        renderBlocs(sequence.blocs) +
+        '<p class="no-print"><button type="button" class="btn secondary" data-action="lire" data-id="' + esc(sequence.id) + '">Marquer cette séquence comme lue</button></p></article>'
+      ).join("");
+      const value = state.progress.productions["metier-" + metier.id] || "";
+      return '<div class="wrap page">' + pageHead(metier.duree, metier.titre, metier.intention) +
+        "<p>" + esc(metier.public) + ".</p>" + sequences +
+        '<section class="panel"><h2>Production</h2><p>' + esc(metier.production) +
+        '</p><label>Votre texte<textarea data-production="metier-' + esc(metier.id) + '">' + esc(value) + "</textarea></label>" +
+        "<p>Le texte reste dans ce navigateur. Il ne constitue pas un signalement réel.</p></section>" +
+        '<p><a href="#/metiers">Tous les métiers</a></p></div>';
+    }
+
+    function renderJeu() {
+      const jeu = state.data.programme.jeu;
+      const progress = state.progress.jeu;
+      const etapes = jeu.etapes;
+      let corps = "";
+      if (progress.termine) {
+        const score = progress.reponses.filter((item) => item.qualite === "adapte").length;
+        const detail = progress.reponses.map((item) => {
+          const etape = etapes.find((step) => step.id === item.etape);
+          const choix = etape.choix.find((option) => option.id === item.choix);
+          return "<li><strong>" + esc(etape.titre) + ".</strong> " + esc(choix.retour) + "</li>";
+        }).join("");
+        corps = '<p class="score">' + score + " réflexe" + (score > 1 ? "s" : "") + " adapté" + (score > 1 ? "s" : "") + " sur " + etapes.length +
+          "</p><p>Le score décrit la qualité des décisions de protection. Il ne classe pas une personne.</p><ul>" + detail + "</ul>" +
+          '<p class="no-print"><button type="button" class="btn secondary" data-action="retry-jeu">Recommencer l’exercice</button></p>';
+      } else {
+        const etape = etapes[progress.index] || etapes[0];
+        const choix = etape.choix.map((option) =>
+          '<p><button type="button" class="btn secondary" data-action="jeu-choix" data-id="' + esc(option.id) + '">' + esc(option.texte) + "</button></p>"
+        ).join("");
+        corps = "<p>Étape " + (progress.index + 1) + " / " + etapes.length + "</p><article class=\"panel\"><h2>" + esc(etape.titre) +
+          "</h2><p>" + esc(etape.texte) + "</p>" + choix + "</article>";
+      }
+      return '<div class="wrap page">' + pageHead("Jeu court", "Qualité du réflexe", jeu.duree) +
+        "<p>" + esc(jeu.regle) + "</p><p>" + esc(jeu.scenario) + "</p>" + corps +
+        '<p>La version avancée, de 60 à 120 minutes, avec équipes et analyse de dépendances, est un livrable ultérieur. Elle n’est pas simulée ici.</p></div>';
+    }
+
+    function renderCadre() {
+      const programme = state.data.programme;
+      const competences = programme.competences.map((item) =>
+        "<tr><td data-label=\"Compétence\">" + esc(item.competence) + "</td><td data-label=\"Niveau 1\">" + esc(item.n1) +
+        "</td><td data-label=\"Niveau 2\">" + esc(item.n2) + "</td><td data-label=\"Niveau 3\">" + esc(item.n3) + "</td></tr>"
+      ).join("");
+      const phases = programme.phases.map((item) =>
+        "<tr><td data-label=\"Phase\">" + esc(item.phase) + "</td><td data-label=\"Durée\">" + esc(item.duree) +
+        "</td><td data-label=\"Livrables\">" + esc(item.livrables) + "</td></tr>"
+      ).join("");
+      const ia = programme.ia;
+      const donnees = programme.donnees;
+      const gouv = programme.gouvernance;
+      const indicateurs = programme.indicateurs;
+      const fonctionnel = programme.fonctionnel;
+      return '<div class="wrap page">' + pageHead("Gouvernance", "Cadre du dispositif", programme.formulation) +
+        "<h2>Compétences</h2><table class=\"responsive\"><thead><tr><th>Compétence</th><th>Niveau 1</th><th>Niveau 2</th><th>Niveau 3</th></tr></thead><tbody>" +
+        competences + "</tbody></table>" +
+        "<h2>Intelligence artificielle</h2><div class=\"grid-2\"><article class=\"panel\"><h3>Usages possibles</h3>" + bullets(ia.acceptables) +
+        "</article><article class=\"panel\"><h3>Limites</h3>" + bullets(ia.limites) + "</article></div>" +
+        "<div class=\"grid-2\"><article class=\"panel\"><h3>Mode local</h3>" + bullets(ia.local) +
+        "</article><article class=\"panel\"><h3>Mode externe</h3>" + bullets(ia.externe) + "</article></div>" +
+        "<h2>Protection des données</h2><div class=\"grid-2\"><article class=\"panel\"><h3>Acteurs à identifier</h3>" + bullets(donnees.responsables) +
+        "</article><article class=\"panel\"><h3>Données à privilégier</h3>" + bullets(donnees.collecter) + "</article></div>" +
+        "<div class=\"grid-2\"><article class=\"panel\"><h3>Données à éviter</h3>" + bullets(donnees.eviter) +
+        "</article><article class=\"panel\"><h3>Information des personnes</h3>" + bullets(donnees.information) + "</article></div>" +
+        "<p>" + esc(donnees.aipd) + "</p>" +
+        "<h2>Gouvernance</h2><div class=\"grid-3\"><article class=\"panel\"><h3>Comité de pilotage</h3>" + bullets(gouv.pilotage) +
+        "</article><article class=\"panel\"><h3>Comité éditorial</h3>" + bullets(gouv.editorial) +
+        "</article><article class=\"panel\"><h3>Validation avant déploiement</h3>" + bullets(gouv.validation) + "</article></div>" +
+        "<h2>Indicateurs</h2><div class=\"grid-3\"><article class=\"panel\"><h3>Pédagogie</h3>" + bullets(indicateurs.pedagogiques) +
+        "</article><article class=\"panel\"><h3>Établissement</h3>" + bullets(indicateurs.institutionnels) +
+        "</article><article class=\"panel\"><h3>À ne pas utiliser comme profil de risque</h3>" + bullets(indicateurs.exclus) + "</article></div>" +
+        "<h2>Ce prototype et la cible</h2><div class=\"grid-2\"><article class=\"panel\"><h3>Déjà jouable</h3>" + bullets(fonctionnel.prototype) +
+        "</article><article class=\"panel\"><h3>Prévu au déploiement</h3>" + bullets(fonctionnel.cible) + "</article></div>" +
+        "<h2>Plan de production</h2><table class=\"responsive\"><thead><tr><th>Phase</th><th>Durée</th><th>Livrables</th></tr></thead><tbody>" +
+        phases + "</tbody></table></div>";
+    }
+
+    function renderParcours() {
+      const steps = state.data.scenario.map((step, index) =>
+        '<article class="card"><h3>' + (index + 1) + ". " + esc(step.etape) + "</h3><p>" + esc(step.texte) + "</p></article>"
+      ).join("");
+      const modules = state.data.modules.map((module) => {
+        const read = module.sequences.filter((sequence) => state.progress.sequences[sequence.id]).length;
+        return '<a class="mod-link" style="border-left-color:' + esc(module.couleur) + '" href="#/module/' + esc(module.id) + '"><span class="num">' +
+          module.numero + "</span><span><strong>" + esc(module.titre) + "</strong>" + esc(module.resume) +
+          "<br>Séquences ouvertes : " + read + " / " + module.sequences.length + "</span><span class=\"tag" +
+          (module.mvp === "complet" ? "" : " apercu") + "\">" + esc(module.duree) + "</span></a>";
+      }).join("");
+      return '<div class="wrap page">' + pageHead("Niveau 3 · parcours expert", "Analyse de la guerre économique", "Le programme initial est conservé pour les directions, les référents, les responsables de recherche, de numérique, de valorisation et les formateurs. Durée indicative : 30 à 40 heures. Les modules 1 et 2 sont développés ; les modules 3 à 6 restent en aperçu.") +
+        '<p class="notice">Ce niveau forme à la lecture, à la veille et à la résilience. Il ne forme pas à des opérations clandestines, offensives ou de contournement. <a href="#/positionnement">Positionnement</a> · <a href="#/cas">Étude de cas</a> · <a href="#/outils">Outils</a> · <a href="#/glossaire">Glossaire</a></p>' +
+        '<div class="grid-3">' + steps + "</div><div class=\"timeline\" style=\"margin-top:1.5rem\">" + modules + "</div></div>";
+    }
+
+    function renderModule(id) {
+      const module = state.data.modules.find((item) => item.id === id);
+      if (!module) return '<div class="wrap page"><h1>Module introuvable</h1><p><a href="#/parcours">Retour au parcours</a></p></div>';
+      const marked = state.progress.marques.includes(module.id);
+      const sommaire = module.sequences.map((sequence) =>
+        '<a href="#/module/' + esc(module.id) + '" data-scroll="' + esc(sequence.id) + '">' + esc(sequence.titre) +
+        (state.progress.sequences[sequence.id] ? " · lu" : "") + "</a>"
+      ).join("");
+      const sequences = module.sequences.map((sequence) =>
+        '<article class="panel seq" id="' + esc(sequence.id) + '"><div class="seq-head"><h2>' + esc(sequence.titre) + "</h2>" +
+        (state.progress.sequences[sequence.id] ? '<span class="tag">Séquence lue</span>' : "") + "</div>" +
+        sequence.etapes.map(renderEtape).join("") +
+        '<p class="no-print"><button type="button" class="btn secondary" data-action="lire" data-id="' + esc(sequence.id) + '">Marquer cette séquence comme lue</button></p></article>'
+      ).join("");
+      const terms = module.glossaire.map((termId) => {
+        const term = state.data.glossaire.find((item) => item.id === termId);
+        return term ? '<a href="#/glossaire/' + esc(term.id) + '">' + esc(term.terme) + "</a>" : "";
+      }).filter(Boolean).join(" · ");
+      const books = module.bibliographie.map((bookId) => {
+        const book = state.data.bibliographie.find((item) => item.id === bookId);
+        if (!book) return "";
+        const href = book.url
+          ? '<a href="' + esc(book.url) + '" target="_blank" rel="noopener noreferrer">' + esc(book.titre) + "</a>"
+          : esc(book.titre);
+        return "<li>" + esc(book.auteurs) + ", " + href + " (" + esc(book.annee) + ")</li>";
+      }).join("");
+      const banner = module.mvp === "complet" ? "" : '<p class="notice">Aperçu. Le MVP développe les modules 1 et 2, le positionnement, l’étude de cas et les outils. Ce module fixe le contrat pédagogique en attendant la production complète.</p>';
+      return '<div class="wrap page">' + pageHead("Module " + module.numero + " · " + module.duree, module.titre, module.intention) +
+        banner + '<p class="no-print"><button type="button" class="btn secondary" data-action="marque" data-id="' + esc(module.id) + '">' +
+        (marked ? "Retirer des marque-pages" : "Ajouter aux marque-pages") + "</button></p>" +
+        '<section class="panel accent" style="border-top-color:' + esc(module.couleur) + '"><h2>Contenus</h2>' + bullets(module.contenus) + "</section>" +
+        '<nav class="sommaire" aria-label="Séquences du module">' + sommaire + "</nav>" + sequences +
+        renderClassement(module) + renderSourcesActivity(module) + renderQuiz(module.id, module.quiz) + renderProduction(module) +
+        '<section class="grid-2"><article class="panel"><h2>Glossaire du module</h2><p>' + terms + '</p></article><article class="panel"><h2>Bibliographie du module</h2><ul>' +
+        books + '</ul><p><a href="#/ressources">Corpus complet : archives et livres</a></p></article></section></div>';
+    }
+
+    function renderPositionnement() {
+      const block = state.data.positionnement;
+      return '<div class="wrap page">' + pageHead("Évaluation diagnostique", block.titre, block.introduction) +
+        renderQuiz("positionnement", block.questions) + "</div>";
+    }
+
+    function renderCas() {
+      if (!state.progress.casVisite) {
+        state.progress.casVisite = true;
+        save();
+      }
+      const cas = state.data.cas;
+      const current = cas.maillons.find((item) => item.id === state.progress.casEtape) || cas.maillons[0];
+      const buttons = cas.maillons.map((item) =>
+        '<button type="button" class="chip-btn' + (item.id === current.id ? " is-on" : "") + '" data-action="cas-etape" data-id="' +
+        esc(item.id) + '">' + esc(item.titre) + "</button>"
+      ).join("");
+      const options = cas.options.map((item) =>
+        '<article class="card accent"><h3>' + esc(item.horizon) + "</h3><p>" + esc(item.piste) + "</p></article>"
+      ).join("");
+      const note = state.progress.productions.cas || "";
+      return '<div class="wrap page">' + pageHead("Étude de cas", cas.titre, cas.question) +
+        '<p class="notice">' + esc(cas.vigilance) + "</p><p>" + esc(cas.probleme) + "</p><p><strong>Repère de version.</strong> " +
+        esc(cas.dateCas) + ".</p>" + '<div class="sommaire" role="group" aria-label="Maillons de la chaîne">' + buttons + "</div>" +
+        '<article class="panel accent" id="detail-maillon"><h2>' + esc(current.titre) + "</h2><p>" + esc(current.role) +
+        "</p><p><strong>Acteurs.</strong> " + esc(current.acteurs) + "</p><p><strong>Fragilité.</strong> " + esc(current.fragilite) +
+        "</p><p><strong>Question d’analyse.</strong> " + esc(current.question) + "</p></article>" +
+        "<h2>Options de résilience</h2><div class=\"grid-3\">" + options + "</div>" +
+        '<section class="panel"><h2>Votre lecture</h2><label>Quel maillon vous paraît le moins substituable, et pourquoi ?<textarea data-production="cas">' +
+        esc(note) + "</textarea></label></section></div>";
+    }
+
+    function renderOutils() {
+      const grille = state.progress.grille;
+      const fields = [
+        ["acteurs", "Acteurs", "Qui décide, qui produit, qui subit, qui régule ?"],
+        ["dependances", "Dépendances", "Quel flux est difficile à remplacer, et dans quel délai ?"],
+        ["interets", "Intérêts", "Que cherche chaque acteur, au-delà du discours ?"],
+        ["instruments", "Instruments", "Tarif, licence, norme, investissement, sanction, stock…"],
+        ["vulnerabilites", "Vulnérabilités", "Où une rupture aurait un effet disproportionné ?"],
+        ["scenarios", "Scénarios", "Deux ou trois enchaînements plausibles, avec un indicateur pour chacun."]
+      ].map(([key, label, hint]) =>
+        "<label>" + esc(label) + "<textarea data-grille=\"" + key + "\" placeholder=\"" + esc(hint) + "\">" + esc(grille[key]) + "</textarea></label>"
+      ).join("");
+      const acteurs = state.progress.acteurs.map((actor) =>
+        "<tr><td data-label=\"Acteur\">" + esc(actor.nom) + "</td><td data-label=\"Type\">" + esc(actor.type) +
+        "</td><td data-label=\"Intérêt\">" + esc(actor.interet) + "</td><td data-label=\"Ressource\">" + esc(actor.ressource) +
+        "</td><td data-label=\"Dépendance\">" + esc(actor.dependance) +
+        "</td><td><button type=\"button\" class=\"btn secondary\" data-action=\"del-acteur\" data-id=\"" + esc(actor.id) + "\">Retirer</button></td></tr>"
+      ).join("");
+      const sources = state.progress.sources.map((source) =>
+        "<tr><td data-label=\"Titre\">" + esc(source.titre) + "</td><td data-label=\"Auteur\">" + esc(source.auteur) +
+        "</td><td data-label=\"Date\">" + esc(source.date) + "</td><td data-label=\"Faits retenus\">" + esc(source.faits) +
+        "</td><td data-label=\"Confiance\">" + esc(source.confiance) +
+        "</td><td><button type=\"button\" class=\"btn secondary\" data-action=\"del-source\" data-id=\"" + esc(source.id) + "\">Retirer</button></td></tr>"
+      ).join("");
+      return '<div class="wrap page">' + pageHead("Outils d’analyse", "Grille, acteurs et sources", "Ces tableaux restent dans votre navigateur. N’y déposez aucune donnée confidentielle.") +
+        '<section class="panel"><h2>Grille d’analyse</h2><div class="form-grid">' + fields + "</div></section>" +
+        '<section class="panel"><h2>Matrice des acteurs</h2><div class="form-grid grid-2">' +
+        '<label>Nom<input id="acteur-nom" type="text"></label><label>Type<input id="acteur-type" type="text" placeholder="État, entreprise, institution, organisation"></label>' +
+        '<label>Intérêt<input id="acteur-interet" type="text"></label><label>Ressource maîtrisée<input id="acteur-ressource" type="text"></label>' +
+        '<label>Dépendance<input id="acteur-dependance" type="text"></label></div><p><button type="button" class="btn" data-action="add-acteur">Ajouter l’acteur</button></p>' +
+        (acteurs ? '<table class="responsive"><thead><tr><th>Acteur</th><th>Type</th><th>Intérêt</th><th>Ressource</th><th>Dépendance</th><th></th></tr></thead><tbody>' + acteurs + "</tbody></table>" : "<p>Aucun acteur pour l’instant.</p>") +
+        "</section>" +
+        '<section class="panel"><h2>Grille des sources</h2><div class="form-grid grid-2">' +
+        '<label>Titre<input id="source-titre" type="text"></label><label>Auteur ou institution<input id="source-auteur" type="text"></label>' +
+        '<label>Date<input id="source-date" type="text" placeholder="Date du document et date de consultation"></label>' +
+        '<label>Confiance<select id="source-confiance"><option>À vérifier</option><option>Faible</option><option>Moyenne</option><option>Élevée</option></select></label>' +
+        '<label>Faits que vous retenez<input id="source-faits" type="text"></label></div>' +
+        '<p><button type="button" class="btn" data-action="add-source">Ajouter la source</button></p>' +
+        (sources ? '<table class="responsive"><thead><tr><th>Titre</th><th>Auteur</th><th>Date</th><th>Faits retenus</th><th>Confiance</th><th></th></tr></thead><tbody>' + sources + "</tbody></table>" : "<p>Aucune source pour l’instant.</p>") +
+        "</section></div>";
+    }
+
+    function renderGlossaire(route) {
+      const cards = state.data.glossaire.map((term) => {
+        const links = (term.voir || []).map((id) => {
+          const target = state.data.glossaire.find((item) => item.id === id);
+          return target ? '<a href="#/glossaire/' + esc(target.id) + '">' + esc(target.terme) + "</a>" : "";
+        }).filter(Boolean).join(" · ");
+        return '<article class="panel" id="terme-' + esc(term.id) + '" data-terme="' + esc(norm(term.terme + " " + term.definition)) + '"><h2>' +
+          esc(term.terme) + "</h2><p>" + esc(term.definition) + "</p>" + (links ? "<p>Voir aussi : " + links + "</p>" : "") + "</article>";
+      }).join("");
+      return '<div class="wrap page">' + pageHead("Vocabulaire du parcours", "Glossaire", "Les définitions servent de tuteur statique : elles expliquent un concept, signalent une limite, et renvoient vers une notion voisine.") +
+        '<p class="no-print"><label>Filtrer<input id="filtre-glossaire" type="search" data-filter="glossaire" placeholder="Tapez un terme"></label></p>' +
+        '<div class="timeline" id="liste-glossaire">' + cards + "</div></div>";
+    }
+
+    function renderCorpusCard(item) {
+      const link = item.url
+        ? '<p><a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer">' + esc(item.lien || "Ouvrir") + "</a></p>"
+        : "";
+      return '<article class="panel" id="ref-' + esc(item.id) + '"><p><span class="tag">' + esc(item.etiquette) + "</span></p><h2>" +
+        esc(item.titre) + "</h2><p><strong>" + esc(item.auteurs) + "</strong> · " + esc(item.annee) + " · " + esc(item.support) +
+        "</p><p>" + esc(item.apport) + "</p><p>" + esc(item.precision) + "</p>" + link + "</article>";
+    }
+
+    function renderRessources(route) {
+      const corpus = state.data.corpus;
+      const ouverte = corpus.ouverte.map(renderCorpusCard).join("");
+      const payante = corpus.payante.map(renderCorpusCard).join("");
+      const livres = corpus.livres.map(renderCorpusCard).join("");
+      const criteres = state.data.criteres.map((item) =>
+        "<tr><td data-label=\"Critère\">" + esc(item.critere) + "</td><td data-label=\"Attendu\">" + esc(item.attendu) + "</td></tr>"
+      ).join("");
+      const maj = state.data.maj.map((item) =>
+        "<tr><td data-label=\"Objet\">" + esc(item.objet) + "</td><td data-label=\"Fréquence\">" + esc(item.frequence) + "</td></tr>"
+      ).join("");
+      const gardes = bullets(state.data.gardeFous);
+      const officiels = (state.data.programme ? state.data.programme.documents : []).map(renderCorpusCard).join("");
+      return '<div class="wrap page">' + pageHead("Documentation", "Ressources et critères", "Contrôle du 5 octobre 2026. Prochaine révision conseillée : " + state.data.meta.prochaineRevision + ". " + state.data.meta.niveauConfiance + ".") +
+        '<p class="notice">' + esc(corpus.introduction) + "</p>" +
+        '<nav class="sommaire" aria-label="Types de ressources"><a href="#documents-officiels">Documents institutionnels</a><a href="#archive-ouverte">Archive ouverte</a><a href="#archive-payante">Archive payante</a><a href="#livres">Livres</a></nav>' +
+        '<h2 id="documents-officiels">Documents institutionnels</h2><p>Corpus prioritaire du niveau commun et des métiers : doctrines et guides français, complétés par la recommandation européenne de 2024. Le corpus scientifique reste disponible plus bas pour le niveau expert.</p>' + officiels +
+        '<h2 id="archive-ouverte">Archive ouverte</h2><p>Textes intégraux lisibles sans abonnement. Les formulations du parcours se contrôlent d’abord sur cet ensemble.</p>' + ouverte +
+        '<h2 id="archive-payante">Archive payante</h2><p>Seize articles de revue parus entre 2016 et 2025, plus l’article classique de Luttwak (1990). Le texte intégral n’a pas été lu pour rédiger le parcours. Téléchargez-le par la bibliothèque si vous voulez vérifier un point.</p>' + payante +
+        '<h2 id="livres">Livres</h2><p>Dix ouvrages, dont cinq en français. Le site ne dépose aucun fichier intégral. Harbulot, Delbecque, Gagliano et Laïdi se lisent comme une école de pensée.</p>' + livres +
+        "<h2>Critères d’évaluation</h2><table class=\"responsive\"><thead><tr><th>Critère</th><th>Attendu</th></tr></thead><tbody>" + criteres + "</tbody></table>" +
+        "<h2>Mise à jour</h2><table class=\"responsive\"><thead><tr><th>Objet</th><th>Fréquence</th></tr></thead><tbody>" + maj + "</tbody></table>" +
+        "<h2>Cadre d’usage</h2>" + gardes + "</div>";
+    }
+
+    function renderTableau() {
+      const pct = completion();
+      const positionnement = state.progress.quizzes.positionnement;
+      const modules = state.data.modules.map((module) => {
+        const read = module.sequences.filter((sequence) => state.progress.sequences[sequence.id]).length;
+        const quiz = state.progress.quizzes[module.id];
+        return "<li><a href=\"#/module/" + esc(module.id) + "\">" + esc(module.titre) + "</a> — séquences " + read + "/" +
+          module.sequences.length + (quiz && quiz.done ? " — quiz " + quiz.score + "/" + quiz.total : "") + "</li>";
+      }).join("");
+      const marques = state.progress.marques.map((id) => {
+        const module = state.data.modules.find((item) => item.id === id);
+        return module ? "<li><a href=\"#/module/" + esc(module.id) + "\">" + esc(module.titre) + "</a></li>" : "";
+      }).join("");
+      const productions = Object.entries(state.progress.productions).filter(([, text]) => String(text).trim()).map(([id, text]) =>
+        "<li><strong>" + esc(id) + ".</strong> " + esc(String(text).trim().slice(0, 180)) + (String(text).trim().length > 180 ? "…" : "") + "</li>"
+      ).join("");
+      return '<div class="wrap page">' + pageHead("Espace apprenant", "Tableau de bord", "La progression, les notes et les outils sont enregistrés localement dans ce navigateur. Ce prototype ne crée pas de compte.") +
+        '<div class="bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '" aria-label="Progression du MVP"><span style="width:' + pct + '%"></span></div><p class="score">' + pct + " %</p>" +
+        '<div class="grid-2"><article class="panel"><h2>Positionnement</h2><p>' +
+        (positionnement && positionnement.done ? positionnement.score + " / " + positionnement.total : "Pas encore réalisé.") +
+        '</p><p><a href="#/positionnement">Ouvrir le test</a></p></article><article class="panel"><h2>Outils</h2><p>' +
+        state.progress.acteurs.length + " acteur(s), " + state.progress.sources.length + " source(s).</p><p><a href=\"#/outils\">Ouvrir les outils</a></p></article></div>" +
+        "<h2>Modules</h2><ul>" + modules + "</ul><h2>Marque-pages</h2>" + (marques ? "<ul>" + marques + "</ul>" : "<p>Aucun marque-page.</p>") +
+        "<h2>Productions</h2>" + (productions ? "<ul>" + productions + "</ul>" : "<p>Aucune production saisie.</p>") +
+        '<section class="panel"><h2>Notes personnelles</h2><label class="sr-only" for="notes">Notes</label><textarea id="notes" data-notes="1">' +
+        esc(state.progress.notes) + "</textarea></section>" +
+        '<p class="notice">Le certificat de réussite du cahier des charges n’est pas délivré dans ce prototype. Il suppose une évaluation humaine des productions.</p>' +
+        '<div class="actions no-print"><button type="button" class="btn secondary" data-action="export">Télécharger mes travaux (JSON)</button>' +
+        '<button type="button" class="btn danger" data-action="reset">Effacer la progression de ce navigateur</button></div></div>';
+    }
+
+    function render() {
+      const route = parseRoute();
+      const flash = state.flash;
+      state.flash = "";
+      const views = {
+        accueil: renderAccueil,
+        sensibilisation: renderSensibilisation,
+        metiers: renderMetiers,
+        metier: () => renderMetier(route.id),
+        jeu: renderJeu,
+        cadre: renderCadre,
+        parcours: renderParcours,
+        positionnement: renderPositionnement,
+        cas: renderCas,
+        outils: renderOutils,
+        glossaire: () => renderGlossaire(route),
+        ressources: () => renderRessources(route),
+        tableau: renderTableau,
+        module: () => renderModule(route.id)
+      };
+      const view = views[route.name] || function () {
+        return '<div class="wrap page"><h1>Page introuvable</h1><p><a href="#/">Retour à l’accueil</a></p></div>';
+      };
+      document.getElementById("contenu").innerHTML = (flash ? '<div class="wrap page"><p class="flash" role="status">' + esc(flash) + "</p></div>" : "") + view();
+      document.title = state.data.meta.titre + " — Université Paris-Saclay";
+      updateChrome(route);
+      const scrollId = state.scrollTo;
+      state.scrollTo = "";
+      if (scrollId) {
+        const target = document.getElementById(scrollId);
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else if (route.name === "glossaire" && route.id) {
+        const term = document.getElementById("terme-" + route.id);
+        if (term) term.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else if (route.name === "ressources" && route.id) {
+        const ref = document.getElementById("ref-" + route.id);
+        if (ref) ref.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.scrollTo(0, 0);
+      }
+      document.getElementById("resultats").hidden = true;
+      document.getElementById("q").value = "";
+      document.getElementById("nav").classList.remove("is-open");
+      document.getElementById("menu-btn").setAttribute("aria-expanded", "false");
+    }
+
+    function questionsFor(scope) {
+      if (scope === "positionnement") return state.data.positionnement.questions;
+      if (scope === "sensibilisation") return state.data.programme.sensibilisation.quiz;
+      const module = state.data.modules.find((item) => item.id === scope);
+      return module ? module.quiz : [];
+    }
+
+    function readRadios(prefix, ids) {
+      const answers = {};
+      let missing = false;
+      ids.forEach((id) => {
+        const selected = document.querySelector('input[name="' + prefix + id + '"]:checked');
+        answers[id] = selected ? selected.value : "";
+        if (!answers[id]) missing = true;
+      });
+      return { answers, missing };
+    }
+
+    function onClick(event) {
+      const scrollLink = event.target.closest("[data-scroll]");
+      if (scrollLink) {
+        event.preventDefault();
+        const target = document.getElementById(scrollLink.dataset.scroll);
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      const button = event.target.closest("[data-action]");
+      if (!button) return;
+      const action = button.dataset.action;
+      if (action === "lire") {
+        state.progress.sequences[button.dataset.id] = true;
+        save();
+        state.scrollTo = button.dataset.id;
+        render();
+      }
+      if (action === "marque") {
+        const id = button.dataset.id;
+        const index = state.progress.marques.indexOf(id);
+        if (index >= 0) state.progress.marques.splice(index, 1);
+        else state.progress.marques.push(id);
+        save();
+        render();
+      }
+      if (action === "submit-quiz") {
+        const scope = button.dataset.scope;
+        const questions = questionsFor(scope);
+        const result = readRadios(scope + "-", questions.map((question) => question.id));
+        if (result.missing) {
+          showFlash("Répondez à chaque question avant de valider.");
+          return;
+        }
+        const score = questions.filter((question) => result.answers[question.id] === question.reponse).length;
+        state.progress.quizzes[scope] = { score, total: questions.length, answers: result.answers, done: true };
+        save();
+        state.scrollTo = "resultat-quiz";
+        render();
+      }
+      if (action === "retry-quiz") {
+        delete state.progress.quizzes[button.dataset.scope];
+        save();
+        render();
+      }
+      if (action === "jeu-choix") {
+        const etapes = state.data.programme.jeu.etapes;
+        const etape = etapes[state.progress.jeu.index];
+        const choix = etape && etape.choix.find((option) => option.id === button.dataset.id);
+        if (!choix) return;
+        state.progress.jeu.reponses.push({ etape: etape.id, choix: choix.id, qualite: choix.qualite });
+        state.progress.jeu.index += 1;
+        state.progress.jeu.termine = state.progress.jeu.index >= etapes.length;
+        save();
+        render();
+      }
+      if (action === "retry-jeu") {
+        state.progress.jeu = { index: 0, reponses: [], termine: false };
+        save();
+        render();
+      }
+      if (action === "print") {
+        window.print();
+      }
+      if (action === "submit-classement") {
+        const items = state.data.modules.find((module) => module.id === "m1").activite.items;
+        const answers = {};
+        let missing = false;
+        items.forEach((item) => {
+          const select = document.querySelector('[name="class-' + item.id + '"]');
+          answers[item.id] = select ? select.value : "";
+          if (!answers[item.id]) missing = true;
+        });
+        if (missing) {
+          showFlash("Classez chaque situation avant de valider.");
+          return;
+        }
+        const score = items.filter((item) => answers[item.id] === item.reponse).length;
+        state.progress.classement = { answers, score, total: items.length, done: true };
+        save();
+        state.scrollTo = "resultat-activite";
+        render();
+      }
+      if (action === "retry-classement") {
+        state.progress.classement = null;
+        save();
+        render();
+      }
+      if (action === "submit-sources") {
+        const docs = state.data.modules.find((module) => module.id === "m2").activite.documents;
+        const result = readRadios("src-", docs.map((doc) => doc.id));
+        if (result.missing) {
+          showFlash("Qualifiez chaque document avant de valider.");
+          return;
+        }
+        const score = docs.filter((doc) => result.answers[doc.id] === doc.reponse).length;
+        state.progress.activiteSources = { answers: result.answers, score, total: docs.length, done: true };
+        save();
+        state.scrollTo = "resultat-activite";
+        render();
+      }
+      if (action === "retry-sources") {
+        state.progress.activiteSources = null;
+        save();
+        render();
+      }
+      if (action === "cas-etape") {
+        state.progress.casEtape = button.dataset.id;
+        save();
+        state.scrollTo = "detail-maillon";
+        render();
+      }
+      if (action === "add-acteur") {
+        const nom = document.getElementById("acteur-nom").value.trim();
+        if (!nom) {
+          showFlash("Indiquez au moins le nom de l’acteur.");
+          return;
+        }
+        state.progress.acteurs.push({
+          id: String(Date.now()),
+          nom,
+          type: document.getElementById("acteur-type").value.trim(),
+          interet: document.getElementById("acteur-interet").value.trim(),
+          ressource: document.getElementById("acteur-ressource").value.trim(),
+          dependance: document.getElementById("acteur-dependance").value.trim()
+        });
+        save();
+        render();
+      }
+      if (action === "del-acteur") {
+        state.progress.acteurs = state.progress.acteurs.filter((actor) => actor.id !== button.dataset.id);
+        save();
+        render();
+      }
+      if (action === "add-source") {
+        const titre = document.getElementById("source-titre").value.trim();
+        if (!titre) {
+          showFlash("Indiquez le titre de la source.");
+          return;
+        }
+        state.progress.sources.push({
+          id: String(Date.now()),
+          titre,
+          auteur: document.getElementById("source-auteur").value.trim(),
+          date: document.getElementById("source-date").value.trim(),
+          faits: document.getElementById("source-faits").value.trim(),
+          confiance: document.getElementById("source-confiance").value
+        });
+        save();
+        render();
+      }
+      if (action === "del-source") {
+        state.progress.sources = state.progress.sources.filter((source) => source.id !== button.dataset.id);
+        save();
+        render();
+      }
+      if (action === "export") {
+        const blob = new Blob([JSON.stringify({ exporteLe: new Date().toISOString(), travaux: state.progress }, null, 2)], { type: "application/json" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "parcours-guerre-economique.json";
+        link.click();
+        URL.revokeObjectURL(link.href);
+      }
+      if (action === "reset") {
+        if (window.confirm("Effacer la progression, les notes et les outils enregistrés dans ce navigateur ?")) {
+          state.progress = defaultProgress();
+          save();
+          render();
+        }
+      }
+    }
+
+    function onInput(event) {
+      const target = event.target;
+      if (target.dataset.grille) {
+        state.progress.grille[target.dataset.grille] = target.value;
+        save();
+      }
+      if (target.dataset.production) {
+        state.progress.productions[target.dataset.production] = target.value;
+        save();
+        updateChrome(parseRoute());
+      }
+      if (target.dataset.notes) {
+        state.progress.notes = target.value;
+        save();
+      }
+      if (target.dataset.filter === "glossaire") {
+        const query = norm(target.value.trim());
+        document.querySelectorAll("[data-terme]").forEach((article) => {
+          article.hidden = Boolean(query) && !article.dataset.terme.includes(query);
+        });
+      }
+      if (target.id === "q") {
+        const query = norm(target.value.trim());
+        const box = document.getElementById("resultats");
+        if (query.length < 2) {
+          box.hidden = true;
+          box.innerHTML = "";
+          return;
+        }
+        const entries = [];
+        state.data.modules.forEach((module) => entries.push({
+          label: "Module " + module.numero + " — " + module.titre,
+          meta: module.resume,
+          href: "#/module/" + module.id
+        }));
+        state.data.glossaire.forEach((term) => entries.push({ label: term.terme, meta: term.definition, href: "#/glossaire/" + term.id }));
+        ["ouverte", "payante", "livres"].forEach((key) => {
+          (state.data.corpus[key] || []).forEach((item) => entries.push({
+            label: item.titre,
+            meta: item.auteurs + ", " + item.annee,
+            href: "#/ressources/" + item.id
+          }));
+        });
+        if (state.data.programme) {
+          state.data.programme.documents.forEach((item) => entries.push({
+            label: item.titre,
+            meta: item.auteurs,
+            href: "#/ressources/" + item.id
+          }));
+          state.data.programme.metiers.forEach((item) => entries.push({
+            label: item.titre,
+            meta: "Parcours métier",
+            href: "#/metier/" + item.id
+          }));
+          entries.push({ label: "Sensibilisation commune", meta: "Niveau 1", href: "#/sensibilisation" });
+          entries.push({ label: "Jeu court", meta: "Réflexes", href: "#/jeu" });
+        }
+        entries.push({ label: state.data.cas.titre, meta: state.data.cas.question, href: "#/cas" });
+        const found = entries.filter((entry) => norm(entry.label + " " + entry.meta).includes(query)).slice(0, 8);
+        box.innerHTML = found.length ? found.map((entry) =>
+          '<a href="' + esc(entry.href) + '">' + esc(entry.label) + "<small>" + esc(entry.meta) + "</small></a>"
+        ).join("") : "<p class=\"panel\">Aucun résultat.</p>";
+        box.hidden = false;
+      }
+    }
+
+    function showFlash(message) {
+      let flash = document.getElementById("flash");
+      if (!flash) {
+        flash = document.createElement("p");
+        flash.id = "flash";
+        flash.className = "flash";
+        flash.setAttribute("role", "status");
+        document.getElementById("contenu").prepend(flash);
+      }
+      flash.textContent = message;
+    }
+
+    function showError(message) {
+      document.getElementById("contenu").innerHTML = '<div class="wrap page"><h1>Le parcours n’a pas pu être chargé</h1><p>' +
+        esc(message) + "</p><p>Ouvrez le dossier avec un serveur local, puis affichez cette page :</p><p><code>python3 -m http.server</code></p></div>";
+    }
+
+    async function init() {
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        const nav = document.getElementById("nav");
+        const open = nav.classList.toggle("is-open");
+        document.getElementById("menu-btn").setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      document.getElementById("form-recherche").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const first = document.querySelector("#resultats a");
+        if (first) first.click();
+      });
+      document.body.addEventListener("click", onClick);
+      document.body.addEventListener("input", onInput);
+      window.addEventListener("hashchange", render);
+      try {
+        const response = await fetch("formation.json", { cache: "no-store" });
+        if (!response.ok) throw new Error("Fichier formation.json introuvable (" + response.status + ").");
+        state.data = await response.json();
+        render();
+      } catch (error) {
+        showError(error.message || "Erreur de chargement.");
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
